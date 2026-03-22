@@ -30,7 +30,7 @@ const initialData: WizardData = {
   referralSource: "",
 };
 
-type WizardPhase = "form" | "submitting" | "booking" | "confirmed";
+type WizardPhase = "form" | "booking" | "confirmed";
 
 interface WizardContextType {
   data: WizardData;
