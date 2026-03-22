@@ -7,13 +7,19 @@ import { Check, Minus } from "lucide-react";
 
 export default function Pricing() {
   const featureRows = [
-    { name: "Pages Included", starter: "Up to 3", standard: "Up to 5", growth: "Up to 10" },
+    { name: "Pages Included", starter: "Up to 5", standard: "Up to 7", growth: "Up to 10" },
+    { name: "SEO Funnel Pages", starter: false, standard: "5 Pages", growth: "10 Pages" },
     { name: "Mobile-First Design", starter: true, standard: true, growth: true },
     { name: "Secure Hosting & SSL", starter: true, standard: true, growth: true },
     { name: "Monthly Change Requests", starter: "1 / month", standard: "3 / month", growth: "Unlimited" },
     { name: "Lead Capture Forms", starter: "Basic", standard: "Advanced", growth: "Custom Integrated" },
     { name: "SEO Optimization", starter: "Basic Setup", standard: "Local SEO Focus", growth: "Advanced + Schema" },
     { name: "Google Business Profile", starter: false, standard: true, growth: true },
+    { name: "Business Dashboard", starter: false, standard: true, growth: true },
+    { name: "Website Analytics", starter: false, standard: "Basic Insights", growth: "Full Reports" },
+    { name: "Edit Business Info (Hours, Phone, Address)", starter: false, standard: true, growth: true },
+    { name: "Announcement / Message Banner", starter: false, standard: false, growth: true },
+    { name: "Easy Update Request Submission", starter: false, standard: false, growth: true },
     { name: "Daily Backups", starter: false, standard: false, growth: true },
     { name: "Priority Support (24hr)", starter: false, standard: false, growth: true },
     { name: "Quarterly Strategy Call", starter: false, standard: false, growth: true },

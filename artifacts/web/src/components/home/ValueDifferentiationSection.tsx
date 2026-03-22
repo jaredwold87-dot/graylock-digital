@@ -8,6 +8,7 @@ export function ValueDifferentiationSection() {
     { theirs: "Lock you into long-term contracts", ours: "Month-to-month, cancel anytime" },
     { theirs: "Leave you alone after launch", ours: "Handle hosting, updates, and maintenance every month" },
     { theirs: "Hand you a template and call it custom", ours: "Build a site designed specifically for your business and niche" },
+    { theirs: "No way to see what's happening on your site", ours: "Business dashboard with traffic insights and easy info updates" },
   ];
 
   return (

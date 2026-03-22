@@ -18,16 +18,16 @@ const homepageFaqs = [
     a: "Not at all. The review and demo are genuinely free. If you love what you see and want to move forward, great. If not, you keep the evaluation insights and there's zero pressure. We'd rather earn your trust than push a sale."
   },
   {
-    q: "How long does the call take?",
-    a: "About 20 minutes. We'll learn about your business, review your current site together, and walk you through our findings. After the call, we build your custom homepage demo and send it over within a few days."
+    q: "What is the business dashboard?",
+    a: "It's a simple, private dashboard included with our Standard and Growth plans. You can view your website traffic, update business details like hours and phone number, and submit change requests — all without needing to contact a developer."
+  },
+  {
+    q: "Which plans include dashboard access?",
+    a: "The Standard and Growth plans both include dashboard access. Growth plan customers also get enhanced features like full performance reports, announcement banner editing, and easy update request submission."
   },
   {
     q: "What types of businesses do you work with?",
     a: "We specialize in small service businesses — accountants, therapists, contractors, consultants, dentists, lawyers, and other local professional services. If you rely on trust, reputation, and local visibility to grow, we're built for you."
-  },
-  {
-    q: "What happens after the call?",
-    a: "After our call, we build your custom homepage demo and send it over. You'll see exactly what your new website could look like. If you want to move forward, we build the full site in 3–5 days. If not, you keep the insights — no hard feelings."
   }
 ];
 
@@ -40,7 +40,7 @@ export function FAQSection() {
         
         <ScrollReveal className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-display text-charcoal mb-4">
-            Questions About the Free Review
+            Common Questions
           </h2>
         </ScrollReveal>
 

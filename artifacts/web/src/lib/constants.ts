@@ -10,7 +10,8 @@ export const PRICING_TIERS = [
       "Basic SEO Setup",
       "Hosting & SSL Included",
       "Monthly Software Updates",
-      "1 Content Update / Month"
+      "1 Content Update / Month",
+      "Email Support"
     ]
   },
   {
@@ -18,14 +19,15 @@ export const PRICING_TIERS = [
     price: "$119",
     setup: "$499 one-time setup",
     popular: true,
-    description: "The sweet spot for growing businesses looking to capture more leads.",
+    description: "The sweet spot for growing businesses that want visibility and control.",
     features: [
       "Custom 7-Page Website",
       "5 SEO-Optimized Funnel Pages",
+      "Business Dashboard Access",
+      "Website Analytics & Visitor Insights",
+      "Edit Business Hours, Phone & Address",
       "Advanced Lead Forms",
       "Local SEO Optimization",
-      "Hosting & SSL Included",
-      "Weekly Security Scans",
       "3 Content Updates / Month",
       "Google Business Profile Setup"
     ]
@@ -34,13 +36,15 @@ export const PRICING_TIERS = [
     name: "Growth",
     price: "$199",
     setup: "$999 one-time setup",
-    description: "For established businesses that need a high-performance marketing machine.",
+    description: "For established businesses that need full control and maximum performance.",
     features: [
       "Custom 10-Page Website",
       "10 SEO-Optimized Funnel Pages",
-      "Custom Service Landing Pages",
+      "Enhanced Dashboard + Priority Support",
+      "Full Analytics & Performance Reports",
+      "Edit All Business Info + Message Banner",
+      "Easy Update Request Submission",
       "Advanced SEO & Schema",
-      "Priority Support (24hr)",
       "Daily Backups & Scans",
       "Unlimited Content Updates",
       "Quarterly Strategy Call"
@@ -112,11 +116,36 @@ export const FAQS = [
       },
       {
         q: "Can I upgrade my plan later?",
-        a: "Absolutely. As your business grows, you can seamlessly move to a higher tier to unlock more pages, features, and monthly change requests."
+        a: "Absolutely. As your business grows, you can seamlessly move to a higher tier to unlock more pages, features, dashboard access, and additional monthly change requests."
       },
       {
         q: "Are there any hidden fees?",
         a: "Zero. You pay the one-time setup fee, and then the flat monthly rate. That's it. Hosting, SSL, and routine maintenance are all baked into the monthly price."
+      }
+    ]
+  },
+  {
+    category: "Business Dashboard",
+    questions: [
+      {
+        q: "What is included in the business dashboard?",
+        a: "The dashboard gives you a simple place to view your website analytics — like visitor traffic and lead activity — and update key business details like hours, phone number, address, and announcement banners. It's designed to be easy to use, not overwhelming."
+      },
+      {
+        q: "Which plans include dashboard access?",
+        a: "The Standard and Growth plans both include dashboard access. The Growth plan includes enhanced dashboard features like full performance reports, message banner editing, and easy update request submission."
+      },
+      {
+        q: "Can I update my business information myself?",
+        a: "Yes. With the Standard or Growth plan, you can log in and update things like your hours, phone number, and address whenever you need to — no waiting on a developer."
+      },
+      {
+        q: "What kind of analytics can I see?",
+        a: "You can see simple, useful insights like how many people are visiting your site, which pages they're viewing, and whether visitors are submitting inquiries or contact forms. It's designed to give you a clear picture without the complexity of a tool like Google Analytics."
+      },
+      {
+        q: "Do I still get support if I have dashboard access?",
+        a: "Absolutely. The dashboard gives you more control, but it doesn't replace our support. You still get your monthly content updates, and the Growth plan includes priority support with 24-hour response times."
       }
     ]
   },

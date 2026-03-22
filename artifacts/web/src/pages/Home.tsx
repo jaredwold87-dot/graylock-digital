@@ -5,6 +5,7 @@ import { HowItWorksSection } from "@/components/home/HowItWorksSection";
 import { ValueDifferentiationSection } from "@/components/home/ValueDifferentiationSection";
 import { ProblemSection } from "@/components/home/ProblemSection";
 import { SolutionSection } from "@/components/home/SolutionSection";
+import { DashboardSection } from "@/components/home/DashboardSection";
 import { TestimonialSection } from "@/components/home/TestimonialSection";
 import { MissionBlurb } from "@/components/home/MissionBlurb";
 import { NicheExamplesSection } from "@/components/home/NicheExamplesSection";
@@ -22,6 +23,7 @@ export default function Home() {
       <HowItWorksSection />
       <ValueDifferentiationSection />
       <SolutionSection />
+      <DashboardSection />
       <TestimonialSection />
       <MissionBlurb />
       <NicheExamplesSection />
