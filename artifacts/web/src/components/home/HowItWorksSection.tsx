@@ -5,18 +5,23 @@ export function HowItWorksSection() {
   const steps = [
     {
       num: "01",
-      title: "We Talk",
-      desc: "Book a free 20-minute evaluation. We look at your current setup, discuss your goals, and see if we're a good fit."
+      title: "Book a Free Call",
+      desc: "Pick a time that works for you. It takes 20 minutes and there's zero obligation. We just want to learn about your business and take a look at your current site."
     },
     {
       num: "02",
-      title: "We Build",
-      desc: "You pay the one-time setup fee, and we get to work. Within 3–5 days, we present a complete, custom website."
+      title: "We Review Your Website",
+      desc: "We analyze your current site and walk you through what's working, what's not, and exactly what's costing you leads. You'll leave the call with real clarity — whether you hire us or not."
     },
     {
       num: "03",
-      title: "We Launch — and Stay",
-      desc: "You approve it, we launch it. Then your flat monthly subscription kicks in, covering hosting and all future text/photo updates."
+      title: "We Build You a Demo Homepage",
+      desc: "We create a custom homepage concept for your business so you can see exactly how we'd improve your messaging, design, and brand presence. No cost, no pressure."
+    },
+    {
+      num: "04",
+      title: "You Decide — No Pressure",
+      desc: "Love it? We build the full site in 3–5 days and launch. Not ready? No problem. You keep the evaluation insights and demo concept. Zero hard feelings."
     }
   ];
 
@@ -26,27 +31,29 @@ export function HowItWorksSection() {
         
         <ScrollReveal className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-display text-charcoal mb-6">
-            From Your First Call to a Live Website — In Three Steps
+            How It Works — Simple and Risk-Free
           </h2>
+          <p className="text-gray-600 text-lg font-sans max-w-2xl mx-auto">
+            From first call to a live website that gets you leads. No contracts, no surprises, no pressure.
+          </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 mb-16 relative">
-          {/* Connector Line for Desktop */}
-          <div className="hidden md:block absolute top-8 left-[16%] right-[16%] h-0.5 bg-gray-300 z-0"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mb-16 relative">
+          <div className="hidden lg:block absolute top-10 left-[12%] right-[12%] h-0.5 bg-gray-300 z-0"></div>
 
           {steps.map((step, i) => (
-            <ScrollReveal key={i} delay={i * 0.2} className="relative z-10 flex flex-col items-center text-center">
+            <ScrollReveal key={i} delay={i * 0.15} className="relative z-10 flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-full bg-charcoal text-orange flex items-center justify-center font-display text-2xl tracking-widest shadow-lg mb-6 border-4 border-offwhite">
                 {step.num}
               </div>
-              <h3 className="text-2xl font-display text-charcoal mb-4">{step.title}</h3>
-              <p className="text-gray-600 font-sans leading-relaxed max-w-sm">{step.desc}</p>
+              <h3 className="text-xl font-display text-charcoal mb-4">{step.title}</h3>
+              <p className="text-gray-600 font-sans leading-relaxed text-sm max-w-xs">{step.desc}</p>
             </ScrollReveal>
           ))}
         </div>
 
         <ScrollReveal delay={0.6} className="text-center">
-          <CTAButton href="/contact">Book Your Free Evaluation</CTAButton>
+          <CTAButton href="/contact">Book Your Free Website Review</CTAButton>
         </ScrollReveal>
 
       </div>

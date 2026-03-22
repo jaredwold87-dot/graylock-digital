@@ -3,28 +3,28 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 export function ProblemSection() {
   const problems = [
     {
-      title: "Still Looks Like 2014",
-      desc: "An outdated design signals an outdated business to potential clients."
+      title: "Your Site Looks Outdated",
+      desc: "Visitors judge your business in under 3 seconds. An old design tells them you're behind the times — even if your work is exceptional."
     },
     {
-      title: "Broken on Mobile",
-      desc: "Over 60% of visitors browse on phones. If they pinch to zoom, they leave."
+      title: "It's Broken on Mobile",
+      desc: "Over 60% of your visitors are on their phones. If they have to pinch and zoom, they're leaving — and calling your competitor instead."
     },
     {
-      title: "Invisible on Google",
-      desc: "No proper SEO foundation means your competitors get the local traffic."
+      title: "You're Invisible on Google",
+      desc: "Without a proper SEO foundation, the people searching for your services in your area are finding everyone but you."
     },
     {
-      title: "Agency Quotes Are Overwhelming",
-      desc: "Agencies quote $5,000–$15,000 upfront. That ties up too much cash."
+      title: "Agencies Want $10K Upfront",
+      desc: "Most agencies quote $5,000–$15,000 before showing you anything. That's a huge gamble for a small business."
     },
     {
-      title: "You Can't Update It Yourself",
-      desc: "Every minor text change requires emailing a developer who ignores you."
+      title: "You Don't Know What's Wrong",
+      desc: "You know your site isn't working, but you can't pinpoint exactly why. You need someone to show you — clearly."
     },
     {
       title: "You've Been Putting It Off",
-      desc: "It feels too complicated and expensive to fix, so you live with a bad site."
+      desc: "It feels too complicated and expensive to fix. So every month, you lose more leads to a website that doesn't represent you."
     }
   ];
 
@@ -34,10 +34,10 @@ export function ProblemSection() {
         
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-display text-charcoal mb-6">
-            Your Website Might Be Costing You More Than You Think
+            Most Business Owners Know Their Website Needs Work
           </h2>
           <p className="text-gray-600 text-lg font-sans">
-            Every day you stick with an underperforming website, you're handing warm leads over to your competitors.
+            They just don't know exactly what's wrong — or how to fix it without spending a fortune. Sound familiar?
           </p>
         </ScrollReveal>
 
@@ -52,7 +52,7 @@ export function ProblemSection() {
 
         <ScrollReveal delay={0.4} className="text-center">
           <p className="text-xl font-display text-orange tracking-wide uppercase">
-            We built Graylock Digital specifically for businesses in this situation.
+            That's exactly why we review your site for free — so you finally know what to fix.
           </p>
         </ScrollReveal>
 

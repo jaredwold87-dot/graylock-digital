@@ -1,0 +1,199 @@
+I need you to update the Graylock Digital website messaging, layout, and conversion flow to make our core offer the centerpiece of the site.
+
+IMPORTANT CONTEXT:
+Graylock Digital is a modern website company for small service businesses. We rebuild outdated websites into modern, mobile-first, lead-focused websites for a low upfront cost plus a monthly subscription.
+
+Right now, our site is not clearly pushing our strongest offer. I need that fixed.
+
+CORE OFFER TO FEATURE PROMINENTLY:
+When a business owner schedules a call with us, they receive:
+
+1. A completely free, no-obligation evaluation of their current website
+2. A live consultation where we walk them through what is and is not working on their current site
+3. A free custom demo homepage concept showing exactly how we would improve their homepage, messaging, and brand presentation
+
+This is a true value-first offer.
+There is no cost for the evaluation.
+There is no cost for the demo homepage.
+There is no obligation to move forward.
+
+This offer should feel like an Alex Hormozi-style unreasonable offer:
+- High perceived value
+- Low friction
+- Clear outcome
+- Risk-free
+- Easy next step
+
+OBJECTIVE:
+Rework the site so that this free offer becomes the primary CTA and most compelling reason to book a consultation.
+
+POSITIONING GOALS:
+The site should make visitors feel:
+- “I would be crazy not to take this call”
+- “They’re doing real work for me before I pay them anything”
+- “This is low risk and high value”
+- “These guys clearly know what they’re doing”
+- “I get to actually see what my site could become before making a decision”
+
+TARGET CUSTOMER:
+Small service businesses with outdated websites, including:
+- accountants
+- therapists
+- contractors
+- local professional service businesses
+- specialized service businesses
+
+These business owners often:
+- know their website is outdated
+- know it is underperforming
+- do not know exactly what is wrong
+- do not want to spend thousands upfront with an agency
+- want something easy, clear, and trustworthy
+
+MESSAGING DIRECTION:
+The website should emphasize that we do not just talk about improvements — we show them.
+
+Key themes:
+- Free website evaluation
+- Free custom homepage demo
+- No obligation
+- We show you exactly what is broken
+- We show you exactly how we would improve it
+- Modern, mobile-first, lead-focused design
+- Fast, affordable, professional
+- Designed for small business owners who want results without the headache
+
+DO NOT make the tone hypey or scammy.
+It should feel:
+- confident
+- modern
+- clear
+- premium but approachable
+- trustworthy
+- practical
+- highly conversion-focused
+
+PRIMARY CTA:
+“Book Your Free Website Review”
+Alternative CTA options can include:
+- “Get My Free Website Evaluation”
+- “See a Free Demo of Your New Homepage”
+- “Claim Your Free Website Review”
+
+WHAT I NEED YOU TO CHANGE:
+
+1. HERO SECTION
+Rewrite the hero section so the offer is immediately clear.
+The hero should communicate:
+- who we help
+- what problem we solve
+- what free value they get by booking a call
+- the CTA
+
+The hero should clearly explain that booking a call gets them:
+- a free website evaluation
+- a free walkthrough of what is broken
+- a free custom homepage demo
+
+Include a strong headline, subheadline, CTA button, and supporting trust-focused copy.
+
+2. OFFER SECTION
+Add a dedicated section near the top of the homepage titled something like:
+- “What You Get on Your Free Call”
+- “Your Free Website Review Includes”
+- “See Exactly What We’d Fix — Before You Pay Us Anything”
+
+This section should visually and clearly break down the 3-part offer:
+- Website evaluation
+- Strategy walkthrough
+- Custom homepage demo
+
+Each item should explain the benefit, not just the feature.
+
+3. HOW IT WORKS SECTION
+Add or revise a section that explains the simple process:
+Step 1: Book a free call
+Step 2: We review your current website and show what is hurting performance
+Step 3: We create a custom homepage demo so you can see the difference
+Step 4: If you want to move forward, we build the full site
+
+Make this feel simple and low friction.
+
+4. VALUE / DIFFERENTIATION SECTION
+Add messaging that makes this offer feel unusually valuable compared to normal agencies.
+Examples of ideas to communicate:
+- Most agencies charge before showing anything
+- Most business owners have no idea what is actually wrong with their site
+- We show you the issues and a better path before asking you to commit
+- You get clarity and a visual demo without risk
+
+5. CTA SECTIONS
+Place CTA blocks throughout the homepage that reinforce the offer.
+The CTA should consistently point to booking the free call, not just “contact us.”
+
+6. FAQ SECTION
+Add FAQs that reduce friction, such as:
+- Is the website review really free?
+- Is the homepage demo really custom?
+- Am I obligated to buy?
+- What types of businesses do you work with?
+- How long does the call take?
+- What happens after the call?
+
+7. CONTACT / BOOKING SECTION
+Revise the booking/contact section so it is clearly tied to the free offer.
+Make it obvious what they get by booking.
+
+DESIGN DIRECTION:
+The site should feel clean, sharp, modern, premium, and conversion-focused.
+Think:
+- strong hierarchy
+- bold offer presentation
+- clear CTA buttons
+- easy scanning
+- mobile-first
+- modern SaaS/agency hybrid aesthetic
+
+Avoid clutter.
+Avoid vague agency jargon.
+Avoid generic “we build amazing websites” copy.
+
+COPY STRATEGY:
+Write copy that is specific and direct.
+Focus on:
+- outdated websites
+- lost leads
+- poor mobile experience
+- unclear messaging
+- businesses not knowing what is broken
+- us showing them exactly what to improve
+
+The copy should make the free offer the star.
+
+SUGGESTED MESSAGING ANGLES TO USE:
+- “We’ll show you what’s wrong with your current website and what we’d do differently — free.”
+- “Before you pay us a dollar, we’ll review your current site and build a demo homepage concept for your business.”
+- “Most business owners know their site needs work. We help you see exactly how to fix it.”
+- “No pressure. No obligation. Just a clear look at what your website could become.”
+
+IMPORTANT:
+Do not just tweak a few sentences.
+I want a meaningful homepage repositioning around this offer.
+
+DELIVERABLES:
+1. Updated homepage copy and structure
+2. Revised CTA strategy
+3. Improved section hierarchy centered on the free offer
+4. Any design/layout updates needed to make the offer stand out
+5. Mobile-optimized implementation
+
+If helpful, create a homepage structure in this approximate order:
+- Hero
+- Offer breakdown
+- How it works
+- Why businesses choose Graylock
+- Before/after or results/value section
+- FAQ
+- Final CTA / booking section
+
+Please implement the revised homepage directly.

@@ -6,30 +6,29 @@ export function SolutionSection() {
     {
       icon: <Clock className="text-orange mb-4" size={32} />,
       title: "Built Fast",
-      desc: "Skip the endless revisions. We build and launch your custom website in just 3–5 business days."
+      desc: "Once you say go, we build and launch your custom website in just 3–5 business days. No endless back and forth."
     },
     {
       icon: <Wrench className="text-orange mb-4" size={32} />,
       title: "Maintained Monthly",
-      desc: "Hosting, security, and monthly content updates are all handled for you. Zero technical headaches."
+      desc: "Hosting, security, and content updates are all handled for you. Your site stays fresh and performing — no technical headaches."
     },
     {
       icon: <Zap className="text-orange mb-4" size={32} />,
       title: "Built to Convert",
-      desc: "We don't just make it pretty. We structure your site to turn visitors into phone calls and booked appointments."
+      desc: "We don't just make it pretty. Every page is structured to turn visitors into phone calls and booked appointments."
     }
   ];
 
   return (
     <section className="bg-navy py-24 px-6 md:px-12 relative overflow-hidden">
-      {/* Decorative pattern */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#F2F3F5 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-display text-offwhite mb-6">
-            A Done-For-You Website That Actually Works — Starting at $59/month
+            A Done-For-You Website That Actually Gets Results — Starting at $59/month
           </h2>
           <p className="text-stone text-lg font-sans">
             Stop worrying about hosting, plugins, and design templates. Focus on running your business while we handle your web presence entirely.

@@ -61,8 +61,10 @@ Frontend-only React + Vite marketing website for Graylock Digital, a subscriptio
 - **Pages**: / (homepage), /how-it-works, /pricing, /work, /about, /faq, /contact, /thank-you
 - **Form**: Contact form uses Formspree (placeholder URL: `https://formspree.io/f/REPLACE`)
 - **Assets in public/**: logo-horizontal.png (navbar), logo-stacked.png (footer), hero-bg.png (homepage hero background), devices-hero.png (device mockup), about-hero.png (about/how-it-works hero bg), portfolio-before-{1,2,3}.png & portfolio-after-{1,2,3}.png (before/after portfolio images for CPA, Therapist, Contractor)
-- **Key Components**: Navbar (sticky, mobile hamburger, includes Home link), Footer, BeforeAfterMockup (auto-cycling real portfolio images), PricingSection, FAQSection, NicheExamplesSection
-- **Section Rhythm**: Hero (charcoal) → Problem (offwhite) → Solution (navy) → How It Works (offwhite) → Testimonials (charcoal) → Work Examples (navy) → Pricing (charcoal) → FAQ (offwhite) → Trust block (navy) → Final CTA (orange) → Footer (charcoal)
+- **Core Offer**: Free website review + free custom homepage demo (value-first, no obligation). Primary CTA: "Book Your Free Website Review"
+- **Key Components**: Navbar (sticky, mobile hamburger, includes Home link), Footer, BeforeAfterMockup (auto-cycling real portfolio images), OfferBreakdownSection (3-part free offer), ValueDifferentiationSection (agency comparison table), PricingSection, FAQSection (offer-focused), NicheExamplesSection (AI-generated website screenshots)
+- **Section Rhythm**: Hero (charcoal) → Offer Breakdown (navy) → Problem (offwhite) → How It Works (offwhite) → Value Differentiation (charcoal) → Solution (navy) → Testimonials (charcoal) → Mission Blurb (charcoal) → Niche Examples (navy) → Pricing (charcoal) → FAQ (offwhite) → Final CTA (orange) → Footer (charcoal)
+- **Niche Images in public/**: niche-{accountant,therapist,contractor,consultant,dentist,lawyer}-{1,2,3}.png (18 AI-generated website mockup screenshots)
 - **Animations**: Framer Motion scroll-reveal (fade up, 0.5s, 20px offset)
 - `pnpm --filter @workspace/web run dev` — run the dev server
 

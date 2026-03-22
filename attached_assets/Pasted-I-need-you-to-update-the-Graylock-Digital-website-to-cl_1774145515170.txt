@@ -1,0 +1,157 @@
+I need you to update the Graylock Digital website to clearly introduce and explain a personalized business dashboard feature that is included in our two upper pricing tiers.
+
+IMPORTANT CONTEXT:
+Graylock Digital builds and maintains modern, lead-focused websites for small service businesses. Our website already highlights our free offer:
+- free website evaluation
+- free consultation walkthrough
+- free custom homepage demo
+
+Now I need the website to also communicate that our higher-tier plans include access to a personalized business dashboard.
+
+GOAL:
+Position this dashboard as a premium, practical value-add for business owners who want more visibility and more control over key website-related business information without needing to contact us for every small update.
+
+DASHBOARD FEATURE TO EXPLAIN:
+For the two upper tiers, customers receive access to a personalized dashboard where they can:
+
+1. View website analytics
+2. Update certain business information themselves
+3. Submit update requests more easily
+
+The editable business information should include examples such as:
+- operating hours
+- message banner / announcement bar
+- phone number
+- address
+- business contact info
+- other simple business details that may need occasional updating
+
+ANALYTICS SHOULD BE POSITIONED SIMPLY:
+Do not make this sound overly technical or like a complex Google Analytics platform.
+The positioning should be simple and useful for small business owners.
+
+Examples of what they can see:
+- site traffic
+- visitor activity
+- lead or inquiry visibility if applicable
+- simple performance insights
+
+The tone should be:
+- practical
+- easy to understand
+- helpful
+- premium
+- business-owner friendly
+
+WHAT I NEED YOU TO DO:
+
+1. UPDATE PRICING / PACKAGE MESSAGING
+Revise the upper two tiers so they clearly include dashboard access as a premium feature.
+
+For example:
+- Mid-tier plan includes dashboard access
+- Top-tier plan includes enhanced dashboard access / priority support / additional visibility
+
+Make the dashboard one of the most attractive differentiators between the lower tier and upper tiers.
+
+2. ADD A NEW SECTION TO THE HOMEPAGE
+Add a section that introduces the dashboard in a compelling way.
+
+Possible section title ideas:
+- More Control, Without the Headache
+- Your Website, With Better Visibility
+- A Business Dashboard Built for Simplicity
+- Easy Access to the Info You Actually Need
+
+This section should explain:
+- You do not have to rely on a developer for every small change
+- You can quickly update key business details
+- You can log in and view useful website insights
+- It gives you more control without adding complexity
+
+3. ADD FEATURE CALLOUTS
+Create a visual feature list or icon grid for the dashboard including items like:
+- View website traffic
+- Update business hours
+- Change phone and address
+- Post a message banner
+- Submit support or update requests
+
+4. UPDATE THE OFFER / DIFFERENTIATION MESSAGING
+Somewhere on the site, communicate that Graylock is not just building websites.
+We are also providing an easier way for small businesses to manage the most important parts of their online presence.
+
+Messaging angle:
+- Most small business websites are hard to update
+- Most owners have to wait on someone else for every little change
+- Our upper-tier plans give you a cleaner, easier way to manage the essentials
+
+5. UPDATE THE FAQ
+Add relevant FAQs such as:
+- What is included in the dashboard?
+- Which plans include dashboard access?
+- Can I update my business information myself?
+- What kind of analytics can I see?
+- Do I still get support if I have dashboard access?
+
+6. UPDATE THE PRICING COMPARISON TABLE
+If the website has a comparison section or pricing table, add dashboard-related feature rows such as:
+- Dashboard access
+- Website analytics
+- Business info editing
+- Announcement / message banner editing
+- Easier update request submission
+
+The two upper tiers should clearly show these features included.
+The lowest tier should either not include them or include a more limited version.
+
+POSITIONING NOTES:
+This dashboard is a premium convenience and control feature.
+It should not be framed as complicated software.
+It should feel:
+- simple
+- valuable
+- modern
+- useful
+- time-saving
+
+The customer should think:
+- “That would make my life easier”
+- “I like being able to change simple things myself”
+- “I like being able to see what’s happening on my site”
+- “This feels more modern than just paying someone and hoping for the best”
+
+COPY DIRECTION:
+Use clear, non-technical language.
+Avoid phrases that sound like enterprise SaaS jargon.
+Do not overcomplicate the explanation.
+
+Strong benefit-driven phrases to consider:
+- “Update key business info without waiting on a developer”
+- “See how your website is performing at a glance”
+- “Make simple changes quickly and easily”
+- “More visibility. More control. Less back-and-forth.”
+
+DESIGN DIRECTION:
+The dashboard section should feel premium and modern.
+If helpful, include:
+- a mock dashboard preview
+- a clean analytics card preview
+- editable settings examples
+- a simple visual showing business info controls
+
+This should visually help customers understand what the dashboard is without overwhelming them.
+
+IMPORTANT:
+Do not bury this feature.
+It should be clearly presented as one of the major reasons to choose one of the upper-tier plans.
+
+DELIVERABLES:
+1. Updated homepage messaging to include the dashboard
+2. Updated pricing/package language
+3. A new dashboard feature section
+4. Updated FAQ entries
+5. Any visual or layout improvements needed to showcase this feature clearly
+6. Mobile-optimized implementation
+
+Please implement these changes directly into the site.

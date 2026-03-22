@@ -14,7 +14,7 @@ export function PricingSection() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-stone text-lg font-sans max-w-2xl mx-auto">
-            Pay a one-time build fee, then a flat monthly rate for hosting and ongoing changes. No surprises.
+            Pay a one-time build fee, then a flat monthly rate. No surprises. Not sure which plan fits? Book a free review and we'll recommend the right one for your business.
           </p>
         </ScrollReveal>
 
@@ -58,7 +58,7 @@ export function PricingSection() {
                 variant={tier.popular ? 'primary' : 'outline'}
                 className="w-full"
               >
-                Get Started
+                Book Your Free Website Review
               </CTAButton>
             </ScrollReveal>
           ))}
@@ -66,7 +66,7 @@ export function PricingSection() {
 
         <ScrollReveal delay={0.5} className="mt-16 text-center">
           <p className="text-stone font-sans mb-2">
-            Not sure which plan is right for you? Book a free evaluation and we'll tell you exactly what your business needs.
+            Not sure which plan is right? Book a free website review and we'll tell you exactly what your business needs.
           </p>
           <p className="text-stone/60 text-sm font-sans max-w-2xl mx-auto">
             All plans include hosting, SSL, mobile optimization, and ongoing maintenance. No long-term contracts. Cancel anytime.

@@ -16,23 +16,23 @@ export function HeroSection() {
         
         <ScrollReveal>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-display text-offwhite leading-[1.1] mb-6">
-            Your Website Should Be Getting You Leads.<br /><span className="text-orange">Is It?</span>
+            We'll Show You What's Wrong With Your Website.<br /><span className="text-orange">For Free.</span>
           </h1>
           <p className="text-stone text-lg md:text-xl font-sans mb-8 max-w-xl leading-relaxed">
-            Graylock Digital builds and maintains modern, lead-focused websites for small service businesses — for one simple monthly subscription. Done for you. Launched in days. Maintained forever.
+            Book a free call and we'll review your current site, walk you through exactly what's costing you leads, and build you a custom homepage demo — before you pay us a dollar.
           </p>
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
             <CTAButton href="/contact">
-              Get Your Free Website Evaluation
+              Book Your Free Website Review
             </CTAButton>
           </div>
 
           <div className="flex flex-col gap-3">
             {[
-              "Sites delivered in 3–5 business days",
-              "Hosting & maintenance included",
-              "No long-term contracts"
+              "Free website evaluation — no strings attached",
+              "Custom homepage demo built for your business",
+              "Zero obligation to move forward"
             ].map((text, i) => (
               <div key={i} className="flex items-center gap-3">
                 <div className="flex-shrink-0 w-5 h-5 rounded-full bg-navy border border-gunmetal flex items-center justify-center">

@@ -3,7 +3,6 @@ import { TESTIMONIALS } from "@/lib/constants";
 import { Star } from "lucide-react";
 
 export function TrustStatsSection() {
-  // Use testimonials 3 and 4
   const testimonials = TESTIMONIALS.slice(3, 5);
 
   return (
@@ -36,16 +35,16 @@ export function TrustStatsSection() {
         <ScrollReveal delay={0.4}>
           <div className="bg-charcoal rounded-2xl border border-gunmetal p-8 md:p-12 flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-gunmetal">
             <div className="flex-1 text-center py-6 md:py-0 px-4">
+              <div className="text-4xl md:text-6xl font-display text-orange mb-2">$0</div>
+              <div className="text-stone font-display text-xl tracking-wide uppercase">Cost for Your Review</div>
+            </div>
+            <div className="flex-1 text-center py-6 md:py-0 px-4">
               <div className="text-4xl md:text-6xl font-display text-orange mb-2">3–5 Days</div>
               <div className="text-stone font-display text-xl tracking-wide uppercase">Average Build Time</div>
             </div>
             <div className="flex-1 text-center py-6 md:py-0 px-4">
               <div className="text-4xl md:text-6xl font-display text-orange mb-2">100%</div>
               <div className="text-stone font-display text-xl tracking-wide uppercase">Done-For-You Service</div>
-            </div>
-            <div className="flex-1 text-center py-6 md:py-0 px-4">
-              <div className="text-4xl md:text-6xl font-display text-orange mb-2">$0</div>
-              <div className="text-stone font-display text-xl tracking-wide uppercase">Hidden Fees</div>
             </div>
           </div>
         </ScrollReveal>

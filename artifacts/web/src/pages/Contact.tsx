@@ -3,7 +3,7 @@ import { useLocation } from "wouter";
 import { SEO } from "@/components/SEO";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { Loader2 } from "lucide-react";
+import { Loader2, Check } from "lucide-react";
 
 export default function Contact() {
   const [, setLocation] = useLocation();
@@ -16,7 +16,6 @@ export default function Contact() {
     const formData = new FormData(e.currentTarget);
     
     try {
-      // Formspree placeholder - replace with real URL
       await fetch("https://formspree.io/f/REPLACE", {
         method: "POST",
         body: formData,
@@ -24,7 +23,6 @@ export default function Contact() {
           Accept: "application/json",
         },
       });
-      // Even if fetch fails (due to invalid placeholder), we simulate success for demo
       setLocation("/thank-you");
     } catch (err) {
       console.error(err);
@@ -36,19 +34,18 @@ export default function Contact() {
 
   return (
     <>
-      <SEO title="Get a Free Evaluation | Graylock Digital" />
+      <SEO title="Book Your Free Website Review | Graylock Digital" />
       
       <section className="bg-charcoal py-24 px-6 md:px-12 min-h-[80vh] flex items-center">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-20">
           
-          {/* Left Column: Form */}
           <div className="lg:col-span-3">
             <ScrollReveal>
               <h1 className="text-4xl md:text-6xl font-display text-offwhite mb-4">
-                Get Your Free Website Evaluation
+                Book Your Free Website Review
               </h1>
               <p className="text-stone font-sans text-lg mb-10 leading-relaxed">
-                Fill out the form below and Tim will personally review your current website before your call — so we can make the most of your time together.
+                Fill out the form below and we'll personally review your current website before your call — so we can make the most of your time together.
               </p>
 
               <form onSubmit={handleSubmit} className="bg-navy p-8 md:p-10 rounded-2xl border border-gunmetal shadow-2xl flex flex-col gap-6">
@@ -85,12 +82,14 @@ export default function Contact() {
                     id="businessType" 
                     name="businessType" 
                     className="bg-charcoal border border-gunmetal rounded p-3 text-offwhite font-sans focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-all appearance-none"
+                    defaultValue=""
                   >
-                    <option value="" disabled selected>Select your industry...</option>
+                    <option value="" disabled>Select your industry...</option>
                     <option value="Accountant">Accountant / CPA</option>
                     <option value="Therapist">Therapist / Counselor</option>
                     <option value="Contractor">Contractor / Trades</option>
                     <option value="Consultant">Consultant</option>
+                    <option value="Dentist">Dentist / Orthodontist</option>
                     <option value="Attorney">Attorney / Law Firm</option>
                     <option value="Insurance">Insurance Agent</option>
                     <option value="Other">Other</option>
@@ -145,33 +144,37 @@ export default function Contact() {
                 </div>
 
                 <CTAButton type="submit" variant="primary" className="w-full mt-2">
-                  {isSubmitting ? <Loader2 className="animate-spin" /> : "Request My Free Evaluation"}
+                  {isSubmitting ? <Loader2 className="animate-spin" /> : "Book My Free Website Review"}
                 </CTAButton>
 
               </form>
             </ScrollReveal>
           </div>
 
-          {/* Right Column: Sidebar */}
           <div className="lg:col-span-2">
             <ScrollReveal delay={0.2} className="bg-navy rounded-2xl p-8 md:p-10 border border-gunmetal sticky top-32">
-              <h3 className="font-display text-offwhite text-3xl mb-8 border-b border-gunmetal pb-4">What to Expect</h3>
+              <h3 className="font-display text-offwhite text-3xl mb-8 border-b border-gunmetal pb-4">What You'll Get — Free</h3>
               
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-5">
                 {[
-                  "Submit this form",
-                  "Tim reviews your website before the call",
-                  "We schedule a free 20-minute call",
-                  "You get an honest evaluation — no strings attached"
-                ].map((step, i) => (
-                  <div key={i} className="flex gap-4 items-start">
-                    <div className="font-display text-orange text-2xl leading-none mt-0.5">{i + 1}.</div>
-                    <p className="text-offwhite font-sans font-semibold text-lg">{step}</p>
+                  { title: "Full Website Evaluation", desc: "We analyze your current site and identify every issue that's costing you leads." },
+                  { title: "Live Strategy Walkthrough", desc: "We walk you through the findings in a 20-minute call — clear, no jargon." },
+                  { title: "Custom Homepage Demo", desc: "We design a homepage concept for your business so you can see what's possible." },
+                  { title: "Zero Obligation", desc: "Love it? We'll build the full site. Not ready? Keep the insights. No pressure." }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-3 items-start">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-orange/10 flex items-center justify-center mt-0.5">
+                      <Check size={14} className="text-orange" />
+                    </div>
+                    <div>
+                      <p className="text-offwhite font-sans font-semibold">{item.title}</p>
+                      <p className="text-stone font-sans text-sm">{item.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-10 pt-6 border-t border-gunmetal">
+              <div className="mt-8 pt-6 border-t border-gunmetal">
                 <p className="text-stone font-sans italic text-sm text-center">
                   "No credit card. No commitment. Just a real conversation about your website."
                 </p>
