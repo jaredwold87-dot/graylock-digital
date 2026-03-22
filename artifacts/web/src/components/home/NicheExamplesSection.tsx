@@ -211,11 +211,11 @@ const niches: NicheItem[] = [
 ];
 
 export function NicheExamplesSection() {
-  const [activeTab, setActiveTab] = useState("All");
+  const [activeTab, setActiveTab] = useState("Accountants");
 
-  const tabs = ["All", "Accountants", "Therapists", "Contractors", "Consultants", "Dentists", "Lawyers"];
+  const tabs = ["Accountants", "Therapists", "Contractors", "Consultants", "Dentists", "Lawyers"];
 
-  const filteredNiches = activeTab === "All" ? niches : niches.filter(n => n.type === activeTab);
+  const filteredNiches = niches.filter(n => n.type === activeTab).slice(0, 3);
 
   return (
     <section id="niches" className="bg-navy py-24 px-6 md:px-12 border-y border-gunmetal">

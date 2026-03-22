@@ -4,6 +4,7 @@ import { ProblemSection } from "@/components/home/ProblemSection";
 import { SolutionSection } from "@/components/home/SolutionSection";
 import { HowItWorksSection } from "@/components/home/HowItWorksSection";
 import { TestimonialSection } from "@/components/home/TestimonialSection";
+import { MissionBlurb } from "@/components/home/MissionBlurb";
 import { NicheExamplesSection } from "@/components/home/NicheExamplesSection";
 import { PricingSection } from "@/components/home/PricingSection";
 import { FAQSection } from "@/components/home/FAQSection";
@@ -19,6 +20,7 @@ export default function Home() {
       <SolutionSection />
       <HowItWorksSection />
       <TestimonialSection />
+      <MissionBlurb />
       <NicheExamplesSection />
       <PricingSection />
       <FAQSection />
