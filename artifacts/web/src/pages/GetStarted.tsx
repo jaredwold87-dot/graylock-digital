@@ -6,9 +6,11 @@ import { Step2HasWebsite } from "@/components/wizard/steps/Step2HasWebsite";
 import { Step3A_WebsiteUrl } from "@/components/wizard/steps/Step3A_WebsiteUrl";
 import { Step4A_PrimaryGoal } from "@/components/wizard/steps/Step4A_PrimaryGoal";
 import { Step5A_TargetCustomer } from "@/components/wizard/steps/Step5A_TargetCustomer";
+import { Step6A_Branding } from "@/components/wizard/steps/Step6A_Branding";
 import { Step3B_BusinessType } from "@/components/wizard/steps/Step3B_BusinessType";
 import { Step4B_BusinessStage } from "@/components/wizard/steps/Step4B_BusinessStage";
 import { Step5B_LeadGen } from "@/components/wizard/steps/Step5B_LeadGen";
+import { Step6B_TargetCustomer } from "@/components/wizard/steps/Step6B_TargetCustomer";
 import { StepFinalReferral } from "@/components/wizard/steps/StepFinalReferral";
 import { BookingState } from "@/components/wizard/BookingState";
 
@@ -28,14 +30,16 @@ function WizardContent() {
     if (currentStep === 3) return <Step3A_WebsiteUrl />;
     if (currentStep === 4) return <Step4A_PrimaryGoal />;
     if (currentStep === 5) return <Step5A_TargetCustomer />;
-    if (currentStep === 6) return <StepFinalReferral />;
+    if (currentStep === 6) return <Step6A_Branding />;
+    if (currentStep === 7) return <StepFinalReferral />;
   }
 
   if (hasWebsite === false) {
     if (currentStep === 3) return <Step3B_BusinessType />;
     if (currentStep === 4) return <Step4B_BusinessStage />;
     if (currentStep === 5) return <Step5B_LeadGen />;
-    if (currentStep === 6) return <StepFinalReferral />;
+    if (currentStep === 6) return <Step6B_TargetCustomer />;
+    if (currentStep === 7) return <StepFinalReferral />;
   }
 
   return <Step1BasicInfo />;

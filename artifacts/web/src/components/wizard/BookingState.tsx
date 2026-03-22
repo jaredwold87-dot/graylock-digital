@@ -107,7 +107,13 @@ export function BookingState() {
       )}
 
       {CALENDLY_URL && (
-        <div className="text-center">
+        <div className="flex flex-col items-center gap-4">
+          <button
+            onClick={() => setPhase("confirmed")}
+            className="bg-orange text-white font-sans font-semibold text-lg px-8 py-4 rounded-lg hover:bg-orange/90 transition-all shadow-[0_4px_14px_rgba(232,99,26,0.25)] hover:shadow-[0_6px_20px_rgba(232,99,26,0.35)] hover:-translate-y-0.5"
+          >
+            I've booked my call
+          </button>
           <button
             onClick={() => setPhase("confirmed")}
             className="text-stone font-sans hover:text-offwhite transition-colors underline underline-offset-4 text-sm"

@@ -53,7 +53,7 @@ export function useWizard() {
   return ctx;
 }
 
-const TOTAL_STEPS = 6;
+const TOTAL_STEPS = 7;
 
 export function WizardProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<WizardData>(initialData);
