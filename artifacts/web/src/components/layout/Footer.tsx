@@ -7,14 +7,12 @@ export function Footer() {
         
         {/* Brand & Tagline */}
         <div className="md:col-span-1">
-          <Link href="/" className="flex items-center gap-2 mb-4 group">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-orange">
-              <path d="M12 2L2 20H22L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M12 10L7 18H17L12 10Z" fill="currentColor"/>
-            </svg>
-            <span className="font-display text-2xl text-offwhite uppercase tracking-wider group-hover:text-orange transition-colors">
-              Graylock Digital
-            </span>
+          <Link href="/" className="block mb-4 group">
+            <img 
+              src={`${import.meta.env.BASE_URL}logo-stacked.png`}
+              alt="Graylock Digital" 
+              className="h-24 w-auto group-hover:opacity-90 transition-opacity"
+            />
           </Link>
           <p className="text-stone font-sans mt-4 max-w-xs">
             Modern websites for small service businesses. Done for you, maintained forever.

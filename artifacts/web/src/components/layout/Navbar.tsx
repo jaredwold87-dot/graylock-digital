@@ -37,15 +37,12 @@ export function Navbar() {
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            {/* 3-arrow SVG triangle icon placeholder */}
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-orange">
-              <path d="M12 2L2 20H22L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M12 10L7 18H17L12 10Z" fill="currentColor"/>
-            </svg>
-            <span className="font-display text-xl text-orange uppercase tracking-wider group-hover:opacity-90 transition-opacity">
-              Graylock Digital
-            </span>
+          <Link href="/" className="flex items-center group">
+            <img 
+              src={`${import.meta.env.BASE_URL}logo-horizontal.png`}
+              alt="Graylock Digital" 
+              className="h-8 md:h-10 w-auto group-hover:opacity-90 transition-opacity"
+            />
           </Link>
 
           {/* Desktop Nav */}
