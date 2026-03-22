@@ -30,7 +30,7 @@ export function HeroSection() {
 
           <div className="flex flex-col gap-3">
             {[
-              "Sites delivered in 1–3 business days",
+              "Sites delivered in 3–5 business days",
               "Hosting & maintenance included",
               "No long-term contracts"
             ].map((text, i) => (

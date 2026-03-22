@@ -2,7 +2,7 @@ export const PRICING_TIERS = [
   {
     name: "Starter",
     price: "$59",
-    setup: "$500 one-time setup",
+    setup: "$249 one-time setup",
     description: "Perfect for single-operator service businesses needing a professional web presence.",
     features: [
       "Custom 3-Page Website",
@@ -16,7 +16,7 @@ export const PRICING_TIERS = [
   {
     name: "Standard",
     price: "$119",
-    setup: "$750 one-time setup",
+    setup: "$499 one-time setup",
     popular: true,
     description: "The sweet spot for growing businesses looking to capture more leads.",
     features: [
@@ -32,7 +32,7 @@ export const PRICING_TIERS = [
   {
     name: "Growth",
     price: "$199",
-    setup: "$1,200 one-time setup",
+    setup: "$999 one-time setup",
     description: "For established businesses that need a high-performance marketing machine.",
     features: [
       "Up to 10-Page Website",

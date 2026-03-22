@@ -6,7 +6,7 @@ export function SolutionSection() {
     {
       icon: <Clock className="text-orange mb-4" size={32} />,
       title: "Built Fast",
-      desc: "Skip the endless revisions. We build and launch your custom website in just 1–3 business days."
+      desc: "Skip the endless revisions. We build and launch your custom website in just 3–5 business days."
     },
     {
       icon: <Wrench className="text-orange mb-4" size={32} />,

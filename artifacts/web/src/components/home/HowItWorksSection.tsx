@@ -11,7 +11,7 @@ export function HowItWorksSection() {
     {
       num: "02",
       title: "We Build",
-      desc: "You pay the one-time setup fee, and we get to work. Within 1–3 days, we present a complete, custom website."
+      desc: "You pay the one-time setup fee, and we get to work. Within 3–5 days, we present a complete, custom website."
     },
     {
       num: "03",
