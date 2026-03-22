@@ -1,0 +1,591 @@
+Build a complete marketing website for a company called Graylock Digital.
+
+Graylock Digital is a subscription-based website company that builds and 
+maintains modern, lead-focused websites for small service businesses 
+(accountants, therapists, contractors, and similar local professionals).
+
+---
+
+TECH STACK
+- Framework: Next.js 14 (App Router)
+- Styling: Tailwind CSS
+- Animations: Framer Motion
+- Forms: Formspree (use a placeholder action URL, I will replace it)
+- Fonts: Use Google Fonts — pair "Barlow Condensed" (700 weight) for 
+  all headlines and display text with "Barlow" (400/600 weight) for 
+  all body text and UI elements. These match the brand's logo typography.
+- Deployment ready: Vercel-compatible
+
+---
+
+EXACT BRAND COLORS (use these precisely, do not substitute)
+Define these as CSS variables in globals.css and use them everywhere:
+
+--color-charcoal: #0F1117;       /* Hero backgrounds, navbar */
+--color-navy: #1A1F2E;           /* Cards, pricing panels, footer */
+--color-gunmetal: #2C3140;       /* Borders, dividers, muted elements */
+--color-stone: #8A8F9E;          /* Body text on dark, captions, subtext */
+--color-offwhite: #F2F3F5;       /* Light sections, headline text on dark */
+--color-orange: #E8631A;         /* ALL CTAs, accents, step numbers, checkmarks */
+
+Tailwind config: extend the theme to include these as custom colors so 
+they can be used as Tailwind classes (e.g. bg-charcoal, text-orange, etc.)
+
+---
+
+BRAND & DESIGN DIRECTION
+- Use the exact color palette above. No other accent colors.
+- The navbar and hero section use --color-charcoal (#0F1117) as background.
+- Cards, pricing panels, and the footer use --color-navy (#1A1F2E).
+- Light content sections (How It Works, FAQ preview, About) use 
+  --color-offwhite (#F2F3F5) as background with --color-charcoal text.
+- The final CTA section uses --color-orange (#E8631A) as background 
+  with white text and a --color-charcoal button. Use this treatment 
+  ONLY for the final CTA — not for any other section.
+- All CTA buttons use --color-orange background with white text.
+  Outline button variant: --color-orange border and text, transparent bg.
+- Body text on dark backgrounds uses --color-stone (#8A8F9E).
+- Headline text on dark backgrounds uses --color-offwhite (#F2F3F5).
+- Borders, dividers, and subtle separators use --color-gunmetal (#2C3140).
+- Design tone: Refined, modern, confident. Feels like a premium local 
+  service firm. Bold typography-driven layouts. NOT startup-flashy.
+- Section rhythm: alternate dark/light/dark/light as you scroll:
+  Hero (charcoal) → Problem (offwhite) → Solution (navy) → 
+  How It Works (offwhite) → Testimonials (charcoal) → 
+  Work Examples (navy) → Pricing (charcoal) → FAQ (offwhite) → 
+  Trust block (navy) → Final CTA (orange) → Footer (charcoal)
+- NO generic purple gradients. NO stock photo hero images.
+- All sections should have smooth scroll-reveal animations using 
+  Framer Motion (fade up on enter, 0.5s duration, 20px offset).
+
+---
+
+LOGO USAGE
+- The Graylock Digital logo has two versions:
+  Horizontal: icon left + "GRAYLOCK / DIGITAL" wordmark right — 
+  use this in the navbar
+  Stacked: icon above + "GRAYLOCK / DIGITAL" wordmark below — 
+  use this in the footer
+- Since the actual logo image files will be added after build, use 
+  a placeholder in the navbar: render "GRAYLOCK DIGITAL" in 
+  Barlow Condensed 700, --color-orange, with a simple 3-arrow SVG 
+  triangle icon to the left of it (matching the brand mark shape).
+- Make the logo area easy to swap with a real <Image> component later.
+
+---
+
+BEFORE/AFTER MOCKUP COMPONENT
+Build this as a styled HTML/CSS component (BeforeAfterMockup.tsx), 
+not an image. It sits in the hero section on the right side (desktop) 
+or below the headline (mobile).
+
+Left panel labeled "BEFORE":
+- Dark muted border, label "BEFORE" in small caps at top
+- Simulated outdated website: tiny misaligned text, no clear hierarchy,
+  a faded blurry "logo" box, wall-of-text content block, 
+  a barely-visible contact link at the bottom
+- Desaturated grey/muted color treatment
+
+Right panel labeled "AFTER":
+- Clean sharp border in --color-orange, label "AFTER" in --color-orange
+- Simulated modern Graylock-built site: clear bold headline, strong 
+  orange CTA button, clean nav bar, professional service description, 
+  trust signals row
+- Crisp, high-contrast, clearly structured
+
+Both panels should look like miniature browser windows (with a fake 
+browser chrome bar at the top with 3 small circles). The "AFTER" panel 
+should have a subtle orange glow/border to make it pop.
+
+---
+
+PAGES TO BUILD
+
+1. / (Homepage)
+2. /how-it-works
+3. /pricing
+4. /work
+5. /about
+6. /faq
+7. /contact
+8. /thank-you
+
+---
+
+HOMEPAGE SECTIONS (in order)
+
+1. NAVBAR
+- Background: --color-charcoal, slight blur backdrop on scroll
+- Left: Graylock Digital logo (horizontal version placeholder)
+- Center/Right nav links: How It Works | Pricing | Our Work | About
+  Links use --color-stone, hover to --color-offwhite
+- Sticky on scroll — add a 1px --color-gunmetal bottom border 
+  when scrolled
+- Right: CTA button "Get a Free Evaluation" in --color-orange
+- Mobile: hamburger menu, full-screen dark overlay nav
+
+2. HERO SECTION
+- Background: --color-charcoal
+- Two-column layout on desktop (text left, mockup right)
+- Single column stacked on mobile
+- Headline (Barlow Condensed 700, large, --color-offwhite):
+  "Your Website Should Be Getting You Leads. Is It?"
+- Subheadline (Barlow 400, --color-stone):
+  "Graylock Digital builds and maintains modern, lead-focused websites 
+  for small service businesses — for one simple monthly subscription. 
+  Done for you. Launched in days. Maintained forever."
+- Primary CTA button (--color-orange):
+  "Get Your Free Website Evaluation"
+- Secondary text link (--color-stone, underline on hover):
+  "See How It Works →"
+- Trust bar below CTA (small, --color-stone with --color-orange 
+  checkmarks):
+  "✓ Sites delivered in 1–3 business days"
+  "✓ Hosting & maintenance included"
+  "✓ No long-term contracts"
+- Right column: BeforeAfterMockup component
+
+3. PROBLEM SECTION
+- Background: --color-offwhite
+- Section headline (Barlow Condensed 700, --color-charcoal):
+  "Your Website Might Be Costing You More Than You Think"
+- 6 pain point cards in a 2x3 grid (3 columns on desktop, 
+  2 on tablet, 1 on mobile)
+- Card style: white background, subtle shadow, --color-gunmetal border,
+  rounded corners, --color-orange icon accent
+- Each card has: icon, bold title (--color-charcoal), 
+  description (--color-stone):
+  1. "Still Looks Like 2014" — Outdated design signals an outdated 
+     business. Prospects move on before they call.
+  2. "Broken on Mobile" — Over 60% of visitors browse on phones. 
+     A bad mobile experience is a lost lead.
+  3. "Invisible on Google" — No SEO foundation means you're missing 
+     the people already searching for you.
+  4. "Agency Quotes Are Overwhelming" — $5,000–$15,000 to rebuild a 
+     5-page site is a lot to swallow.
+  5. "You Can't Update It Yourself" — Every small change requires 
+     calling someone, waiting, and paying extra.
+  6. "You've Been Putting It Off" — Because it always feels too 
+     complicated and too expensive to deal with.
+- Closing line centered below grid (Barlow 600, --color-charcoal):
+  "We built Graylock Digital specifically for businesses in 
+  this situation."
+
+4. SOLUTION SECTION
+- Background: --color-navy
+- Section headline (Barlow Condensed 700, --color-offwhite):
+  "A Done-For-You Website That Actually Works — Starting at $59/month"
+- 3 value cards side by side (dark card bg: --color-charcoal, 
+  --color-orange top border accent, rounded corners):
+  Card 1 — "Built Fast"
+  "Your site is live in 1–3 business days. We handle design, copy, 
+  setup, and launch."
+  Card 2 — "Maintained Monthly"
+  "Hosting, updates, maintenance, and support are included every month. 
+  You never touch the backend."
+  Card 3 — "Built to Convert"
+  "Every site is designed to turn visitors into leads, calls, 
+  and inquiries."
+- Card titles: Barlow Condensed 700, --color-offwhite
+- Card body: Barlow 400, --color-stone
+- Text link below cards (--color-orange):
+  "See Pricing & Packages →" linking to /pricing
+
+5. HOW IT WORKS SECTION
+- Background: --color-offwhite
+- Section headline (Barlow Condensed 700, --color-charcoal):
+  "From Your First Call to a Live Website — In Three Steps"
+- 3 steps in a horizontal row on desktop, stacked on mobile
+- Large step number (Barlow Condensed 700, very large, --color-orange)
+- Step title (Barlow Condensed 700, --color-charcoal)
+- Step description (Barlow 400, --color-stone)
+- Thin --color-gunmetal connector line between steps on desktop
+  Step 1: "We Talk" — Schedule a free 20-minute call. We review your 
+  current website, ask about your business and goals, and give you an 
+  honest evaluation. No sales pressure.
+  Step 2: "We Build" — We create a modern, professional website 
+  customized for your business and niche. You review it, give feedback, 
+  and we finalize it together.
+  Step 3: "We Launch — and Stay" — Your site goes live. Monthly 
+  hosting, maintenance, and support are included. You run your 
+  business. We handle the website.
+- Below steps (Barlow 600, --color-charcoal, centered):
+  "Average time from first call to live website: 1–3 business days."
+- CTA button below (--color-orange):
+  "Book Your Free Evaluation"
+
+6. TESTIMONIAL SECTION (FIRST)
+- Background: --color-charcoal
+- Section headline (Barlow Condensed 700, --color-offwhite):
+  "What Our Clients Say"
+- 3 testimonial cards (--color-navy bg, --color-gunmetal border, 
+  rounded corners)
+- Large opening quote mark in --color-orange
+- Quote text: Barlow 400, --color-offwhite
+- Attribution: Barlow 600, --color-orange (name), 
+  --color-stone (business + city)
+- Placeholder testimonials:
+  "I'd been putting off rebuilding my website for two years because 
+  every agency quote felt overwhelming. Graylock had it done in two 
+  days and it already looks better than anything I could have built 
+  myself."
+  — Sarah M., Licensed Therapist, Reno NV
+
+  "Our old site was embarrassing to hand out on a business card. 
+  Now I'm proud to send people there. The whole process was easier 
+  than I expected."
+  — David K., CPA & Tax Advisor, Henderson NV
+
+  "The maintenance alone is worth it. I used to dread calling my old 
+  web guy for every tiny update. Now I just submit a request and it's 
+  handled."
+  — Marcus T., General Contractor, Phoenix AZ
+
+7. NICHE EXAMPLES SECTION
+- Background: --color-navy
+- Section headline (Barlow Condensed 700, --color-offwhite):
+  "Built for Businesses Like Yours"
+- Filter tabs: All | Accountants | Therapists | Contractors
+  Tab style: --color-gunmetal bg inactive, --color-orange active, 
+  Barlow 600
+- 6 example cards in a 3x2 grid (--color-charcoal bg, rounded corners,
+  --color-gunmetal border)
+- Each card: a styled HTML/CSS simulated website screenshot (miniature 
+  browser window mockup), niche label badge in --color-orange, 
+  short description in --color-stone
+- Niches: Accountant, Therapist, General Contractor, 
+  Insurance Agent, Consultant, Attorney
+- Each mini-mockup should show a different clean layout appropriate 
+  to that niche (different headline, different color accent in the 
+  mini-site to show variety)
+- CTA below grid (--color-offwhite text + --color-orange link):
+  "Want a site like this? Get your free evaluation →"
+
+8. PRICING SECTION
+- Background: --color-charcoal
+- Section headline (Barlow Condensed 700, --color-offwhite):
+  "Simple, Honest Pricing. No Hidden Fees."
+- 3-tier pricing table, cards side by side:
+
+  STARTER
+  Background: --color-navy
+  Setup: $249 one-time
+  Monthly price (large, Barlow Condensed 700, --color-offwhite): $59
+  "/mo" in --color-stone
+  Features (--color-stone, --color-orange checkmarks):
+  - Up to 4 pages
+  - 1 change request/month
+  - Hosting & maintenance included
+  - Mobile-optimized
+  CTA button (outline style, --color-orange border + text):
+  "Get Started"
+
+  STANDARD — highlight as Most Popular
+  Background: --color-navy
+  Add a "Most Popular" badge in --color-orange above the card
+  Add a top border in --color-orange (3px)
+  Setup: $499 one-time
+  Monthly price: $119/mo
+  Features:
+  - Up to 7 pages
+  - 3 change requests/month
+  - Hosting & maintenance included
+  - Mobile-optimized
+  - Local SEO setup
+  - Analytics dashboard access
+  CTA button (filled, --color-orange bg): "Get Started"
+
+  GROWTH
+  Background: --color-navy
+  Setup: $999 one-time
+  Monthly price: $199/mo
+  Features:
+  - Up to 10 pages
+  - 5 change requests/month
+  - Hosting & maintenance included
+  - Mobile-optimized
+  - Local SEO setup
+  - Analytics dashboard access
+  - Priority support
+  CTA button (outline style): "Get Started"
+
+- Below table (Barlow 400, --color-stone, centered):
+  "Not sure which plan is right for you? Book a free evaluation and 
+  we'll tell you exactly what your business needs."
+- Small print (--color-stone, smaller):
+  "All plans include hosting, SSL, mobile optimization, and ongoing 
+  maintenance. No long-term contracts. Cancel anytime."
+
+9. FAQ PREVIEW SECTION
+- Background: --color-offwhite
+- Section headline (Barlow Condensed 700, --color-charcoal):
+  "Common Questions"
+- 4 accordion Q&As (white bg cards, --color-charcoal border, 
+  --color-orange expand icon)
+- Question text: Barlow 600, --color-charcoal
+- Answer text: Barlow 400, --color-stone
+  Q: What if I already have a website?
+  A: We'll evaluate it for free on your first call. If it's better 
+  to rebuild, we'll tell you exactly why. If it just needs 
+  improvements, we'll talk through options.
+
+  Q: What does "maintenance" actually include?
+  A: Hosting, security, software updates, uptime monitoring, and 
+  handling your monthly change requests. We keep everything running 
+  so you don't have to.
+
+  Q: How is this different from just using Wix or Squarespace?
+  A: With those platforms, you build and maintain the site yourself. 
+  With Graylock, we do everything. You get a professionally built, 
+  niche-specific site — done for you, maintained for you, every month.
+
+  Q: What happens if I want to cancel?
+  A: No long-term contracts. If you need to cancel, you can. We'll 
+  export your content and make the transition as easy as possible.
+
+- Link below (--color-orange):
+  "See all FAQs →" linking to /faq
+
+10. SECOND TESTIMONIAL / TRUST BLOCK
+- Background: --color-navy
+- Section headline (Barlow Condensed 700, --color-offwhite):
+  "Real Businesses. Real Results."
+- 2 more testimonial cards (same style as Section 6)
+- Stats bar below cards — 3 metrics in a row 
+  (--color-charcoal bg, --color-orange numbers, --color-stone labels):
+  "1–3 Days" / Average Build Time
+  "100%" / Done-For-You Service
+  "$0" / Hidden Fees
+
+11. FINAL CTA SECTION
+- Background: --color-orange (this is the ONLY section with this bg)
+- Headline (Barlow Condensed 700, white, large):
+  "Ready to Stop Losing Leads to a Bad Website?"
+- Subheadline (Barlow 400, rgba white 0.85):
+  "Book a free 20-minute call and we'll review your current site, 
+  tell you exactly what's holding it back, and show you what a 
+  Graylock site could look like for your business."
+- CTA button (--color-charcoal bg, white text):
+  "Get My Free Website Evaluation"
+- Supporting line (Barlow 400, rgba white 0.75, small):
+  "No commitment. No sales pitch. Just an honest look at 
+  your website."
+
+12. FOOTER
+- Background: --color-charcoal
+- Top border: 1px --color-gunmetal
+- Left: Logo placeholder + tagline in --color-stone:
+  "Modern websites for small service businesses."
+- Center: Two link columns
+  Column 1 — Company: How It Works | Pricing | Our Work | About
+  Column 2 — Support: FAQ | Contact | Privacy Policy | Terms
+  Link color: --color-stone, hover to --color-offwhite
+- Right: Repeat CTA
+  "Get a Free Evaluation" button (--color-orange)
+  Email placeholder in --color-stone: hello@graylockdigital.com
+- Bottom bar (--color-gunmetal top border):
+  "© 2025 Graylock Digital. All rights reserved." in --color-stone
+
+---
+
+SUPPORTING PAGES
+
+/how-it-works
+- Background rhythm: offwhite hero → navy detail sections
+- Expanded 3-step process from homepage with more detail per step
+- 4th section: "What Happens After Launch"
+  Describes the monthly maintenance relationship, how change requests 
+  work (submit → reviewed → completed within 3 business days), 
+  and what the client dashboard provides
+- Timeline graphic: Day 1 (call + evaluation), Day 1–2 (build), 
+  Day 2–3 (client review), Day 3 (launch)
+  Use --color-orange for timeline dots and active states
+- CTA at bottom: "Get Your Free Website Evaluation"
+
+/pricing
+- Full pricing table (same as homepage section 8)
+- Feature comparison grid below the table showing all three tiers 
+  in detail — rows for each feature, checkmarks and dashes
+- Pricing FAQ section (4–6 questions specific to billing):
+  "Is there a setup fee?"
+  "Can I upgrade my plan later?"
+  "What counts as a change request?"
+  "Do you offer refunds?"
+  "What happens to my site if I cancel?"
+- CTA: "Not sure? Book a free evaluation and we'll recommend 
+  the right plan."
+
+/work
+- Full portfolio grid of niche examples (expand to 9 cards, 3x3)
+- Filter tabs by business type (same style as homepage)
+- Each card expands or links to a detail view with:
+  Niche type, goal of the site, features included
+- CTA below: "Want a site like this for your business?"
+
+/about
+- Background rhythm: offwhite → navy → offwhite
+- Two founder sections side by side (navy cards):
+  JARED WOLD — Systems & Operations
+  "Jared focuses on building the processes, workflows, and technology 
+  that power Graylock Digital. He designed the operating system that 
+  allows the company to build and maintain websites efficiently at 
+  scale."
+  
+  TIM MONAHAN — Client Relations & Growth
+  "Tim leads outreach, discovery calls, and client relationships. 
+  He's the first person you talk to — and he makes sure every client 
+  gets exactly what their business needs from day one."
+- Company story section (offwhite bg):
+  Headline: "Why We Built Graylock Digital"
+  Body: Short origin story about seeing small businesses stuck with 
+  outdated, underperforming websites and no affordable way to fix them.
+- Values section: 4 principles with --color-orange icon accents:
+  "Done-For-You" | "Transparent" | "Fast" | "Relationship-Driven"
+- CTA: "Meet us on a call →"
+
+/faq
+- Full FAQ page, organized by category with section headers
+  in Barlow Condensed 700, --color-charcoal:
+  About the Service (4–5 questions)
+  Pricing & Billing (4–5 questions)
+  The Build Process (3–4 questions)
+  Maintenance & Support (3–4 questions)
+  Getting Started (2–3 questions)
+- All accordions, same style as homepage FAQ
+- CTA at bottom
+
+/contact
+- Background: --color-charcoal
+- Two-column layout on desktop
+- Left column:
+  Page headline (Barlow Condensed 700, --color-offwhite):
+  "Get Your Free Website Evaluation"
+  Subheadline (Barlow 400, --color-stone):
+  "Fill out the form below and Tim will personally review your 
+  current website before your call — so we can make the most of 
+  your time together."
+  Form (--color-navy bg cards, --color-gunmetal borders on inputs,
+  --color-offwhite label text, --color-stone placeholder text):
+    First Name *
+    Business Name *
+    Business Type (dropdown: Accountant | Therapist | Contractor | 
+    Consultant | Attorney | Insurance Agent | Other) *
+    Current Website URL *
+    Email Address *
+    Phone Number (optional)
+    What's your biggest frustration with your current website? 
+    (textarea, optional, 4 rows)
+  Submit button (full width, --color-orange):
+  "Request My Free Evaluation"
+  Form action: Formspree placeholder "https://formspree.io/f/REPLACE"
+  On submit: redirect to /thank-you
+
+- Right column (--color-navy bg, rounded, padding):
+  "What to Expect" sidebar in --color-offwhite:
+  4 numbered steps with --color-orange numbers:
+  "1. Submit this form"
+  "2. Tim reviews your website before the call"
+  "3. We schedule a free 20-minute call"
+  "4. You get an honest evaluation — no strings attached"
+  Below: a simple trust note in --color-stone:
+  "No credit card. No commitment. Just a real conversation 
+  about your website."
+
+/thank-you
+- Background: --color-charcoal
+- Centered layout, max-width 600px
+- Large --color-orange checkmark icon at top
+- Headline (Barlow Condensed 700, --color-offwhite):
+  "You're All Set."
+- Subheadline (Barlow 400, --color-stone):
+  "Tim will review your website and reach out within 1 business day 
+  to schedule your free evaluation call."
+- 3 "what happens next" steps with --color-orange step numbers
+- Two text links back into the site:
+  "See how we build sites →" (to /how-it-works)
+  "View our work →" (to /work)
+
+---
+
+GLOBAL REQUIREMENTS
+- Fully responsive: mobile (375px), tablet (768px), desktop (1280px)
+- All CTAs throughout every page link to /contact
+- Smooth scroll-reveal on all sections: Framer Motion, fade up, 
+  0.5s duration, 20px y offset, triggered on enter viewport
+- Sticky navbar: transparent to --color-charcoal solid on scroll, 
+  with a 1px --color-gunmetal bottom border appearing on scroll
+- Active nav link: --color-orange underline
+- Open Graph meta tags on all pages:
+  og:title, og:description, og:type, og:url
+  Use "Graylock Digital — Modern Websites for Small Service Businesses"
+  as the default title pattern
+- All pages: proper H1/H2/H3 hierarchy for SEO
+- Next.js <Image> component for all images (optimized loading)
+- Google Analytics 4 placeholder in layout.tsx:
+  Tracking ID: G-XXXXXXXXXX (I will replace this)
+- Formspree placeholder: https://formspree.io/f/REPLACE (I will replace)
+- No lorem ipsum anywhere — use all copy provided above
+- Clean, well-commented code organized by component
+- All section backgrounds must alternate correctly per the rhythm 
+  defined in the design direction section above
+
+---
+
+FOLDER STRUCTURE
+
+/app
+  layout.tsx        (global layout: navbar, footer, GA4 script)
+  page.tsx          (homepage — all 12 sections)
+  /how-it-works/page.tsx
+  /pricing/page.tsx
+  /work/page.tsx
+  /about/page.tsx
+  /faq/page.tsx
+  /contact/page.tsx
+  /thank-you/page.tsx
+
+/components
+  Navbar.tsx
+  Footer.tsx
+  CTAButton.tsx           (primary + outline variants)
+  HeroSection.tsx
+  BeforeAfterMockup.tsx   (HTML/CSS fake browser window component)
+  ProblemSection.tsx
+  SolutionSection.tsx
+  HowItWorksSection.tsx
+  TestimonialSection.tsx
+  NicheExamplesSection.tsx
+  PricingSection.tsx
+  FAQSection.tsx          (accordion component, reused on /faq page)
+  TrustStatsSection.tsx
+  FinalCTASection.tsx
+  EvaluationForm.tsx
+
+/styles
+  globals.css             (CSS variables for all brand colors, 
+                           base typography, Barlow font import)
+
+/lib
+  constants.ts            (shared copy strings, pricing data, 
+                           FAQ data, testimonial data)
+
+---
+
+TAILWIND CONFIG
+In tailwind.config.ts, extend the theme with brand colors:
+
+colors: {
+  charcoal: '#0F1117',
+  navy: '#1A1F2E',
+  gunmetal: '#2C3140',
+  stone: '#8A8F9E',
+  offwhite: '#F2F3F5',
+  orange: '#E8631A',
+}
+
+---
+
+START by building the global layout (layout.tsx with navbar and footer), 
+then build the homepage with all 12 sections in order.
+Confirm when the homepage is complete before building 
+the supporting pages.

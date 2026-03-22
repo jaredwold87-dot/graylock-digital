@@ -1,0 +1,10 @@
+packages:
+  "framer-motion": "Page transitions and scroll-triggered animations"
+  "react-helmet-async": "SEO metadata management"
+  "clsx": "Utility for conditionally joining classNames"
+  "tailwind-merge": "Utility for merging tailwind classes without style conflicts"
+
+notes:
+  - This is a static marketing site, no backend API is required.
+  - Using wouter for routing and react-helmet-async for SEO.
+  - The contact form uses a generic fetch to a Formspree placeholder URL.

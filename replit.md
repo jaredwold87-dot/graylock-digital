@@ -21,7 +21,8 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 ```text
 artifacts-monorepo/
 ├── artifacts/              # Deployable applications
-│   └── api-server/         # Express API server
+│   ├── api-server/         # Express API server
+│   └── web/                # Graylock Digital marketing website (React + Vite)
 ├── lib/                    # Shared libraries
 │   ├── api-spec/           # OpenAPI spec + Orval codegen config
 │   ├── api-client-react/   # Generated React Query hooks
@@ -49,6 +50,20 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
 ## Packages
+
+### `artifacts/web` (`@workspace/web`) — Graylock Digital Marketing Website
+
+Frontend-only React + Vite marketing website for Graylock Digital, a subscription-based website company for small service businesses.
+
+- **Tech**: React, Vite, Tailwind CSS, Framer Motion, wouter (routing), react-helmet-async (SEO)
+- **Brand Colors**: charcoal (#0F1117), navy (#1A1F2E), gunmetal (#2C3140), stone (#8A8F9E), offwhite (#F2F3F5), orange (#E8631A)
+- **Typography**: Barlow Condensed (700, headlines) + Barlow (400/600, body)
+- **Pages**: / (homepage), /how-it-works, /pricing, /work, /about, /faq, /contact, /thank-you
+- **Form**: Contact form uses Formspree (placeholder URL: `https://formspree.io/f/REPLACE`)
+- **Key Components**: Navbar (sticky, mobile hamburger), Footer, BeforeAfterMockup, PricingSection, FAQSection, NicheExamplesSection
+- **Section Rhythm**: Hero (charcoal) → Problem (offwhite) → Solution (navy) → How It Works (offwhite) → Testimonials (charcoal) → Work Examples (navy) → Pricing (charcoal) → FAQ (offwhite) → Trust block (navy) → Final CTA (orange) → Footer (charcoal)
+- **Animations**: Framer Motion scroll-reveal (fade up, 0.5s, 20px offset)
+- `pnpm --filter @workspace/web run dev` — run the dev server
 
 ### `artifacts/api-server` (`@workspace/api-server`)
 
