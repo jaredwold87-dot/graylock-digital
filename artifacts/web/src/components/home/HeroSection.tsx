@@ -27,10 +27,10 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <ScrollReveal>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-display text-offwhite leading-[1.1] mb-6">
-              See What Your Website Could Become.<br /><span className="text-orange">For Free.</span>
+              Stop Losing Leads to a Dated & Basic Website.
             </h1>
             <p className="text-stone text-lg md:text-xl font-sans mb-8 max-w-xl leading-relaxed">
-              Book a free call and we'll review your current site, walk you through exactly what's costing you leads, and build you a custom homepage demo — before you pay us a dollar.
+              Most websites are just digital brochures. We build high-performance sales engines. Book a free review, and we'll show you exactly where your current site is leaking revenue and how we can fix it.
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
