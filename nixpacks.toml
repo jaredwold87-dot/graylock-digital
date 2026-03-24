@@ -8,8 +8,8 @@ cmds = [
 cmds = [
   "pnpm --filter './lib/**' -r build || true",
   "pnpm --filter @workspace/api-server build",
-  "pnpm --filter @workspace/mt-counseling build"
+  "pnpm --filter @workspace/web build"
 ]
 
 [start]
-cmd = "node artifacts/api-server/dist/index.mjs"
+cmd = "NODE_ENV=production node artifacts/api-server/dist/index.mjs"
