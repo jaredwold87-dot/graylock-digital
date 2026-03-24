@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN npm install -g pnpm@10
 
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY package.json pnpm-workspace.yaml ./
 COPY artifacts/api-server/package.json artifacts/api-server/
 COPY artifacts/web/package.json artifacts/web/
 COPY lib/api-client-react/package.json lib/api-client-react/
@@ -12,13 +12,13 @@ COPY lib/api-spec/package.json lib/api-spec/
 COPY lib/api-zod/package.json lib/api-zod/
 COPY lib/db/package.json lib/db/
 
-RUN pnpm install --no-frozen-lockfile
+RUN pnpm install --no-lockfile
 
 COPY . .
 
-RUN pnpm --filter './lib/**' -r build || true
-RUN pnpm --filter @workspace/api-server build
-RUN pnpm --filter @workspace/web build
+RUN pnpm --filter './lib/**' -r build || true && \
+    pnpm --filter @workspace/api-server build && \
+    BASE_PATH=/ pnpm --filter @workspace/web build
 
 ENV NODE_ENV=production
 EXPOSE 3000
