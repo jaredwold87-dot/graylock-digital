@@ -1,13 +1,15 @@
 node_modules
+**/node_modules
 .git
 .replit
 replit.nix
+replit_agent
 .cache
 .config
 *.log
-dist
-artifacts/*/dist
+**/dist
 artifacts/mockup-sandbox
 .canvas
 .local
 /tmp
+attached_assets
