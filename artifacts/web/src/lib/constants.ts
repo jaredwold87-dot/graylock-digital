@@ -9,11 +9,7 @@ export const PRICING_TIERS = [
       "Mobile-First Design",
       "Basic SEO Setup",
       "Hosting & SSL Included",
-      "Monthly Software Updates",
-      "Basic Dashboard Access",
-      "Monthly Performance Report",
-      "1 Content Update / Month",
-      "Email Support"
+      "Dashboard + Support"
     ]
   },
   {
@@ -25,14 +21,13 @@ export const PRICING_TIERS = [
     features: [
       "Custom 7-Page Website",
       "5 SEO-Optimized Funnel Pages",
-      "Full Dashboard Access",
       "Website Analytics & Visitor Insights",
       "Edit Business Info + Announcement Banner",
       "Lead Activity Tracking",
       "Monthly Performance Report",
       "Local SEO Optimization",
-      "3 Content Updates / Month",
-      "Google Business Profile Setup"
+      "Google Business Profile Setup",
+      "Enhanced Dashboard + Priority Support"
     ]
   },
   {
@@ -129,7 +124,7 @@ export const FAQS = [
     questions: [
       {
         q: "What's included in the monthly fee?",
-        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n• Website hosting on fast, secure servers\n• SSL certificate (the padlock that makes your site trusted and secure)\n• Monthly software and security updates\n• Monthly performance report\n• Content updates each month (number depends on your plan)\n• Email support for any questions or requests\n\nStarter plan ($69/mo): Basic dashboard access + 1 content update/month\nStandard plan ($119/mo): Full dashboard + 3 content updates/month + Google Business Profile setup\nGrowth plan ($199/mo): Enhanced dashboard + unlimited updates + priority support + quarterly strategy call\nCustom plan: Tailored to your needs — contact us for a quote\n\nYou can view all plan details on our Pricing page."
+        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n• Website hosting on fast, secure servers\n• SSL certificate (the padlock that makes your site trusted and secure)\n• Dashboard access and support\n\nStarter plan ($69/mo): Dashboard + support\nStandard plan ($119/mo): Enhanced dashboard + priority support + Google Business Profile setup\nGrowth plan ($199/mo): Enhanced dashboard + unlimited updates + priority support + quarterly strategy call\nCustom plan: Tailored to your needs — contact us for a quote\n\nYou can view all plan details on our Pricing page."
       },
       {
         q: "Is there a setup fee, and what does it cover?",
@@ -177,7 +172,7 @@ export const FAQS = [
       },
       {
         q: "What is the business dashboard, and do all plans include it?",
-        a: "Yes — all plans now include dashboard access.\n\nStarter plan: Basic dashboard — view your website traffic, edit business hours, phone number, and address.\n\nStandard plan: Full dashboard — all Starter features plus announcement banner editing, lead activity tracking, and full performance reports.\n\nGrowth plan: Enhanced dashboard — all Standard features plus easy update request submission and priority support.\n\nCustom plan: Custom dashboard configuration tailored to your specific needs.\n\nThe dashboard is a private, easy-to-use portal that puts you in control of your key business information without needing to contact a developer."
+        a: "Yes — all plans include dashboard access.\n\nStarter plan: Dashboard + support — view your website traffic, edit business hours, phone number, and address.\n\nStandard plan: Enhanced dashboard + priority support — all Starter features plus announcement banner editing, lead activity tracking, and full performance reports.\n\nGrowth plan: Enhanced dashboard — all Standard features plus easy update request submission and priority support.\n\nCustom plan: Custom dashboard configuration tailored to your specific needs.\n\nThe dashboard is a private, easy-to-use portal that puts you in control of your key business information without needing to contact a developer."
       }
     ]
   },
