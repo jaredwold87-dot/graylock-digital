@@ -70,10 +70,10 @@ export default function About() {
       <section className="bg-navy py-24 px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-display text-offwhite">Meet the Founders</h2>
+            <h2 className="text-3xl md:text-5xl font-display text-offwhite">Meet the Team</h2>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ScrollReveal delay={0.1} className="bg-charcoal p-10 rounded-2xl border border-gunmetal hover:border-gunmetal/80 transition-colors shadow-xl">
               <div className="w-20 h-20 bg-gunmetal rounded-full flex items-center justify-center text-stone mb-6">
                 <User size={32} />
@@ -85,7 +85,7 @@ export default function About() {
               </p>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.2} className="bg-charcoal p-10 rounded-2xl border border-gunmetal hover:border-gunmetal/80 transition-colors shadow-xl">
+            <ScrollReveal delay={0.15} className="bg-charcoal p-10 rounded-2xl border border-gunmetal hover:border-gunmetal/80 transition-colors shadow-xl">
               <div className="w-20 h-20 bg-gunmetal rounded-full flex items-center justify-center text-stone mb-6">
                 <User size={32} />
               </div>
@@ -95,7 +95,48 @@ export default function About() {
                 Tim leads outreach, discovery calls, and client relationships. He's the first person you talk to — and he makes sure every client gets exactly what their business needs from day one. He bridges the gap between your business goals and our technical execution.
               </p>
             </ScrollReveal>
+
+            <ScrollReveal delay={0.2} className="bg-charcoal p-10 rounded-2xl border border-gunmetal hover:border-gunmetal/80 transition-colors shadow-xl">
+              <div className="w-20 h-20 bg-gunmetal rounded-full flex items-center justify-center text-stone mb-6">
+                <User size={32} />
+              </div>
+              <h3 className="text-3xl font-display text-offwhite mb-2 uppercase tracking-wide">Marcus</h3>
+              <p className="text-orange font-sans font-semibold mb-6">SEO Specialist</p>
+              <p className="text-stone font-sans leading-relaxed">
+                Marcus handles everything search — from local SEO and Google Business Profile optimization to keyword strategy and schema markup. He makes sure your business gets found by the right people in your area.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.25} className="bg-charcoal p-10 rounded-2xl border border-gunmetal hover:border-gunmetal/80 transition-colors shadow-xl">
+              <div className="w-20 h-20 bg-gunmetal rounded-full flex items-center justify-center text-stone mb-6">
+                <User size={32} />
+              </div>
+              <h3 className="text-3xl font-display text-offwhite mb-2 uppercase tracking-wide">Rachel</h3>
+              <p className="text-orange font-sans font-semibold mb-6">Web Developer</p>
+              <p className="text-stone font-sans leading-relaxed">
+                Rachel brings designs to life with clean, fast, accessible code. She builds responsive websites that look great on every device and load in under two seconds — because speed matters for both users and search rankings.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.3} className="bg-charcoal p-10 rounded-2xl border border-gunmetal hover:border-gunmetal/80 transition-colors shadow-xl">
+              <div className="w-20 h-20 bg-gunmetal rounded-full flex items-center justify-center text-stone mb-6">
+                <User size={32} />
+              </div>
+              <h3 className="text-3xl font-display text-offwhite mb-2 uppercase tracking-wide">Daniel</h3>
+              <p className="text-orange font-sans font-semibold mb-6">Web Developer</p>
+              <p className="text-stone font-sans leading-relaxed">
+                Daniel specializes in performance optimization, integrations, and custom functionality. When a project needs something beyond the standard build, he's the one making it happen.
+              </p>
+            </ScrollReveal>
           </div>
+
+          <ScrollReveal delay={0.35} className="mt-10">
+            <div className="bg-charcoal/50 rounded-xl border border-gunmetal p-6 text-center">
+              <p className="text-stone font-sans leading-relaxed">
+                For specialized or one-off projects, we also partner with a trusted network of U.S.-based professionals who meet our quality standards and share our commitment to client success.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -145,7 +186,7 @@ export default function About() {
               <p className="text-white font-sans text-lg md:text-xl leading-relaxed italic">
                 "We started Graylock because we saw too many hardworking business owners getting left behind online. These are the people who show up early, stay late, and take care of their customers. They deserve a website that works as hard as they do — and a team that actually gives a damn."
               </p>
-              <p className="text-blue-200 font-sans font-semibold mt-4 text-sm uppercase tracking-widest">— Jared & Tim, Founders</p>
+              <p className="text-blue-200 font-sans font-semibold mt-4 text-sm uppercase tracking-widest">— The Graylock Team</p>
             </div>
           </ScrollReveal>
         </div>
