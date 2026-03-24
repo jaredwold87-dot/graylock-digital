@@ -9,6 +9,7 @@ export const PRICING_TIERS = [
       "Mobile-First Design",
       "Basic SEO Setup",
       "Hosting & SSL Included",
+      "Basic Lead Submission Form",
       "Dashboard + Support"
     ]
   },
@@ -26,6 +27,7 @@ export const PRICING_TIERS = [
       "Lead Activity Tracking",
       "Monthly Performance Report",
       "Local SEO Optimization",
+      "Enhanced Lead Submission Form",
       "Google Business Profile Setup",
       "Enhanced Dashboard + Priority Support"
     ]
@@ -39,6 +41,7 @@ export const PRICING_TIERS = [
       "Custom 10-Page Website",
       "10 SEO-Optimized Funnel Pages",
       "Enhanced Dashboard + Priority Support",
+      "Advanced Lead Generation Form",
       "Full Analytics & Performance Reports",
       "Edit All Business Info + Message Banner",
       "Easy Update Request Submission",

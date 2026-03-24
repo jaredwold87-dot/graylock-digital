@@ -13,7 +13,7 @@ export default function Pricing() {
     { name: "Secure Hosting & SSL", starter: true, standard: true, growth: true, custom: true },
     { name: "Monthly Performance Report", starter: false, standard: true, growth: true, custom: true },
     { name: "Monthly Change Requests", starter: false, standard: false, growth: "Unlimited", custom: "Unlimited" },
-    { name: "Lead Capture Forms", starter: "Basic", standard: "Advanced", growth: "Custom Integrated", custom: "Custom Integrated" },
+    { name: "Lead Capture Forms", starter: "Basic", standard: "Enhanced", growth: "Advanced", custom: "Custom Integrated" },
     { name: "SEO Optimization", starter: "Basic Setup", standard: "Local SEO Focus", growth: "Advanced + Schema", custom: "Advanced Strategy" },
     { name: "Google Business Profile", starter: false, standard: true, growth: true, custom: true },
     { name: "Business Dashboard", starter: "Dashboard + Support", standard: "Enhanced + Priority", growth: "Enhanced + Priority", custom: "Custom" },
