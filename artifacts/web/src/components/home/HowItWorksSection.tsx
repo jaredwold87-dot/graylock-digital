@@ -16,12 +16,12 @@ export function HowItWorksSection() {
     {
       num: "03",
       title: "We Build You a Demo Homepage",
-      desc: "We create a custom homepage concept for your business so you can see exactly how we'd improve your messaging, design, and brand presence. No cost, no pressure."
+      desc: "We create a custom homepage concept for your business so you can see exactly how we'd improve your messaging, design, and brand presence. You also receive a comprehensive written report. Both are yours to keep — whether you work with us or not."
     },
     {
       num: "04",
       title: "You Decide — No Pressure",
-      desc: "Love it? We build the full site in 3–5 days and launch. Not ready? No problem. You keep the evaluation insights and demo concept. Zero hard feelings."
+      desc: "Love it? We build the full site within 5 business days and launch. Not ready? No problem. You keep the evaluation insights, the full report, and the demo concept. Zero hard feelings."
     }
   ];
 

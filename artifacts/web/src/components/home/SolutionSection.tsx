@@ -6,7 +6,7 @@ export function SolutionSection() {
     {
       icon: <Clock className="text-orange mb-4" size={32} />,
       title: "Built Fast",
-      desc: "Once you say go, we build and launch your custom website in just 3–5 business days. No endless back and forth."
+      desc: "Once you say go, we build and launch your custom website within 5 business days. No endless back and forth."
     },
     {
       icon: <Wrench className="text-orange mb-4" size={32} />,
@@ -28,7 +28,7 @@ export function SolutionSection() {
         
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-display text-offwhite mb-6">
-            A Done-For-You Website That Actually Gets Results — Starting at $59/month
+            A Done-For-You Website That Actually Gets Results — Starting at $69/month
           </h2>
           <p className="text-stone text-lg font-sans">
             Stop worrying about hosting, plugins, and design templates. Focus on running your business while we handle your web presence entirely.

@@ -55,6 +55,14 @@ export default function GetStarted() {
             <WizardContent />
           </WizardShell>
         </WizardProvider>
+        <div className="max-w-2xl mx-auto px-6 pb-12 text-center">
+          <p className="text-stone/60 text-sm font-sans">
+            Prefer to email us? Reach out at{" "}
+            <a href="mailto:hello@graylockdigital.com" className="text-orange hover:underline">
+              hello@graylockdigital.com
+            </a>
+          </p>
+        </div>
       </section>
     </>
   );

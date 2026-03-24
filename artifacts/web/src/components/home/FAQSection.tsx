@@ -7,7 +7,7 @@ import { Link } from "wouter";
 const homepageFaqs = [
   {
     q: "Is the website review really free?",
-    a: "Yes, 100%. We evaluate your current website, walk you through what's working and what isn't, and give you clear recommendations — all at no cost. There's no hidden fee and no obligation to buy anything."
+    a: "Yes, 100%. We evaluate your current website, walk you through what's working and what isn't, and give you clear recommendations — all at no cost. You also receive a comprehensive written PDF report covering competitive analysis, website performance, SEO gaps, and market opportunities. You receive the full report and the custom homepage demo regardless of whether you choose to work with us. There's no hidden fee and no obligation."
   },
   {
     q: "Is the homepage demo actually custom to my business?",
@@ -15,19 +15,19 @@ const homepageFaqs = [
   },
   {
     q: "Am I obligated to move forward after the call?",
-    a: "Not at all. The review and demo are genuinely free. If you love what you see and want to move forward, great. If not, you keep the evaluation insights and there's zero pressure. We'd rather earn your trust than push a sale."
+    a: "Not at all. The review, report, and demo are genuinely free. If you love what you see and want to move forward, great. If not, you keep the evaluation insights, the full written report, and the demo concept. We'd rather earn your trust than push a sale."
   },
   {
     q: "What is the business dashboard?",
-    a: "It's a simple, private dashboard included with our Standard and Growth plans. You can view your website traffic, update business details like hours and phone number, and submit change requests — all without needing to contact a developer."
+    a: "It's a simple, private dashboard included with every plan. Starter plan clients get basic access to view traffic and edit business info. Standard and Growth plans include full dashboard features — lead activity tracking, announcement banners, update request submission, and performance reports."
   },
   {
     q: "Which plans include dashboard access?",
-    a: "The Standard and Growth plans both include dashboard access. Growth plan customers also get enhanced features like full performance reports, announcement banner editing, and easy update request submission."
+    a: "All plans now include dashboard access. Starter includes basic features (view traffic, edit hours/phone/address). Standard and Growth plans include full features (announcement banner, lead activity, update requests, performance reports). The Custom plan offers a tailored dashboard configuration."
   },
   {
     q: "What types of businesses do you work with?",
-    a: "We specialize in small service businesses — accountants, therapists, contractors, consultants, dentists, lawyers, and other local professional services. If you rely on trust, reputation, and local visibility to grow, we're built for you."
+    a: "We work with any local service business that relies on trust, reputation, and local visibility to grow — accountants, therapists, contractors, consultants, dentists, physicians, lawyers, and more. If that sounds like you, we're a great fit."
   }
 ];
 
@@ -58,7 +58,7 @@ export function FAQSection() {
                 <div 
                   className={cn(
                     "px-6 overflow-hidden transition-all duration-300 ease-in-out",
-                    openIndex === i ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
+                    openIndex === i ? "max-h-[500px] pb-6 opacity-100" : "max-h-0 opacity-0"
                   )}
                 >
                   <p className="text-stone font-sans leading-relaxed">{faq.a}</p>

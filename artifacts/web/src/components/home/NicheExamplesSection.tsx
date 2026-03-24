@@ -28,6 +28,11 @@ const nicheImages: Record<string, string[]> = {
     "/niche-dentist-2.png",
     "/niche-dentist-3.png",
   ],
+  Physicians: [
+    "/niche-dentist-1.png",
+    "/niche-dentist-2.png",
+    "/niche-dentist-3.png",
+  ],
   Lawyers: [
     "/niche-lawyer-1.png",
     "/niche-lawyer-2.png",
@@ -61,12 +66,15 @@ const niches: NicheItem[] = [
   { type: "Consultants", name: "Meridian Strategy Group", tagline: "Lead magnet funnels", imageIdx: 2 },
   { type: "Dentists", name: "Lakewood Orthodontics", tagline: "Treatment plan inquiries", imageIdx: 2 },
   { type: "Lawyers", name: "Pinnacle Injury Attorneys", tagline: "Free consultation signups", imageIdx: 2 },
+  { type: "Physicians", name: "Summit Internal Medicine", tagline: "New patient acquisition", imageIdx: 0 },
+  { type: "Physicians", name: "Valley Family Practice", tagline: "Online appointment booking", imageIdx: 1 },
+  { type: "Physicians", name: "Cascade Cardiology Group", tagline: "Referral network building", imageIdx: 2 },
 ];
 
 export function NicheExamplesSection() {
   const [activeTab, setActiveTab] = useState("Accountants");
 
-  const tabs = ["Accountants", "Therapists", "Contractors", "Consultants", "Dentists", "Lawyers"];
+  const tabs = ["Accountants", "Therapists", "Contractors", "Consultants", "Dentists", "Physicians", "Lawyers"];
 
   const filteredNiches = niches.filter(n => n.type === activeTab).slice(0, 3);
 
@@ -79,7 +87,7 @@ export function NicheExamplesSection() {
             Built for Businesses Like Yours
           </h2>
           <p className="text-stone font-sans text-lg mb-8 max-w-2xl mx-auto">
-            We specialize in service businesses that rely on trust, reputation, and local visibility to grow.
+            We work with any local service business that relies on trust, reputation, and local visibility to grow. Here are just a few of the industries we serve.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-12">

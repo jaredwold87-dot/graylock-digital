@@ -7,7 +7,7 @@ export default function About() {
   const values = [
     { title: "Done-For-You", desc: "We don't sell tools, we sell results. We take the burden entirely off your plate." },
     { title: "Transparent", desc: "No hidden fees, no confusing jargon, and no holding your digital assets hostage." },
-    { title: "Fast", desc: "We value momentum. A good website launched this week beats a perfect website launched next year." },
+    { title: "Fast", desc: "We move fast because we've done this hundreds of times — not because we cut corners. Our structured process, proven build framework, and experienced team let us deliver within 5 business days without sacrificing an ounce of quality." },
     { title: "Relationship-Driven", desc: "We aren't a faceless platform. You always know exactly who is working on your site." }
   ];
 
@@ -20,7 +20,7 @@ export default function About() {
           <ScrollReveal>
             <h1 className="text-4xl md:text-6xl font-display mb-6">Why We Built Graylock Digital</h1>
             <p className="text-xl font-sans text-gray-600 leading-relaxed text-left md:text-center">
-              We spent years watching small service businesses get stuck with outdated, underperforming websites. They either had to spend $10,000 on an agency they couldn't afford, or spend 50 hours trying to figure out WordPress themselves. There was no affordable, done-for-you middle ground. So we built it.
+              We've been on the other side of this. We've built our own websites from scratch, paid agencies thousands for underwhelming results, and spent weekends wrestling with WordPress. We know exactly what it feels like to overpay and underperform — and that frustration is precisely why Graylock exists. We saw small service businesses getting stuck with outdated, underperforming websites. They either had to spend $10,000 on an agency they couldn't afford, or spend 50 hours trying to figure it out themselves. There was no affordable, done-for-you middle ground. So we built it.
             </p>
           </ScrollReveal>
         </div>

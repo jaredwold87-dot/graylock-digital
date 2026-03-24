@@ -1,7 +1,6 @@
 import { Check } from "lucide-react";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { BeforeAfterMockup } from "./BeforeAfterMockup";
 
 export function HeroSection() {
   return (
@@ -30,7 +29,7 @@ export function HeroSection() {
               Stop Losing Leads to a Dated & Ineffective Website.
             </h1>
             <p className="text-stone text-lg md:text-xl font-sans mb-8 max-w-xl leading-relaxed">
-              Most websites are just digital brochures. We build high-performance sales engines. Book a free review, and we'll show you exactly where your current site is leaking revenue and how we can fix it.
+              Most websites are just digital brochures. We build high-performance sales engines. Book a free 20-minute call, and you'll receive a comprehensive written report covering your website analysis, SEO audit, competitive landscape, and growth opportunities — plus a custom homepage demo — all before you pay us anything.
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
@@ -42,6 +41,7 @@ export function HeroSection() {
             <div className="flex flex-col gap-3">
               {[
                 "Free website evaluation — no strings attached",
+                "Full written PDF report yours to keep",
                 "Custom homepage demo built for your business",
                 "Zero obligation to move forward"
               ].map((text, i) => (

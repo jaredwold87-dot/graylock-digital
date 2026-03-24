@@ -1,4 +1,4 @@
-import { Search, MessageSquare, Monitor } from "lucide-react";
+import { Search, MessageSquare, Monitor, FileText } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
 
@@ -13,8 +13,14 @@ export function OfferBreakdownSection() {
     {
       icon: <MessageSquare className="text-orange" size={28} />,
       title: "Live Strategy Walkthrough",
-      desc: "We hop on a call with you and walk through the findings in plain English. No jargon, no fluff — just a clear explanation of what's hurting your site and what we'd do differently.",
+      desc: "We hop on a 20-minute call with you and walk through the findings in plain English. No jargon, no fluff — just a clear explanation of what's hurting your site and what we'd do differently.",
       value: "Clarity you can act on, whether you hire us or not"
+    },
+    {
+      icon: <FileText className="text-orange" size={28} />,
+      title: "Comprehensive Written Report",
+      desc: "You receive a full PDF report covering competitive analysis, customer and audience insights, website performance analysis, and strategic opportunity recommendations. It's a high-value deliverable you keep regardless of whether you move forward.",
+      value: "A professional-grade report — yours to keep forever"
     },
     {
       icon: <Monitor className="text-orange" size={28} />,
@@ -39,14 +45,14 @@ export function OfferBreakdownSection() {
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {offers.map((offer, i) => (
-            <ScrollReveal key={i} delay={i * 0.15} className="bg-charcoal p-10 rounded-xl border-t-4 border-t-orange border-x border-b border-gunmetal shadow-lg shadow-black/20 hover:-translate-y-1 transition-transform duration-300 flex flex-col">
+            <ScrollReveal key={i} delay={i * 0.12} className="bg-charcoal p-8 rounded-xl border-t-4 border-t-orange border-x border-b border-gunmetal shadow-lg shadow-black/20 hover:-translate-y-1 transition-transform duration-300 flex flex-col">
               <div className="w-14 h-14 bg-orange/10 rounded-xl flex items-center justify-center mb-6">
                 {offer.icon}
               </div>
-              <h3 className="text-2xl font-display text-offwhite mb-4">{offer.title}</h3>
-              <p className="text-stone font-sans leading-relaxed mb-6 flex-grow">{offer.desc}</p>
+              <h3 className="text-xl font-display text-offwhite mb-4">{offer.title}</h3>
+              <p className="text-stone font-sans leading-relaxed mb-6 flex-grow text-sm">{offer.desc}</p>
               <p className="text-orange/80 font-sans text-sm font-semibold border-t border-gunmetal pt-4">{offer.value}</p>
             </ScrollReveal>
           ))}

@@ -9,6 +9,8 @@ export function ValueDifferentiationSection() {
     { theirs: "Leave you alone after launch", ours: "Handle hosting, updates, and maintenance every month" },
     { theirs: "Hand you a template and call it custom", ours: "Build a site designed specifically for your business and niche" },
     { theirs: "No way to see what's happening on your site", ours: "Business dashboard with traffic insights and easy info updates" },
+    { theirs: "No visibility into how your site performs", ours: "Monthly performance reporting included on every plan" },
+    { theirs: "Set it and forget it — never revisit", ours: "Quarterly SEO reviews and a long-term refresh at the 2-year mark" },
   ];
 
   return (
