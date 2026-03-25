@@ -15,6 +15,7 @@ import FAQ from "@/pages/FAQ";
 import GetStarted from "@/pages/GetStarted";
 import ContactRedirect from "@/pages/Contact";
 import ThankYou from "@/pages/ThankYou";
+import AccountantsFunnel from "@/pages/AccountantsFunnel";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ function Router() {
       <Route path="/get-started" component={GetStarted} />
       <Route path="/contact" component={ContactRedirect} />
       <Route path="/thank-you" component={ThankYou} />
+      <Route path="/accountants" component={AccountantsFunnel} />
       <Route component={NotFound} />
     </Switch>
   );
