@@ -75,20 +75,21 @@ Or log in to the GOS to view full lead record.`;
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          first_name: payload.first_name,
-          business_name: payload.business_name,
+          firstName: payload.first_name,
+          businessName: payload.business_name,
           email: payload.email,
-          has_website: payload.has_website,
-          website_url: payload.website_url || "",
-          primary_goal: payload.primary_goal || "",
-          ideal_customer: payload.ideal_customer || "",
-          branding_notes: payload.branding_notes || "",
-          heard_about_us: payload.heard_about_us || "",
+          hasWebsite: payload.has_website,
+          websiteUrl: payload.website_url || "",
+          primaryGoal: payload.primary_goal || "",
+          idealCustomer: payload.ideal_customer || "",
+          brandingNotes: payload.branding_notes || "",
+          heardAboutUs: payload.heard_about_us || "",
           source: "graylockdigital.com",
-          submitted_at: submittedAt,
+          submittedAt: submittedAt,
         }),
       });
-      logger.info({ status: response.status }, "GOS webhook response");
+      const responseBody = await response.text();
+      logger.info({ status: response.status, body: responseBody }, "GOS webhook response");
     } catch (err) {
       logger.error({ err }, "Failed to POST to GOS webhook");
     }
