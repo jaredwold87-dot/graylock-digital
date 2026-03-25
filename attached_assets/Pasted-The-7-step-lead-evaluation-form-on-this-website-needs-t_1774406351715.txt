@@ -1,0 +1,84 @@
+The 7-step lead evaluation form on this website needs to 
+send data in two places when the final "Get My Free Report" 
+button is submitted.
+
+The form currently collects these fields across 7 steps:
+- first_name (Step 1)
+- business_name (Step 1)
+- email (Step 1)
+- has_website: true/false (Step 2)
+- website_url (Step 3 — only if has_website is true)
+- primary_goal (Step 4 — one of: "Get more leads", 
+  "Get better quality leads", "Rank higher on Google", 
+  "Convert more visitors", "Not sure yet")
+- ideal_customer (Step 5 — optional text)
+- branding_notes (Step 6 — optional text)
+- heard_about_us (Step 7 — optional text)
+
+ON FORM SUBMIT do both of these simultaneously:
+
+ACTION 1 — Send email via Resend:
+Send to both: jared.wold87@gmail.com AND the email 
+stored in environment variable TEAM_EMAIL_TIM
+
+From: noreply@graylockdigital.com
+Subject: "New Lead: [business_name] — [primary_goal]"
+
+Body:
+  New website evaluation request from graylockdigital.com
+
+  Name: [first_name]
+  Business: [business_name]
+  Email: [email]
+  Has website: [Yes/No]
+  Website URL: [website_url or "None"]
+  Primary goal: [primary_goal]
+  Ideal customer: [ideal_customer or "Not provided"]
+  Branding notes: [branding_notes or "Not provided"]
+  Heard about us: [heard_about_us or "Not provided"]
+
+  Submitted: [current timestamp]
+
+  ---
+  Reply directly to this email to reach the lead.
+  Or log in to the GOS to view full lead record.
+
+Set the Reply-To header to the lead's email address 
+so you can reply directly to them from your inbox.
+
+ACTION 2 — POST to GOS API:
+POST to: [GRAYLOCK_API_URL]/api/webhook/lead
+
+Headers: Content-Type: application/json
+No auth header needed.
+
+Body:
+{
+  "first_name": "",
+  "business_name": "",
+  "email": "",
+  "has_website": true/false,
+  "website_url": "",
+  "primary_goal": "",
+  "ideal_customer": "",
+  "branding_notes": "",
+  "heard_about_us": "",
+  "source": "graylockdigital.com",
+  "submitted_at": "[ISO timestamp]"
+}
+
+ON SUCCESS: show a thank you screen that says:
+"You're all set, [first_name]!
+We're reviewing your info now and will reach out 
+within one business day to schedule your free call.
+Keep an eye on [email] — that's where we'll reach you."
+
+ON ERROR: show the success screen anyway — never 
+show an error to the lead. Log the error to console.
+
+ENVIRONMENT VARIABLES needed (add to Sevalla):
+- RESEND_API_KEY (already set)
+- GRAYLOCK_API_URL (the live GOS URL on Sevalla)
+- TEAM_EMAIL_TIM (Tim's email address)
+
+Push to GitHub when done.

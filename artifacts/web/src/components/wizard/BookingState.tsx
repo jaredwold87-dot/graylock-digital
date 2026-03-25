@@ -25,7 +25,7 @@ export function BookingState() {
           </h2>
 
           <p className="text-stone font-sans text-lg mb-10 relative z-10 max-w-lg mx-auto">
-            We've started building your custom growth report. Check your email for a confirmation and next steps.
+            We're reviewing your info now and will reach out within one business day to schedule your free call. Keep an eye on <span className="text-offwhite font-semibold">{data.email}</span> — that's where we'll reach you.
           </p>
 
           <div className="bg-charcoal rounded-xl p-6 text-left border border-gunmetal mb-10 relative z-10">

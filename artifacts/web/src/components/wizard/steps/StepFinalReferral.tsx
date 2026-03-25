@@ -2,59 +2,38 @@ import { useState } from "react";
 import { useWizard } from "../WizardContext";
 import { Loader2 } from "lucide-react";
 
-const FORMSPREE_URL = "https://formspree.io/f/REPLACE";
-
 export function StepFinalReferral() {
   const { data, updateData, setPhase } = useWizard();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState("");
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
-    setError("");
 
-    const payload: Record<string, string> = {
-      firstName: data.firstName,
-      businessName: data.businessName,
+    const payload = {
+      first_name: data.firstName,
+      business_name: data.businessName,
       email: data.email,
-      hasWebsite: data.hasWebsite ? "Yes" : "No",
+      has_website: !!data.hasWebsite,
+      website_url: data.websiteUrl || "",
+      primary_goal: data.primaryGoal || "",
+      ideal_customer: data.targetCustomer || "",
+      branding_notes: data.brandingNotes || "",
+      heard_about_us: data.referralSource || "",
     };
 
-    if (data.hasWebsite) {
-      payload.websiteUrl = data.websiteUrl;
-      payload.primaryGoal = data.primaryGoal;
-      if (data.targetCustomer) payload.targetCustomer = data.targetCustomer;
-      if (data.brandingNotes) payload.brandingNotes = data.brandingNotes;
-    } else {
-      payload.businessType = data.businessType;
-      payload.businessStage = data.businessStage;
-      payload.leadGenMethod = data.leadGenMethod;
-      payload.targetCustomer = data.targetCustomer;
-    }
-
-    if (data.referralSource) payload.referralSource = data.referralSource;
-
     try {
-      const formData = new FormData();
-      Object.entries(payload).forEach(([k, v]) => formData.append(k, v));
-
-      const response = await fetch(FORMSPREE_URL, {
+      const baseUrl = import.meta.env.BASE_URL || "/";
+      await fetch(`${baseUrl}api/leads`, {
         method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
-
-      if (!response.ok) {
-        throw new Error(`Submission failed (${response.status})`);
-      }
-
-      setPhase("booking");
     } catch (err) {
-      console.error(err);
-      setError("Something went wrong. Please try again, or email us directly at hello@graylockdigital.com.");
-    } finally {
-      setIsSubmitting(false);
+      console.error("Lead submission error:", err);
     }
+
+    setPhase("booking");
+    setIsSubmitting(false);
   };
 
   return (
@@ -79,12 +58,6 @@ export function StepFinalReferral() {
             className="bg-charcoal border border-gunmetal rounded-lg p-4 text-offwhite font-sans text-lg focus:outline-none focus:border-orange focus:ring-1 focus:ring-orange transition-all placeholder:text-stone/50"
           />
         </div>
-
-        {error && (
-          <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
-            <p className="text-red-400 font-sans text-sm">{error}</p>
-          </div>
-        )}
 
         <div className="bg-navy rounded-xl p-6 border border-gunmetal">
           <h3 className="text-offwhite font-sans font-semibold mb-3">Here's what happens next:</h3>
