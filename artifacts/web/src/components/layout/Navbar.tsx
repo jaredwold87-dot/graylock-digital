@@ -13,14 +13,169 @@ const WHO_WE_HELP = [
   { name: "House Cleaners", path: "/websites-for-house-cleaners" },
 ];
 
+const OUR_STRATEGY = [
+  { name: "Strategy Overview", path: "/our-strategy" },
+  { name: "Website Design", path: "/website-design" },
+  { name: "SEO", path: "/seo-for-small-business" },
+  { name: "GEO", path: "/geo-generative-engine-optimization" },
+  { name: "Funnel Pages", path: "/funnel-pages" },
+  { name: "Google Business Profiles", path: "/google-business-profile" },
+  { name: "Lead Generation", path: "/lead-generation-for-small-business" },
+];
+
+function DesktopDropdown({
+  label,
+  items,
+  isActive,
+  location,
+}: {
+  label: string;
+  items: { name: string; path: string }[];
+  isActive: boolean;
+  location: string;
+}) {
+  const [open, setOpen] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setOpen(false), 150);
+  };
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location]);
+
+  return (
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button
+        className={cn(
+          "text-sm font-sans font-semibold transition-all duration-300 relative flex items-center gap-1",
+          isActive ? "text-orange" : "text-stone hover:text-offwhite"
+        )}
+        onClick={() => setOpen(!open)}
+      >
+        {label}
+        <ChevronDown
+          size={14}
+          className={cn(
+            "transition-transform duration-200",
+            open ? "rotate-180" : ""
+          )}
+        />
+        <span
+          className={cn(
+            "absolute -bottom-1 left-0 h-0.5 bg-orange transition-all duration-300",
+            isActive ? "w-full" : "w-0"
+          )}
+        />
+      </button>
+
+      <div
+        className={cn(
+          "absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 rounded-xl border border-gunmetal/60 bg-charcoal/95 backdrop-blur-xl shadow-2xl shadow-black/40 transition-all duration-200 overflow-hidden",
+          open
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none"
+        )}
+      >
+        <div className="py-2">
+          {items.map((item) => (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={cn(
+                "block px-5 py-2.5 text-sm font-sans transition-all duration-200",
+                location === item.path
+                  ? "text-orange bg-orange/5"
+                  : "text-stone hover:text-offwhite hover:bg-white/5"
+              )}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function MobileAccordion({
+  label,
+  items,
+  isActive,
+  location,
+  open,
+  onToggle,
+}: {
+  label: string;
+  items: { name: string; path: string }[];
+  isActive: boolean;
+  location: string;
+  open: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="w-full max-w-xs">
+      <button
+        onClick={onToggle}
+        className={cn(
+          "text-2xl font-display uppercase tracking-widest flex items-center justify-center gap-2 w-full",
+          isActive ? "text-orange" : "text-offwhite hover:text-orange transition-colors"
+        )}
+      >
+        {label}
+        <ChevronDown
+          size={20}
+          className={cn(
+            "transition-transform duration-200",
+            open ? "rotate-180" : ""
+          )}
+        />
+      </button>
+      <div
+        className={cn(
+          "overflow-hidden transition-all duration-300",
+          open ? "max-h-96 mt-4" : "max-h-0"
+        )}
+      >
+        <div className="flex flex-col gap-3">
+          {items.map((item) => (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={cn(
+                "text-base font-sans py-1",
+                location === item.path
+                  ? "text-orange"
+                  : "text-stone hover:text-offwhite transition-colors"
+              )}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileWhoWeHelpOpen, setMobileWhoWeHelpOpen] = useState(false);
+  const [mobileStrategyOpen, setMobileStrategyOpen] = useState(false);
   const [location] = useLocation();
-  const dropdownRef = useRef<HTMLDivElement>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,20 +187,13 @@ export function Navbar() {
 
   useEffect(() => {
     setMobileMenuOpen(false);
-    setDropdownOpen(false);
     setMobileWhoWeHelpOpen(false);
+    setMobileStrategyOpen(false);
   }, [location]);
 
-  const handleMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setDropdownOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => setDropdownOpen(false), 150);
-  };
-
   const isWhoWeHelpActive = WHO_WE_HELP.some((item) => location === item.path);
+  const isStrategyActive =
+    OUR_STRATEGY.some((item) => location === item.path) || location === "/our-strategy";
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -100,63 +248,19 @@ export function Navbar() {
                 </Link>
               ))}
 
-              <div
-                ref={dropdownRef}
-                className="relative"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <button
-                  className={cn(
-                    "text-sm font-sans font-semibold transition-all duration-300 relative flex items-center gap-1",
-                    isWhoWeHelpActive
-                      ? "text-orange"
-                      : "text-stone hover:text-offwhite"
-                  )}
-                  onClick={() => setDropdownOpen(!dropdownOpen)}
-                >
-                  Who We Help
-                  <ChevronDown
-                    size={14}
-                    className={cn(
-                      "transition-transform duration-200",
-                      dropdownOpen ? "rotate-180" : ""
-                    )}
-                  />
-                  <span
-                    className={cn(
-                      "absolute -bottom-1 left-0 h-0.5 bg-orange transition-all duration-300",
-                      isWhoWeHelpActive ? "w-full" : "w-0"
-                    )}
-                  />
-                </button>
+              <DesktopDropdown
+                label="Who We Help"
+                items={WHO_WE_HELP}
+                isActive={isWhoWeHelpActive}
+                location={location}
+              />
 
-                <div
-                  className={cn(
-                    "absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 rounded-xl border border-gunmetal/60 bg-charcoal/95 backdrop-blur-xl shadow-2xl shadow-black/40 transition-all duration-200 overflow-hidden",
-                    dropdownOpen
-                      ? "opacity-100 translate-y-0 pointer-events-auto"
-                      : "opacity-0 -translate-y-2 pointer-events-none"
-                  )}
-                >
-                  <div className="py-2">
-                    {WHO_WE_HELP.map((item) => (
-                      <Link
-                        key={item.path}
-                        href={item.path}
-                        className={cn(
-                          "block px-5 py-2.5 text-sm font-sans transition-all duration-200",
-                          location === item.path
-                            ? "text-orange bg-orange/5"
-                            : "text-stone hover:text-offwhite hover:bg-white/5"
-                        )}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              <DesktopDropdown
+                label="Our Strategy"
+                items={OUR_STRATEGY}
+                isActive={isStrategyActive}
+                location={location}
+              />
 
               {navLinksAfter.map((link) => (
                 <Link
@@ -221,49 +325,23 @@ export function Navbar() {
             </Link>
           ))}
 
-          <div className="w-full max-w-xs">
-            <button
-              onClick={() => setMobileWhoWeHelpOpen(!mobileWhoWeHelpOpen)}
-              className={cn(
-                "text-2xl font-display uppercase tracking-widest flex items-center justify-center gap-2 w-full",
-                isWhoWeHelpActive
-                  ? "text-orange"
-                  : "text-offwhite hover:text-orange transition-colors"
-              )}
-            >
-              Who We Help
-              <ChevronDown
-                size={20}
-                className={cn(
-                  "transition-transform duration-200",
-                  mobileWhoWeHelpOpen ? "rotate-180" : ""
-                )}
-              />
-            </button>
-            <div
-              className={cn(
-                "overflow-hidden transition-all duration-300",
-                mobileWhoWeHelpOpen ? "max-h-96 mt-4" : "max-h-0"
-              )}
-            >
-              <div className="flex flex-col gap-3">
-                {WHO_WE_HELP.map((item) => (
-                  <Link
-                    key={item.path}
-                    href={item.path}
-                    className={cn(
-                      "text-base font-sans py-1",
-                      location === item.path
-                        ? "text-orange"
-                        : "text-stone hover:text-offwhite transition-colors"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
+          <MobileAccordion
+            label="Who We Help"
+            items={WHO_WE_HELP}
+            isActive={isWhoWeHelpActive}
+            location={location}
+            open={mobileWhoWeHelpOpen}
+            onToggle={() => setMobileWhoWeHelpOpen(!mobileWhoWeHelpOpen)}
+          />
+
+          <MobileAccordion
+            label="Our Strategy"
+            items={OUR_STRATEGY}
+            isActive={isStrategyActive}
+            location={location}
+            open={mobileStrategyOpen}
+            onToggle={() => setMobileStrategyOpen(!mobileStrategyOpen)}
+          />
 
           {navLinksAfter.map((link) => (
             <Link

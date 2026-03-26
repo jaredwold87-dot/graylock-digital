@@ -23,6 +23,13 @@ import GroupPractices from "@/pages/industries/GroupPractices";
 import AccountantsIndustry from "@/pages/industries/Accountants";
 import LawyersIndustry from "@/pages/industries/Lawyers";
 import HouseCleaners from "@/pages/industries/HouseCleaners";
+import OurStrategy from "@/pages/strategy/OurStrategy";
+import WebsiteDesign from "@/pages/strategy/WebsiteDesign";
+import SEOPage from "@/pages/strategy/SEO";
+import GEOPage from "@/pages/strategy/GEO";
+import FunnelPagesPage from "@/pages/strategy/FunnelPages";
+import GoogleBusinessProfilePage from "@/pages/strategy/GoogleBusinessProfile";
+import LeadGenerationPage from "@/pages/strategy/LeadGeneration";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -55,6 +62,13 @@ function Router() {
       <Route path="/websites-for-accountants" component={AccountantsIndustry} />
       <Route path="/websites-for-lawyers" component={LawyersIndustry} />
       <Route path="/websites-for-house-cleaners" component={HouseCleaners} />
+      <Route path="/our-strategy" component={OurStrategy} />
+      <Route path="/website-design" component={WebsiteDesign} />
+      <Route path="/seo-for-small-business" component={SEOPage} />
+      <Route path="/geo-generative-engine-optimization" component={GEOPage} />
+      <Route path="/funnel-pages" component={FunnelPagesPage} />
+      <Route path="/google-business-profile" component={GoogleBusinessProfilePage} />
+      <Route path="/lead-generation-for-small-business" component={LeadGenerationPage} />
       <Route component={NotFound} />
     </Switch>
   );
