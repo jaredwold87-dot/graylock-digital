@@ -29,6 +29,7 @@ const data: IndustryPageData = {
     subheadline:
       "You built your business from the ground up. Your website should reflect that — not embarrass you. We build high-converting, professionally maintained websites for small business owners. Fast, affordable, no BS.",
     cta: "Book Your Free Website Review",
+    backgroundImage: `${import.meta.env.BASE_URL}hero-small-business.jpg`,
     trustSignals: [
       "3–5 business days",
       "$79/month",

@@ -29,6 +29,7 @@ const data: IndustryPageData = {
     subheadline:
       "Your expertise changes lives. Your website should make it easy for the right clients to find you, trust you, and book with you. We build warm, conversion-focused websites for solo practitioners — fast, affordable, and entirely done for you.",
     cta: "Book Your Free Website Review",
+    backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Warm, trust-building design",
       "Client inquiry forms",

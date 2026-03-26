@@ -29,6 +29,7 @@ const data: IndustryPageData = {
     subheadline:
       "Your clients trust you with their finances. Your website should reflect that level of professionalism. We build credible, SEO-optimized websites for accountants and CPA firms — fast, affordable, and fully managed.",
     cta: "Book Your Free Website Review",
+    backgroundImage: `${import.meta.env.BASE_URL}hero-accountants.jpg`,
     trustSignals: [
       "Services pages for every offering",
       "Local SEO included",

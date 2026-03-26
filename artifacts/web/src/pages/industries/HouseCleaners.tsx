@@ -31,6 +31,7 @@ const data: IndustryPageData = {
     subheadline:
       "Homeowners need to trust the people they let in their home. A professional website makes you the obvious choice. Graylock builds clean, credible, SEO-optimized websites for independent cleaners and cleaning companies — fast, affordable, and fully managed.",
     cta: "Get Your Free Website Review",
+    backgroundImage: `${import.meta.env.BASE_URL}hero-house-cleaners.jpg`,
     trustSignals: [
       "3–5 day build",
       "Quote forms included",

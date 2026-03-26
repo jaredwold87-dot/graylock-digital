@@ -30,6 +30,7 @@ const data: IndustryPageData = {
     subheadline:
       "One new client from your website pays for years of service. We build credible, SEO-optimized websites for solo attorneys and small law firms — with practice area pages, attorney bios, and intake forms that turn visitors into consultations.",
     cta: "Book Your Free Website Review",
+    backgroundImage: `${import.meta.env.BASE_URL}hero-lawyers.jpg`,
     trustSignals: [
       "Practice area pages",
       "24/7 intake forms",

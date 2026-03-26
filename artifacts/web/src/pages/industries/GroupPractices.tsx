@@ -29,6 +29,7 @@ const data: IndustryPageData = {
     subheadline:
       "Your group practice has grown. Your website should reflect that. We build multi-clinician, specialty-rich websites for group practices — showcasing every provider, every service area, and every reason clients should choose you.",
     cta: "Book Your Free Website Review",
+    backgroundImage: `${import.meta.env.BASE_URL}hero-group-practices.jpg`,
     trustSignals: [
       "Individual clinician pages",
       "Specialty filtering",
