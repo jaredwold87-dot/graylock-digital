@@ -209,7 +209,7 @@ const data: StrategyPageData = {
   bottomCta: {
     headline: "Find Out How Your Website Is Performing in Search — Free",
     subtext:
-      "Book a free 20-minute call. We'll run an SEO audit, show you where you're invisible on Google, and give you a clear picture of what's fixable — at no cost.",
+      "Book a free 20-minute call. We'll run a full SEO evaluation, show you where you're invisible on Google, and give you a clear picture of what's fixable — at no cost.",
     button: "Book Your Free Website Review",
   },
   relatedStrategy: [

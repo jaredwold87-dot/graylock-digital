@@ -106,7 +106,7 @@ export function SolutionSection() {
             A Done-For-You Website That Actually Gets Results — Starting at $79/month
           </h2>
           <p className="text-stone text-lg font-sans">
-            Most websites are just digital brochures. We build high-performance sales engines. Book a free 20-minute call, and you'll receive a comprehensive written report covering your website analysis, SEO audit, competitive landscape, and growth opportunities — plus a custom homepage demo — all before you pay us anything.
+            Most websites are just digital brochures. We build high-performance sales engines. Book a free 20-minute call, and you'll receive a comprehensive written report covering your website analysis, SEO evaluation, competitive landscape, and growth opportunities — plus a custom homepage demo — all before you pay us anything.
           </p>
         </ScrollReveal>
 

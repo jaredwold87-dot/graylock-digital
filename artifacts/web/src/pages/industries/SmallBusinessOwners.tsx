@@ -123,9 +123,9 @@ const data: IndustryPageData = {
           "20-minute call to understand your business, goals, and what you need from your website.",
       },
       {
-        title: "We Audit & Build",
+        title: "We Evaluate & Build",
         description:
-          "We audit your current presence and build a custom homepage demo for your review.",
+          "We evaluate your current presence and build a custom homepage demo for your review.",
       },
       {
         title: "Review & Refine",
@@ -189,7 +189,7 @@ const data: IndustryPageData = {
   bottomCta: {
     headline: "Ready to See What Your Website Could Become?",
     subtext:
-      "Book a free 20-minute call. We'll audit your site, show you what's broken, and build you a custom homepage demo — all before you pay us anything.",
+      "Book a free 20-minute call. We'll evaluate your site, show you what's holding it back, and build you a custom homepage demo — all before you pay us anything.",
     button: "Book Your Free Website Review",
   },
   relatedPages: [

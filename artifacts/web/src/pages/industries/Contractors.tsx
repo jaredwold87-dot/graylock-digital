@@ -188,7 +188,7 @@ const data: IndustryPageData = {
       {
         title: "We Build Your Demo",
         description:
-          "We audit your current presence and build a custom homepage design for your review.",
+          "We evaluate your current presence and build a custom homepage design for your review.",
       },
       {
         title: "Review & Approve",

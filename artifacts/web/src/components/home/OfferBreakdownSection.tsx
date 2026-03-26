@@ -7,7 +7,7 @@ export function OfferBreakdownSection() {
     {
       icon: <Search className="text-orange" size={28} />,
       title: "Full Website Evaluation",
-      desc: "We audit your current site and identify every issue that's costing you leads — from design and messaging problems to mobile usability and SEO gaps. You'll see exactly what's broken and why.",
+      desc: "We evaluate your current site and identify every issue that's costing you leads — from design and messaging problems to mobile usability and SEO gaps. You'll see exactly what's broken and why.",
       value: "Most agencies charge $500+ for this alone"
     },
     {

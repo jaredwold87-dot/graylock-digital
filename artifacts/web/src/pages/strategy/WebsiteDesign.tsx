@@ -206,7 +206,7 @@ const data: StrategyPageData = {
   bottomCta: {
     headline: "See What Your Website Could Look Like — Before You Pay",
     subtext:
-      "Book a free 20-minute call. We'll audit your current site, show you what's holding it back, and build a custom homepage demo — all before you commit to anything.",
+      "Book a free 20-minute call. We'll evaluate your current site, show you what's holding it back, and build a custom homepage demo — all before you commit to anything.",
     button: "Book Your Free Website Review",
   },
   relatedStrategy: [

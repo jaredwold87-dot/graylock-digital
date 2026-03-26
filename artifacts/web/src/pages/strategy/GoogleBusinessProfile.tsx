@@ -209,7 +209,7 @@ const data: StrategyPageData = {
   bottomCta: {
     headline: "Is Your Google Business Profile Complete and Optimized?",
     subtext:
-      "Book a free review. We'll audit your GBP listing, identify every gap, and show you exactly what needs to be done to rank higher in local search and Google Maps.",
+      "Book a free review. We'll evaluate your GBP listing, identify every gap, and show you exactly what needs to be done to rank higher in local search and Google Maps.",
     button: "Book Your Free Website Review",
   },
   relatedStrategy: [

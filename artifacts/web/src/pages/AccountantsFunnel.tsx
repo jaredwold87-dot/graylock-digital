@@ -118,7 +118,7 @@ const faqs = [
   },
   {
     q: "What if I already have a website?",
-    a: "Even better — we'll do a free audit showing exactly what's holding you back, then rebuild it from scratch to actually generate leads.",
+    a: "Even better — we'll do a free evaluation showing exactly what's holding you back, then rebuild it from scratch to actually generate leads.",
   },
   {
     q: "Can I update the website myself?",
@@ -199,7 +199,7 @@ export default function AccountantsFunnel() {
                 href="/get-started"
                 className="px-8 py-5 text-lg"
               >
-                Get Your Free Website Audit
+                Get Your Free Website Evaluation
               </CTAButton>
               <CTAButton
                 href="#before-after"
@@ -521,7 +521,7 @@ export default function AccountantsFunnel() {
             {[
               {
                 step: "01",
-                title: "Free Audit",
+                title: "Free Evaluation",
                 desc: "We review your current online presence and show you exactly what's holding you back.",
                 icon: Search,
               },
@@ -651,14 +651,14 @@ export default function AccountantsFunnel() {
               Ready to Stop Losing Clients to Competitors With Better Websites?
             </h2>
             <p className="text-white/85 text-lg md:text-xl font-sans mb-8 max-w-2xl mx-auto leading-relaxed">
-              Get a free website audit and custom homepage mockup for your
+              Get a free website evaluation and custom homepage mockup for your
               accounting firm. No obligation, no pressure — just a clear look at
               what's possible.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-10 text-left max-w-lg mx-auto">
               {[
-                "Free website audit",
+                "Free website evaluation",
                 "Custom homepage mockup",
                 "Zero obligation",
               ].map((item) => (
@@ -677,11 +677,11 @@ export default function AccountantsFunnel() {
                 variant="dark"
                 className="px-10 py-5 text-lg"
               >
-                Get Your Free Website Audit
+                Get Your Free Website Evaluation
                 <ArrowRight size={18} className="ml-2" />
               </CTAButton>
               <p className="text-white/75 text-sm font-sans mt-2">
-                Takes 2 minutes. We'll have your audit ready within 1 business
+                Takes 2 minutes. We'll have your evaluation ready within 1 business
                 day.
               </p>
             </div>
