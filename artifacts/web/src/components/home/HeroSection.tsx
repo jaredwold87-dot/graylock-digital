@@ -144,7 +144,7 @@ export function HeroSection() {
               Website.
             </h1>
             <p className="text-stone text-lg md:text-xl font-sans mb-8 max-w-xl leading-relaxed">
-              We help growth-minded small and medium sized businesses dominate Google, get more leads, and keep client lists full – without locking you into long-term contracts or charging thousands of dollars upfront.
+              We build and optimize websites that actually convert — then help growth-minded small and medium businesses dominate Google, generate more leads, and keep client lists full. No long-term contracts. No thousands upfront.
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
