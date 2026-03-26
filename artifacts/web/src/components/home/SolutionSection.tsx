@@ -56,14 +56,18 @@ function SolutionPhone() {
 
 function SolutionDevices() {
   return (
-    <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 w-full max-w-5xl mx-auto px-4">
-      <div className="flex-[2.5]">
+    <div className="relative flex items-center justify-center gap-4 sm:gap-6 md:gap-8 w-full max-w-5xl mx-auto px-4">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-orange/[0.04] rounded-full blur-[80px] pointer-events-none" />
+      <div className="flex-[2.5] relative group">
+        <div className="absolute -inset-1 bg-gradient-to-b from-orange/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
         <SolutionLaptop />
       </div>
-      <div className="flex-[1.4] hidden md:block">
+      <div className="flex-[1.4] hidden md:block relative group">
+        <div className="absolute -inset-1 bg-gradient-to-b from-orange/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
         <SolutionTablet />
       </div>
-      <div className="flex-[0.55] hidden sm:block">
+      <div className="flex-[0.55] hidden sm:block relative group">
+        <div className="absolute -inset-1 bg-gradient-to-b from-orange/10 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
         <SolutionPhone />
       </div>
     </div>
@@ -106,7 +110,7 @@ export function SolutionSection() {
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {solutions.map((sol, i) => (
             <ScrollReveal key={i} delay={i * 0.15} className="card-glow gradient-border bg-charcoal/80 p-10 rounded-xl border border-gunmetal/50">
               <div className="w-16 h-16 bg-gradient-to-br from-orange/20 to-orange/5 rounded-xl flex items-center justify-center mb-6 border border-orange/10">
@@ -118,8 +122,12 @@ export function SolutionSection() {
           ))}
         </div>
 
-        <ScrollReveal className="w-full" aria-label="Graylock Digital websites displayed across laptop, tablet, and mobile devices">
-          <SolutionDevices />
+        <ScrollReveal className="w-full relative" aria-label="Graylock Digital websites displayed across laptop, tablet, and mobile devices">
+          <div className="absolute -inset-8 md:-inset-12 bg-gradient-to-b from-orange/[0.03] via-transparent to-transparent rounded-3xl pointer-events-none" />
+          <div className="relative">
+            <SolutionDevices />
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[60%] h-[1px] bg-gradient-to-r from-transparent via-orange/20 to-transparent" />
+          </div>
         </ScrollReveal>
       </div>
     </section>
