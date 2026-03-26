@@ -2,6 +2,92 @@ import { Check } from "lucide-react";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
+function BeforeAfterShowcase() {
+  const BASE = import.meta.env.BASE_URL;
+  return (
+    <div className="relative w-full">
+      <div className="flex gap-4 items-end">
+        <div className="flex-1 flex flex-col">
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-stone/60 mb-2 text-center">Before</span>
+          <div className="relative rounded-lg overflow-hidden border border-gunmetal/60 shadow-xl shadow-black/40 opacity-75 grayscale-[30%]">
+            <img
+              src={`${BASE}wce-before.png`}
+              alt="West Coast Eye Institute — outdated website before redesign"
+              className="w-full block"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
+          </div>
+        </div>
+
+        <div className="flex-1 flex flex-col">
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-orange mb-2 text-center">After</span>
+          <div className="relative rounded-lg overflow-hidden border border-orange/30 shadow-2xl shadow-orange/10">
+            <img
+              src={`${BASE}wce-after-desktop.png`}
+              alt="West Coast Eye Institute — modern redesigned website by Graylock Digital"
+              className="w-full block"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute -bottom-4 right-[2%] w-[18%] z-20">
+        <div className="relative rounded-xl overflow-hidden border-2 border-orange/40 shadow-2xl shadow-orange/20">
+          <img
+            src={`${BASE}wce-after-mobile.jpeg`}
+            alt="West Coast Eye Institute — mobile responsive redesign"
+            className="w-full block"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function BeforeAfterShowcaseMobile() {
+  const BASE = import.meta.env.BASE_URL;
+  return (
+    <div className="relative w-full">
+      <div className="flex gap-3 items-end">
+        <div className="flex-[1.2] flex flex-col">
+          <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-stone/60 mb-1.5 text-center">Before</span>
+          <div className="relative rounded-lg overflow-hidden border border-gunmetal/60 shadow-lg shadow-black/30 opacity-75 grayscale-[30%]">
+            <img
+              src={`${BASE}wce-before.png`}
+              alt="Outdated website before redesign"
+              className="w-full block"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
+          </div>
+        </div>
+
+        <div className="flex-[1.2] flex flex-col">
+          <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-orange mb-1.5 text-center">After</span>
+          <div className="relative rounded-lg overflow-hidden border border-orange/30 shadow-xl shadow-orange/10">
+            <img
+              src={`${BASE}wce-after-desktop.png`}
+              alt="Modern redesigned website by Graylock Digital"
+              className="w-full block"
+            />
+          </div>
+        </div>
+
+        <div className="flex-[0.55] flex flex-col">
+          <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-orange/60 mb-1.5 text-center">Mobile</span>
+          <div className="relative rounded-lg overflow-hidden border border-orange/30 shadow-xl shadow-orange/10">
+            <img
+              src={`${BASE}wce-after-mobile.jpeg`}
+              alt="Mobile responsive redesign"
+              className="w-full block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function HeroSection() {
   return (
     <section className="bg-charcoal pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden relative">
@@ -13,13 +99,9 @@ export function HeroSection() {
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
-        <div className="lg:hidden mb-8">
+        <div className="lg:hidden mb-10">
           <ScrollReveal>
-            <img
-              src={`${import.meta.env.BASE_URL}hero-before-after.png`}
-              alt="Professional website displayed across laptop, tablet, and mobile devices"
-              className="w-full"
-            />
+            <BeforeAfterShowcaseMobile />
           </ScrollReveal>
         </div>
 
@@ -59,11 +141,7 @@ export function HeroSection() {
 
           <div className="hidden lg:block">
             <ScrollReveal delay={0.2}>
-              <img
-                src={`${import.meta.env.BASE_URL}hero-before-after.png`}
-                alt="Professional website displayed across laptop, tablet, and mobile devices"
-                className="w-full"
-              />
+              <BeforeAfterShowcase />
             </ScrollReveal>
           </div>
         </div>
