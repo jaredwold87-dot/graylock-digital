@@ -18,7 +18,7 @@ const data: IndustryPageData = {
   seo: {
     title: "Websites for Small Business Owners | $79/mo | Graylock Digital",
     description:
-      "Graylock Digital builds high-converting websites for small business owners — fast (5 days), affordable ($79/mo), and fully managed. No tech headaches. Free website review.",
+      "Graylock Digital builds high-converting websites for small business owners — fast (3–5 days), affordable ($79/mo), and fully managed. No tech headaches. Free website review.",
     url: "https://graylockdigital.com/websites-for-small-business-owners",
   },
   hero: {
@@ -30,7 +30,7 @@ const data: IndustryPageData = {
       "You built your business from the ground up. Your website should reflect that — not embarrass you. We build high-converting, professionally maintained websites for small business owners. Fast, affordable, no BS.",
     cta: "Book Your Free Website Review",
     trustSignals: [
-      "5 business days",
+      "3–5 business days",
       "$79/month",
       "Free demo first",
       "100% American team",
@@ -82,7 +82,7 @@ const data: IndustryPageData = {
     headline: "Finally — A Website Partner Who Delivers Before You Pay",
     items: [
       {
-        title: "Built in 5 Business Days",
+        title: "Built in 3–5 Business Days",
         description:
           "No endless back-and-forth. You approve, we launch. Your new website is live and working within one business week.",
       },
@@ -114,7 +114,7 @@ const data: IndustryPageData = {
     ],
   },
   process: {
-    headline: "From Call to Launch in 5 Days",
+    headline: "From Call to Launch in Days, Not Months",
     steps: [
       {
         title: "Book a Free Call",
@@ -170,7 +170,7 @@ const data: IndustryPageData = {
     },
     {
       q: "How fast can you build my website?",
-      a: "Once you approve the plan and pay the setup fee, your website is live within 5 business days. Most clients are surprised at how fast it happens.",
+      a: "Once you approve the plan and pay the setup fee, your website is typically live within 3–5 business days. Much of the timeline depends on how quickly you can provide feedback, photos, and logos. Most clients are surprised at how fast it happens.",
     },
     {
       q: "Do I own my website?",
@@ -219,7 +219,7 @@ const data: IndustryPageData = {
         name: "How fast can you build my website?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Your website is live within 5 business days after approval.",
+          text: "Your website is typically live within 3–5 business days after approval.",
         },
       },
     ],

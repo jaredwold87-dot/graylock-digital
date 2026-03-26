@@ -13,7 +13,7 @@ export default function HowItWorks() {
     {
       day: "Day 1–2",
       title: "The Build",
-      desc: "Once you approve the plan and pay the setup fee, our team gets to work. We craft custom copy, source high-quality imagery, and build a blazing-fast site — all within 5 business days. Throughout the build, you'll have full transparency: a dedicated project portal where you can upload assets, communicate directly with our team, and track progress in real time."
+      desc: "Once you approve the plan and pay the setup fee, our team gets to work. We craft custom copy, source high-quality imagery, and build a blazing-fast site — typically within 3–5 business days. Throughout the build, you'll have full transparency: a dedicated project portal where you can upload assets, communicate directly with our team, and track progress in real time."
     },
     {
       day: "Day 3–4",
@@ -35,7 +35,7 @@ export default function HowItWorks() {
         <div className="max-w-4xl mx-auto text-center">
           <ScrollReveal>
             <h1 className="text-4xl md:text-6xl font-display mb-6">Our Proven Process</h1>
-            <p className="text-xl font-sans text-gray-600">From an outdated liability to a lead-generating asset — within 5 business days.</p>
+            <p className="text-xl font-sans text-gray-600">From an outdated liability to a lead-generating asset — within 3–5 business days.</p>
           </ScrollReveal>
         </div>
       </section>

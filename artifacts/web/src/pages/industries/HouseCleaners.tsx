@@ -20,7 +20,7 @@ const data: IndustryPageData = {
   seo: {
     title: "Websites for House Cleaners & Cleaning Companies | $79/mo | Graylock Digital",
     description:
-      "Graylock builds professional, trust-building websites for house cleaners and residential cleaning companies. Quote forms, service pages, local SEO. Built in 5 days. $79/mo. Free demo.",
+      "Graylock builds professional, trust-building websites for house cleaners and residential cleaning companies. Quote forms, service pages, local SEO. Built in 3–5 days. $79/mo. Free demo.",
     url: "https://graylockdigital.com/websites-for-house-cleaners",
   },
   hero: {
@@ -32,7 +32,7 @@ const data: IndustryPageData = {
       "Homeowners need to trust the people they let in their home. A professional website makes you the obvious choice. Graylock builds clean, credible, SEO-optimized websites for independent cleaners and cleaning companies — fast, affordable, and fully managed.",
     cta: "Get Your Free Website Review",
     trustSignals: [
-      "5-day build",
+      "3–5 day build",
       "Quote forms included",
       "Local SEO optimized",
       "$79/month",
@@ -117,7 +117,7 @@ const data: IndustryPageData = {
           "Deep clean, recurring, move-in/out, vacation rental — each service gets its own page.",
       },
       {
-        title: "Built in 5 Days for $79/month",
+        title: "Built in 3–5 Days for $79/month",
         description:
           "Less than one cleaning job per month. The ROI pays for itself with your first online booking.",
       },
@@ -174,7 +174,7 @@ const data: IndustryPageData = {
     ],
   },
   process: {
-    headline: "From Call to Bookings in 5 Days",
+    headline: "From Call to Bookings in Days, Not Months",
     steps: [
       {
         title: "Tell Us About Your Business",

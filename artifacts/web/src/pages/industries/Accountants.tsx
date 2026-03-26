@@ -18,7 +18,7 @@ const data: IndustryPageData = {
   seo: {
     title: "Websites for Accountants & CPA Firms | $79/mo | Graylock Digital",
     description:
-      "Graylock builds professional, SEO-optimized websites for accountants, CPAs, and tax professionals. Services pages, local SEO, client inquiry forms. Built in 5 days. $79/mo. Free demo.",
+      "Graylock builds professional, SEO-optimized websites for accountants, CPAs, and tax professionals. Services pages, local SEO, client inquiry forms. Built in 3–5 days. $79/mo. Free demo.",
     url: "https://graylockdigital.com/websites-for-accountants",
   },
   hero: {
@@ -33,7 +33,7 @@ const data: IndustryPageData = {
       "Services pages for every offering",
       "Local SEO included",
       "Free demo first",
-      "5-day build",
+      "3–5 day build",
     ],
   },
   specialties: {
@@ -115,7 +115,7 @@ const data: IndustryPageData = {
           "Included on Standard and Growth plans so you show up on Google Maps and local results.",
       },
       {
-        title: "Built in 5 Business Days",
+        title: "Built in 3–5 Business Days",
         description:
           "Before tax season or after — your call. We move fast so you don't have to wait.",
       },
@@ -172,7 +172,7 @@ const data: IndustryPageData = {
     ],
   },
   process: {
-    headline: "From Call to Live in 5 Days",
+    headline: "From Call to Live in Days, Not Months",
     steps: [
       {
         title: "Tell Us About Your Firm",
@@ -232,7 +232,7 @@ const data: IndustryPageData = {
     },
     {
       q: "I'm too busy during tax season to work on a website. Can we start now?",
-      a: "We built our process to be fast and low-effort on your end. Most of the information we need can be gathered in a 20-minute call. You review and approve, we do the rest. 5 days from approval to live.",
+      a: "We built our process to be fast and low-effort on your end. Most of the information we need can be gathered in a 20-minute call. You review and approve, we do the rest. 3–5 business days from approval to live on average — the exact timeline depends on how quickly you can provide feedback, logos, and photos.",
     },
     {
       q: "Can we add team member bios and photos?",

@@ -113,7 +113,7 @@ export const FAQS = [
       },
       {
         q: "How long does it take to build and launch my website?",
-        a: "Once you give us the green light, we build and launch your website within 5 business days. We move fast because small businesses can't afford to wait weeks for a website.\n\nBefore we start building, we'll have a short onboarding call to gather your logo, photos, business info, and anything specific you want included. The faster you can get us that information, the faster we launch."
+        a: "Once you give us the green light, we build and launch your website within 3–5 business days on average. We move fast because small businesses can't afford to wait weeks for a website.\n\nBefore we start building, we'll have a short onboarding call to gather your logo, photos, business info, and anything specific you want included. Much of the timeline depends on how quickly you can provide feedback and materials — the faster you can get us that information, the faster we launch."
       },
       {
         q: "What information do you need from me to get started?",
@@ -153,7 +153,7 @@ export const FAQS = [
       },
       {
         q: "Is my website built on a template or is it custom?",
-        a: "Every website we build is custom to your business — not a drag-and-drop template. We design your site around your brand, your services, your local market, and the specific clients you're trying to attract.\n\nThat said, we work from a proven structural framework that lets us move fast (within 5 business days) without sacrificing quality. Think of it like a custom-built home using tested construction methods — not a prefab kit."
+        a: "Every website we build is custom to your business — not a drag-and-drop template. We design your site around your brand, your services, your local market, and the specific clients you're trying to attract.\n\nThat said, we work from a proven structural framework that lets us move fast (within 3–5 business days) without sacrificing quality. Think of it like a custom-built home using tested construction methods — not a prefab kit."
       },
       {
         q: "Will my site work on mobile phones?",

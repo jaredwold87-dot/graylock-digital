@@ -7,7 +7,7 @@ export default function About() {
   const values = [
     { title: "Done-For-You", desc: "We don't sell tools, we sell results. We take the burden entirely off your plate." },
     { title: "Transparent", desc: "No hidden fees, no confusing jargon, and no holding your digital assets hostage." },
-    { title: "Fast", desc: "We move fast because we've done this hundreds of times — not because we cut corners. Our structured process, proven build framework, and experienced team let us deliver within 5 business days without sacrificing an ounce of quality." },
+    { title: "Fast", desc: "We move fast because we have a refined, repeatable process — not because we cut corners. Our structured process, proven build framework, and experienced team let us deliver within 3–5 business days without sacrificing an ounce of quality." },
     { title: "Relationship-Driven", desc: "We aren't a faceless platform. You always know exactly who is working on your site." }
   ];
 

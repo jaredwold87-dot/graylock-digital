@@ -19,7 +19,7 @@ const data: IndustryPageData = {
   seo: {
     title: "Websites for Lawyers & Law Firms | $79/mo | Graylock Digital",
     description:
-      "Graylock builds professional, SEO-optimized websites for solo attorneys and small law firms. Practice area pages, attorney bios, client intake forms. Built in 5 days. Free demo. $79/mo.",
+      "Graylock builds professional, SEO-optimized websites for solo attorneys and small law firms. Practice area pages, attorney bios, client intake forms. Built in 3–5 days. Free demo. $79/mo.",
     url: "https://graylockdigital.com/websites-for-lawyers",
   },
   hero: {
@@ -117,7 +117,7 @@ const data: IndustryPageData = {
           "Significantly less than LawLytics or FindLaw. Professional quality at a fraction of the cost.",
       },
       {
-        title: "Built in 5 Business Days",
+        title: "Built in 3–5 Business Days",
         description:
           "No months of waiting. From consultation to live website in one business week.",
       },
@@ -230,7 +230,7 @@ const data: IndustryPageData = {
     },
     {
       q: "How does your pricing compare to LawLytics?",
-      a: "LawLytics starts at approximately $150–$225/month. Graylock starts at $79/month with a $299 setup fee — meaningfully less expensive, with a custom design, 5-day build, and the same month-to-month flexibility.",
+      a: "LawLytics starts at approximately $150–$225/month. Graylock starts at $79/month with a $299 setup fee — meaningfully less expensive, with a custom design, 3–5 day build, and the same month-to-month flexibility.",
     },
     {
       q: "Can you include an online consultation request form?",
@@ -238,7 +238,7 @@ const data: IndustryPageData = {
     },
     {
       q: "How long does it take to build a law firm website?",
-      a: "5 business days from when you approve the plan and pay the setup fee. We gather everything we need in the initial call and onboarding form.",
+      a: "3–5 business days on average from when you approve the plan and pay the setup fee. The exact timeline depends on how quickly you can provide feedback, photos, and any materials. We gather everything we need in the initial call and onboarding form.",
     },
     {
       q: "Do you understand attorney advertising rules?",

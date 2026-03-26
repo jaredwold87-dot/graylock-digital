@@ -18,7 +18,7 @@ const data: IndustryPageData = {
   seo: {
     title: "Websites for Solo Practitioners | Private Practice Websites | $79/mo | Graylock Digital",
     description:
-      "Graylock builds warm, professional websites for solo practitioners in private practice. Therapists, counselors, coaches and more. Custom built in 5 days. Starting at $79/mo. Free demo.",
+      "Graylock builds warm, professional websites for solo practitioners in private practice. Therapists, counselors, coaches and more. Custom built in 3–5 days. Starting at $79/mo. Free demo.",
     url: "https://graylockdigital.com/websites-for-solo-practitioners",
   },
   hero: {
@@ -117,7 +117,7 @@ const data: IndustryPageData = {
           "Contact and intake inquiry forms included from day one so potential clients can reach you easily.",
       },
       {
-        title: "Built in 5 Business Days",
+        title: "Built in 3–5 Business Days",
         description:
           "No months of delays. Your new professional website is live within one business week.",
       },

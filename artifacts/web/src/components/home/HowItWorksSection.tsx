@@ -21,7 +21,7 @@ export function HowItWorksSection() {
     {
       num: "04",
       title: "You Decide — No Pressure",
-      desc: "Love it? We build the full site within 5 business days and launch. Not ready? No problem. You keep the evaluation insights, the full report, and the demo concept. Zero hard feelings."
+      desc: "Love it? We build the full site within 3–5 business days and launch. Not ready? No problem. You keep the evaluation insights, the full report, and the demo concept. Zero hard feelings."
     }
   ];
 
