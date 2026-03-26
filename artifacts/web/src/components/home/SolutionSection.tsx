@@ -29,11 +29,11 @@ function SolutionLaptop() {
 function SolutionTablet() {
   return (
     <div className="relative w-full rounded-[16px] bg-[#1c1c1e] border-[2.5px] border-[#3a3a3c] shadow-2xl shadow-black/60 overflow-hidden p-[3px]">
-      <div className="absolute top-[3px] left-1/2 -translate-x-1/2 w-[20%] h-[5px] bg-[#1c1c1e] rounded-b-lg z-10 border-x border-b border-[#3a3a3c]" />
-      <div className="relative w-full rounded-[12px] overflow-hidden bg-[#1c1c1e]" style={{ aspectRatio: "3/4" }}>
+      <div className="absolute top-1/2 right-[3px] -translate-y-1/2 w-[5px] h-[15%] bg-[#1c1c1e] rounded-l-lg z-10 border-y border-l border-[#3a3a3c]" />
+      <div className="relative w-full rounded-[12px] overflow-hidden bg-[#1c1c1e]" style={{ aspectRatio: "4/3" }}>
         <picture>
           <source srcSet={`${BASE}wce-after-desktop.webp`} type="image/webp" />
-          <img src={`${BASE}wce-after-desktop.png`} alt="" className="w-full h-full object-cover object-left-top" loading="lazy" />
+          <img src={`${BASE}wce-after-desktop.png`} alt="" className="w-full h-full object-cover object-top" loading="lazy" />
         </picture>
       </div>
     </div>
@@ -56,15 +56,15 @@ function SolutionPhone() {
 
 function SolutionDevices() {
   return (
-    <div className="flex items-end justify-center gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl mx-auto px-4">
+    <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 w-full max-w-5xl mx-auto px-4">
       <div className="flex-[2.5]">
         <SolutionLaptop />
       </div>
-      <div className="flex-[0.65] hidden sm:block">
-        <SolutionPhone />
-      </div>
-      <div className="flex-[1.2] hidden md:block">
+      <div className="flex-[1.4] hidden md:block">
         <SolutionTablet />
+      </div>
+      <div className="flex-[0.55] hidden sm:block">
+        <SolutionPhone />
       </div>
     </div>
   );
