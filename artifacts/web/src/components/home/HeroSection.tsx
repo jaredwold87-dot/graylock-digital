@@ -40,13 +40,13 @@ function LaptopFrame({ showAfter }: { showAfter: boolean }) {
           <span className="flex-1 mx-2 h-4 rounded-md bg-[#1c1c1e] border border-[#3a3a3c]" />
         </div>
 
-        <div className="relative w-full" style={{ aspectRatio: "16/10" }} aria-label="Website redesign comparison on laptop" role="img">
+        <div className="relative w-full bg-[#1c1c1e]" style={{ aspectRatio: "1919/927" }} aria-label="Website redesign comparison on laptop" role="img">
           <picture>
             <source srcSet={`${BASE}wce-before.webp`} type="image/webp" />
             <img
               src={`${BASE}wce-before.png`}
               alt=""
-              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+              className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
               style={{ opacity: showAfter ? 0 : 1 }}
               width={1024}
               height={640}
@@ -58,7 +58,7 @@ function LaptopFrame({ showAfter }: { showAfter: boolean }) {
             <img
               src={`${BASE}wce-after-desktop.png`}
               alt=""
-              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+              className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
               style={{ opacity: showAfter ? 1 : 0 }}
               width={1024}
               height={640}
@@ -145,10 +145,10 @@ export function HeroSection() {
   return (
     <section className="bg-charcoal pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden relative">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url(${BASE}hero-bg.png)` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{ backgroundImage: `url(${BASE}hero-bg-premium.webp)` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-charcoal/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/70 to-charcoal/30" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         {!isLg && (
