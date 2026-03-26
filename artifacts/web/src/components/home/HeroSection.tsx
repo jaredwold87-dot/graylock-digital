@@ -51,7 +51,7 @@ function DeviceMockups() {
             className="w-full block drop-shadow-2xl"
             width={816}
             height={1456}
-            loading="eager"
+            loading="lazy"
           />
         </picture>
       </div>
