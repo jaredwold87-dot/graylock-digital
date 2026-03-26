@@ -129,11 +129,11 @@ function DeviceShowcase() {
   const showAfter = useFlip(2200);
   const isLg = useIsLg();
   return (
-    <div className={`flex items-end w-full ${isLg ? "gap-5" : "gap-3 sm:gap-4 px-2"}`}>
-      <div className={isLg ? "flex-[2.2]" : "flex-[2]"}>
+    <div className={`flex items-center w-full ${isLg ? "gap-6 justify-center" : "gap-3 sm:gap-4 px-2"}`}>
+      <div className={isLg ? "flex-[2.8]" : "flex-[2]"}>
         <LaptopFrame showAfter={showAfter} />
       </div>
-      <div className={isLg ? "flex-[0.7]" : "flex-[0.65]"}>
+      <div className={isLg ? "flex-[0.85]" : "flex-[0.65]"}>
         <PhoneFrame showAfter={showAfter} />
       </div>
     </div>
