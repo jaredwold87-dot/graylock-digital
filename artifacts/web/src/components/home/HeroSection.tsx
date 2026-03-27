@@ -29,76 +29,50 @@ function useIsLg() {
   return isLg;
 }
 
-function LaptopFrame({ showAfter }: { showAfter: boolean }) {
+function LaptopMockup({ showAfter }: { showAfter: boolean }) {
   return (
     <div className="flex flex-col items-center relative">
       <div
-        className="absolute -inset-4 lg:-inset-6 rounded-3xl opacity-30 blur-2xl transition-colors duration-700 pointer-events-none"
-        style={{ background: showAfter
-          ? "radial-gradient(ellipse at center, rgba(232,99,26,0.5) 0%, transparent 70%)"
-          : "radial-gradient(ellipse at center, rgba(232,99,26,0.25) 0%, transparent 70%)"
+        className="absolute -inset-6 lg:-inset-10 rounded-3xl blur-2xl pointer-events-none transition-opacity duration-700"
+        style={{
+          background: "radial-gradient(ellipse at center, rgba(232,99,26,0.35) 0%, transparent 70%)",
+          opacity: showAfter ? 1 : 0.6,
         }}
       />
       <div
-        className="relative w-full rounded-t-xl bg-[#1c1c1e] overflow-hidden"
-        style={{
-          border: "1px solid rgba(255,255,255,0.08)",
-          boxShadow: "0 25px 60px -12px rgba(0,0,0,0.7), 0 0 40px -8px rgba(232,99,26,0.15), inset 0 1px 0 rgba(255,255,255,0.06)"
-        }}
+        className="relative w-full"
+        style={{ aspectRatio: "1952/994" }}
+        aria-label="Website redesign comparison on laptop"
+        role="img"
       >
-        <div className="flex items-center gap-1.5 px-3 py-1.5 bg-[#2c2c2e]/80 border-b border-white/[0.06]">
-          <span className="w-2 h-2 rounded-full bg-[#ff5f57]" />
-          <span className="w-2 h-2 rounded-full bg-[#febc2e]" />
-          <span className="w-2 h-2 rounded-full bg-[#28c840]" />
-          <span className="flex-1 mx-2 h-4 rounded-md bg-[#1c1c1e] border border-white/[0.06]" />
-        </div>
-
-        <div className="relative w-full bg-[#1c1c1e]" style={{ aspectRatio: "1920/930" }} aria-label="Website redesign comparison on laptop" role="img">
-          <picture>
-            <source srcSet={`${BASE}before-desktop.webp`} type="image/webp" />
-            <img
-              src={`${BASE}before-desktop.png`}
-              alt=""
-              className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-              style={{ opacity: showAfter ? 0 : 1 }}
-              width={1920}
-              height={930}
-              loading="eager"
-            />
-          </picture>
-          <picture>
-            <source srcSet={`${BASE}after-desktop.webp`} type="image/webp" />
-            <img
-              src={`${BASE}after-desktop.png`}
-              alt=""
-              className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-              style={{ opacity: showAfter ? 1 : 0 }}
-              width={1920}
-              height={930}
-              loading="eager"
-            />
-          </picture>
-        </div>
+        <picture>
+          <source srcSet={`${BASE}mockup-laptop-before.webp`} type="image/webp" />
+          <img
+            src={`${BASE}mockup-laptop-before.png`}
+            alt=""
+            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+            style={{ opacity: showAfter ? 0 : 1 }}
+            width={1952}
+            height={994}
+            loading="eager"
+          />
+        </picture>
+        <picture>
+          <source srcSet={`${BASE}mockup-laptop-after.webp`} type="image/webp" />
+          <img
+            src={`${BASE}mockup-laptop-after.png`}
+            alt=""
+            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+            style={{ opacity: showAfter ? 1 : 0 }}
+            width={1952}
+            height={994}
+            loading="eager"
+          />
+        </picture>
       </div>
 
-      <div
-        className="w-[90%] h-3 rounded-b-lg"
-        style={{
-          background: "linear-gradient(to bottom, #2c2c2e, #1c1c1e)",
-          border: "1px solid rgba(255,255,255,0.06)",
-          borderTop: "none"
-        }}
-      />
-      <div
-        className="w-[110%] h-[6px] rounded-b-xl"
-        style={{
-          background: "linear-gradient(to bottom, #3a3a3c, #2c2c2e)",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.4)"
-        }}
-      />
-
       <span
-        className="mt-3 text-[10px] font-sans font-bold uppercase tracking-widest transition-colors duration-500"
+        className="mt-4 text-xs sm:text-sm font-sans font-bold uppercase tracking-[0.2em] transition-colors duration-500"
         style={{ color: showAfter ? "#E8631A" : "#8A8F9E" }}
       >
         {showAfter ? "After" : "Before"}
@@ -107,55 +81,50 @@ function LaptopFrame({ showAfter }: { showAfter: boolean }) {
   );
 }
 
-function PhoneFrame({ showAfter }: { showAfter: boolean }) {
+function PhoneMockup({ showAfter }: { showAfter: boolean }) {
   return (
     <div className="flex flex-col items-center relative">
       <div
-        className="absolute -inset-4 lg:-inset-6 rounded-3xl opacity-30 blur-2xl transition-colors duration-700 pointer-events-none"
-        style={{ background: showAfter
-          ? "radial-gradient(ellipse at center, rgba(232,99,26,0.5) 0%, transparent 70%)"
-          : "radial-gradient(ellipse at center, rgba(232,99,26,0.25) 0%, transparent 70%)"
+        className="absolute -inset-4 lg:-inset-8 rounded-3xl blur-2xl pointer-events-none transition-opacity duration-700"
+        style={{
+          background: "radial-gradient(ellipse at center, rgba(232,99,26,0.35) 0%, transparent 70%)",
+          opacity: showAfter ? 1 : 0.6,
         }}
       />
       <div
-        className="relative w-full rounded-[20px] lg:rounded-[24px] bg-[#1c1c1e] overflow-hidden p-[3px] lg:p-1"
-        style={{
-          border: "2.5px solid rgba(255,255,255,0.08)",
-          boxShadow: "0 25px 60px -12px rgba(0,0,0,0.7), 0 0 40px -8px rgba(232,99,26,0.15), inset 0 1px 0 rgba(255,255,255,0.06)"
-        }}
+        className="relative w-full"
+        style={{ aspectRatio: "410/864" }}
+        aria-label="Website redesign comparison on mobile"
+        role="img"
       >
-        <div className="absolute top-[3px] lg:top-1 left-1/2 -translate-x-1/2 w-[30%] h-[5px] lg:h-[6px] bg-[#1c1c1e] rounded-b-lg z-10 border-x border-b border-white/[0.06]" />
-
-        <div className="relative w-full rounded-[16px] lg:rounded-[20px] overflow-hidden" style={{ aspectRatio: "9/19.5" }} aria-label="Website redesign comparison on mobile" role="img">
-          <picture>
-            <source srcSet={`${BASE}before-mobile.webp`} type="image/webp" />
-            <img
-              src={`${BASE}before-mobile.png`}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
-              style={{ opacity: showAfter ? 0 : 1 }}
-              width={390}
-              height={844}
-              loading="eager"
-            />
-          </picture>
-          <picture>
-            <source srcSet={`${BASE}after-mobile.webp`} type="image/webp" />
-            <img
-              src={`${BASE}after-mobile.png`}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
-              style={{ opacity: showAfter ? 1 : 0 }}
-              width={390}
-              height={844}
-              loading="eager"
-            />
-          </picture>
-        </div>
+        <picture>
+          <source srcSet={`${BASE}mockup-phone-before.webp`} type="image/webp" />
+          <img
+            src={`${BASE}mockup-phone-before.png`}
+            alt=""
+            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+            style={{ opacity: showAfter ? 0 : 1 }}
+            width={410}
+            height={864}
+            loading="eager"
+          />
+        </picture>
+        <picture>
+          <source srcSet={`${BASE}mockup-phone-after.webp`} type="image/webp" />
+          <img
+            src={`${BASE}mockup-phone-after.png`}
+            alt=""
+            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+            style={{ opacity: showAfter ? 1 : 0 }}
+            width={410}
+            height={864}
+            loading="eager"
+          />
+        </picture>
       </div>
 
       <span
-        className="mt-3 text-[10px] font-sans font-bold uppercase tracking-widest transition-colors duration-500"
+        className="mt-4 text-xs sm:text-sm font-sans font-bold uppercase tracking-[0.2em] transition-colors duration-500"
         style={{ color: showAfter ? "#E8631A" : "#8A8F9E" }}
       >
         {showAfter ? "After" : "Before"}
@@ -170,10 +139,10 @@ function DeviceShowcase() {
   return (
     <div className={`flex items-center w-full ${isLg ? "gap-6 justify-center" : "gap-3 sm:gap-4 px-2"}`}>
       <div className={isLg ? "flex-[2.8]" : "flex-[2]"}>
-        <LaptopFrame showAfter={showAfter} />
+        <LaptopMockup showAfter={showAfter} />
       </div>
       <div className={isLg ? "flex-[0.85]" : "flex-[0.65]"}>
-        <PhoneFrame showAfter={showAfter} />
+        <PhoneMockup showAfter={showAfter} />
       </div>
     </div>
   );
