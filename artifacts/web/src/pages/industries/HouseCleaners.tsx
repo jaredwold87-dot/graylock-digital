@@ -159,8 +159,8 @@ const data: IndustryPageData = {
       },
       {
         icon: Search,
-        title: "Google Business Profile",
-        description: "Full setup on Standard and Growth plans.",
+        title: "Google Business Profile (Standard & Growth)",
+        description: "Full setup so you appear in local map results.",
       },
       {
         icon: ShieldCheck,
@@ -201,11 +201,11 @@ const data: IndustryPageData = {
   },
   testimonials: {
     featured: {
-      name: "Sarah M.",
-      title: "Licensed Therapist",
-      location: "Reno, NV",
+      name: "Lisa R.",
+      title: "Owner, Sparkle Clean Residential",
+      location: "Scottsdale, AZ",
       quote:
-        "My old site looked outdated and unprofessional. Graylock built me a beautiful new site in under a week, and I finally feel confident sending people to it. Best decision I've made for my practice.",
+        "I was posting on Nextdoor and hoping for referrals. Graylock built me a real website with a quote form, and now I get new booking requests every week straight from Google. It paid for itself the first month.",
     },
     others: [
       {

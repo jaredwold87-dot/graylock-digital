@@ -143,12 +143,12 @@ const data: IndustryPageData = {
         description: "Built-in intake and inquiry forms for new client requests.",
       },
       {
-        icon: Building2,
-        title: "Location & Hours Pages",
-        description: "Multi-location support with hours and directions for each office.",
+        icon: Search,
+        title: "Google Business Profile (Standard & Growth)",
+        description: "Full setup so your practice appears in local map results.",
       },
       {
-        icon: Search,
+        icon: Building2,
         title: "Local SEO Per Specialty",
         description: "Each specialty page is optimized to rank on Google individually.",
       },
@@ -186,26 +186,26 @@ const data: IndustryPageData = {
   },
   testimonials: {
     featured: {
-      name: "Sarah M.",
-      title: "Licensed Therapist",
-      location: "Reno, NV",
+      name: "Dr. Rachel W.",
+      title: "Clinical Director, Mindful Wellness Group",
+      location: "Portland, OR",
       quote:
-        "My old site looked outdated and unprofessional. Graylock built me a beautiful new site in under a week, and I finally feel confident sending people to it. Best decision I've made for my practice.",
+        "We had five clinicians and a website that still looked like a solo practice. Graylock built us a multi-provider site with individual bio pages for each therapist. Our new client inquiries increased significantly within the first month.",
     },
     others: [
       {
-        name: "Elena R.",
-        title: "Family Attorney",
-        location: "Austin, TX",
+        name: "Sarah M.",
+        title: "Licensed Therapist",
+        location: "Reno, NV",
         quote:
-          "The done-for-you aspect is exactly what I needed. I bill by the hour, so I can't afford to waste time with WordPress.",
+          "Graylock built me a beautiful site in under a week. I finally have a site I'm proud to share with clients.",
       },
       {
-        name: "David K.",
-        title: "CPA & Tax Advisor",
-        location: "Henderson, NV",
+        name: "Dr. Kevin T.",
+        title: "Owner, Summit Physical Therapy",
+        location: "Salt Lake City, UT",
         quote:
-          "I just email Tim and it's done the next day. Like having a full-time web developer on staff.",
+          "Adding new therapists to our site used to be a nightmare. Now I just email the team and it's updated within a day. So much easier.",
       },
     ],
   },

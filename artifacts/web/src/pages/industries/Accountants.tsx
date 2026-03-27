@@ -147,7 +147,7 @@ const data: IndustryPageData = {
       },
       {
         icon: Search,
-        title: "Google Business Profile",
+        title: "Google Business Profile (Standard & Growth)",
         description: "Full setup so you appear in local map results.",
       },
       {
@@ -207,18 +207,18 @@ const data: IndustryPageData = {
     },
     others: [
       {
-        name: "Sarah M.",
-        title: "Licensed Therapist",
-        location: "Reno, NV",
+        name: "Elena R.",
+        title: "Family Attorney",
+        location: "Austin, TX",
         quote:
-          "Graylock built me a beautiful site in under a week. I finally have a site I'm proud to share with clients.",
+          "The done-for-you aspect is exactly what I needed. I bill by the hour, so I can't afford to waste time with WordPress.",
       },
       {
-        name: "Marcus T.",
-        title: "General Contractor",
-        location: "Phoenix, AZ",
+        name: "Jennifer P.",
+        title: "Bookkeeper",
+        location: "Boise, ID",
         quote:
-          "Agencies wanted $10k+ to build a site. Graylock got me up and running for the setup fee with total peace of mind.",
+          "I was invisible on Google and losing clients to the big chains. Now my site shows up for bookkeeping searches in my area, and I've picked up several new monthly clients.",
       },
     ],
   },

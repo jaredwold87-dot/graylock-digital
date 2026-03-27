@@ -152,7 +152,7 @@ const data: IndustryPageData = {
       },
       {
         icon: Search,
-        title: "Google Business Profile Setup",
+        title: "Google Business Profile Setup (Standard & Growth)",
         description: "Get set up on Google Maps and local search results.",
       },
       {
@@ -219,11 +219,11 @@ const data: IndustryPageData = {
           "Our new site looks so much more professional. People tell us it's what made them call us over the competition.",
       },
       {
-        name: "David K.",
-        title: "CPA & Tax Advisor",
-        location: "Henderson, NV",
+        name: "Tony M.",
+        title: "Licensed Electrician",
+        location: "Las Vegas, NV",
         quote:
-          "I used to spend hours trying to fix my Wix site. Now I just email Tim and it's done the next day.",
+          "I was getting zero calls from my website. Graylock rebuilt it, added a quote form, and now I get 5–6 new leads a week. Unreal difference.",
       },
     ],
   },

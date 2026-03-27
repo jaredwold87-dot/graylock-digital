@@ -154,8 +154,8 @@ const data: IndustryPageData = {
       },
       {
         icon: Search,
-        title: "Google Business Profile",
-        description: "Full setup on Standard and Growth plans.",
+        title: "Google Business Profile (Standard & Growth)",
+        description: "Full setup so you appear in local map results.",
       },
       {
         icon: Globe,
@@ -209,18 +209,18 @@ const data: IndustryPageData = {
     },
     others: [
       {
-        name: "David K.",
-        title: "CPA & Tax Advisor",
-        location: "Henderson, NV",
+        name: "Michael S.",
+        title: "Criminal Defense Attorney",
+        location: "Tampa, FL",
         quote:
-          "I just email Tim and it's done the next day. Like having a full-time web developer on staff for a fraction of the cost.",
+          "My old site was embarrassing for a law firm. Graylock built something credible and professional in under a week. The intake form alone has brought in new cases I would have missed.",
       },
       {
-        name: "Sarah M.",
-        title: "Licensed Therapist",
-        location: "Reno, NV",
+        name: "Amanda C.",
+        title: "Estate Planning Attorney",
+        location: "Charlotte, NC",
         quote:
-          "Graylock built me a beautiful site in under a week. I finally have a site I'm proud to share with clients.",
+          "I tried LawLytics and it wasn't worth the premium. Graylock gave me a better site for half the price, and they handle everything.",
       },
     ],
   },

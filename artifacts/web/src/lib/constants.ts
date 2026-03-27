@@ -7,10 +7,10 @@ export const PRICING_TIERS = [
     features: [
       "Custom 5-Page Website",
       "Mobile-First Design",
-      "Basic SEO Setup",
-      "Hosting & SSL Included",
       "Basic Lead Submission Form",
-      "Dashboard + Support"
+      "Basic SEO Setup",
+      "Dashboard + Support",
+      "Hosting & SSL Included"
     ]
   },
   {
@@ -22,13 +22,13 @@ export const PRICING_TIERS = [
     features: [
       "Custom 7-Page Website",
       "5 SEO-Optimized Funnel Pages",
-      "Website Analytics & Visitor Insights",
-      "Edit Business Info + Announcement Banner",
-      "Lead Activity Tracking",
-      "Monthly Performance Report",
-      "Local SEO Optimization",
-      "Enhanced Lead Submission Form",
       "Google Business Profile Setup",
+      "Monthly Performance Report",
+      "Lead Activity Tracking",
+      "Local SEO Optimization",
+      "Website Analytics & Visitor Insights",
+      "Enhanced Lead Submission Form",
+      "Edit Business Info + Announcement Banner",
       "Enhanced Dashboard + Priority Support"
     ]
   },
@@ -41,16 +41,16 @@ export const PRICING_TIERS = [
       "Custom 10-Page Website",
       "10 SEO-Optimized Funnel Pages",
       "Enhanced Dashboard + Priority Support",
+      "Monthly Performance Report",
       "Advanced Lead Generation Form",
       "Full Analytics & Performance Reports",
+      "Advanced SEO & Schema",
+      "Quarterly Strategy Call",
       "Edit All Business Info + Message Banner",
       "Easy Update Request Submission",
-      "Monthly Performance Report",
-      "Advanced SEO & Schema",
       "Quarterly SEO Review",
       "Daily Backups & Scans",
-      "Custom Integrations (Calendly, etc.)",
-      "Quarterly Strategy Call"
+      "Custom Integrations (Calendly, etc.)"
     ]
   },
   {

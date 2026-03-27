@@ -159,7 +159,7 @@ const data: IndustryPageData = {
       },
       {
         icon: Search,
-        title: "Google Business Profile Setup",
+        title: "Google Business Profile Setup (Standard & Growth)",
         description: "Get found on Google Maps and local search results.",
       },
       {
