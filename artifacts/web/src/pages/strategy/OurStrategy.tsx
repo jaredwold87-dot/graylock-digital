@@ -76,7 +76,7 @@ export default function OurStrategy() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display text-offwhite mb-6 leading-[1.1]">
               The Complete Digital Strategy That Gets Small Businesses Found, Trusted, and Booked
             </h1>
-            <p className="text-stone font-sans text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            <p className="text-offwhite/80 font-sans text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               Every element of what we build is connected to one goal: generating qualified leads for your business. Here's how each piece works — and why it matters.
             </p>
           </ScrollReveal>

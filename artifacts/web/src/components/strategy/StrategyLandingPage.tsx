@@ -131,7 +131,7 @@ export default function StrategyLandingPage({ data }: { data: StrategyPageData }
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display text-offwhite mb-6 leading-[1.1]">
               {data.hero.h1}
             </h1>
-            <p className="text-stone font-sans text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-offwhite/80 font-sans text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
               {data.hero.subheadline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
@@ -139,7 +139,7 @@ export default function StrategyLandingPage({ data }: { data: StrategyPageData }
                 {data.hero.ctaButton}
               </CTAButton>
             </div>
-            <p className="text-stone/70 font-sans text-sm">{data.hero.ctaSubtext}</p>
+            <p className="text-offwhite/60 font-sans text-sm">{data.hero.ctaSubtext}</p>
           </ScrollReveal>
         </div>
       </section>

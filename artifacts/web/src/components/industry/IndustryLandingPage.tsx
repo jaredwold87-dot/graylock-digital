@@ -132,7 +132,7 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
               <span className="text-orange">{data.hero.h1Highlight}</span>
             </h1>
 
-            <p className="text-stone font-sans text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
+            <p className="text-offwhite/80 font-sans text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
               {data.hero.subheadline}
             </p>
 
@@ -146,7 +146,7 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
               {data.hero.trustSignals.map((item) => (
                 <div key={item} className="flex items-center gap-2">
                   <Check size={14} className="text-orange" />
-                  <span className="text-stone font-sans">{item}</span>
+                  <span className="text-offwhite/70 font-sans">{item}</span>
                 </div>
               ))}
             </div>
@@ -159,19 +159,19 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
                   <>
                     <div className="bg-navy/80 border border-gunmetal rounded-xl p-6 text-center">
                       <div className="text-3xl font-display text-orange font-bold mb-1">3–5</div>
-                      <div className="text-stone text-xs font-sans uppercase tracking-wider">Day Build</div>
+                      <div className="text-offwhite/70 text-xs font-sans uppercase tracking-wider">Day Build</div>
                     </div>
                     <div className="bg-navy/80 border border-gunmetal rounded-xl p-6 text-center">
                       <div className="text-3xl font-display text-orange font-bold mb-1">{PRICING_TIERS[0].price}</div>
-                      <div className="text-stone text-xs font-sans uppercase tracking-wider">/Month Start</div>
+                      <div className="text-offwhite/70 text-xs font-sans uppercase tracking-wider">/Month Start</div>
                     </div>
                     <div className="bg-navy/80 border border-gunmetal rounded-xl p-6 text-center">
                       <div className="text-3xl font-display text-orange font-bold mb-1">100%</div>
-                      <div className="text-stone text-xs font-sans uppercase tracking-wider">US Team</div>
+                      <div className="text-offwhite/70 text-xs font-sans uppercase tracking-wider">US Team</div>
                     </div>
                     <div className="bg-navy/80 border border-gunmetal rounded-xl p-6 text-center">
                       <div className="text-3xl font-display text-orange font-bold mb-1">Free</div>
-                      <div className="text-stone text-xs font-sans uppercase tracking-wider">Demo First</div>
+                      <div className="text-offwhite/70 text-xs font-sans uppercase tracking-wider">Demo First</div>
                     </div>
                   </>
                 )}
@@ -194,7 +194,7 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
               <span className="text-orange font-display text-2xl md:text-3xl font-bold">
                 {stat.value}
               </span>
-              <span className="text-stone font-sans text-sm">{stat.label}</span>
+              <span className="text-offwhite/70 font-sans text-sm">{stat.label}</span>
             </div>
           ))}
         </div>

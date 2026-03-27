@@ -184,7 +184,7 @@ const data: StrategyPageData = {
     },
     {
       q: "How long does it take to build a website?",
-      a: "We build and launch every website within 3–5 business days of receiving your approval and setup fee. The initial call and onboarding form take less than 30 minutes of your time. The exact timeline depends on how quickly you can provide feedback and materials.",
+      a: "Most websites are built and launched within 3–5 business days on average after receiving your approval and setup fee. Larger or more complex builds may take longer. The initial call and onboarding form take less than 30 minutes of your time. The exact timeline depends on how quickly you can provide feedback and materials.",
     },
     {
       q: "What makes a website 'good' for a service business?",
@@ -234,7 +234,7 @@ const data: StrategyPageData = {
         name: "How long does it take to build a website?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We build and launch every website within 3–5 business days of receiving your approval and setup fee.",
+          text: "Most websites are built and launched within 3–5 business days on average after receiving your approval and setup fee.",
         },
       },
       {
