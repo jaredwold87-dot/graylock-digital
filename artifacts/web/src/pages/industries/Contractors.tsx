@@ -242,7 +242,7 @@ const data: IndustryPageData = {
     },
     {
       q: "What if I work in multiple service areas?",
-      a: "We can build service area pages for each city or county you cover. Standard plan (7 pages) and Growth plan (10 pages) are ideal for contractors serving multiple areas.",
+      a: "We can build service area pages for each city or county you cover. Standard plan (7 pages) and Growth plan (14 pages) are ideal for contractors serving multiple areas.",
     },
     {
       q: "Can I add an online quote request form?",
