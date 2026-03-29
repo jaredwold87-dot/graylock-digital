@@ -152,7 +152,7 @@ const data: IndustryPageData = {
       },
       {
         icon: Search,
-        title: "Google Business Profile Setup (Standard & Growth)",
+        title: "Assistance with Google Business Profile Setup (Standard & Growth)",
         description: "Get set up on Google Maps and local search results.",
       },
       {
@@ -234,7 +234,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Will my site show up when homeowners search for my trade in my area?",
-      a: "Yes. Every site we build includes a local SEO foundation — optimized page titles, location-specific content, schema markup, and Google Business Profile setup on Standard and Growth plans.",
+      a: "Yes. Every site we build includes a local SEO foundation — optimized page titles, location-specific content, schema markup, and assistance with Google Business Profile setup on Standard and Growth plans.",
     },
     {
       q: "I'm not tech-savvy. How much do I need to do?",

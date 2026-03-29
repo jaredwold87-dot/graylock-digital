@@ -93,7 +93,7 @@ const data: StrategyPageData = {
       {
         title: "Monthly performance reporting",
         description:
-          "Every plan includes a monthly report showing traffic, new enquiries, and key metrics. Growth plan clients receive a quarterly strategy review to identify new lead generation opportunities.",
+          "Every plan includes a monthly report showing traffic, new enquiries, and key metrics. Growth plan clients receive an annual strategy review to identify new lead generation opportunities.",
       },
       {
         title: "Google Business Profile optimization",
@@ -135,7 +135,7 @@ const data: StrategyPageData = {
       {
         title: "Conversion Rate Optimization (CRO) for Lead Gen",
         description:
-          "CRO is the practice of systematically improving the percentage of visitors who take a desired action. For a lead-generation website, this means testing and refining: headline copy, CTA button text, form placement, social proof positioning, and page structure. Graylock builds with CRO best practices from day one, and Growth plan clients receive quarterly strategy reviews that include CRO recommendations.",
+          "CRO is the practice of systematically improving the percentage of visitors who take a desired action. For a lead-generation website, this means testing and refining: headline copy, CTA button text, form placement, social proof positioning, and page structure. Graylock builds with CRO best practices from day one, and Growth plan clients receive annual strategy reviews that include CRO recommendations.",
       },
     ],
   },

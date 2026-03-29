@@ -231,7 +231,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Will my cleaning website show up when homeowners search 'house cleaner near me'?",
-      a: "Every Graylock site includes a local SEO foundation. Standard and Growth plans include full local SEO and Google Business Profile setup — essential for showing up in local 'near me' searches.",
+      a: "Every Graylock site includes a local SEO foundation. Standard and Growth plans include full local SEO and assistance with Google Business Profile setup — essential for showing up in local 'near me' searches.",
     },
     {
       q: "Can I include a before-and-after photo gallery?",

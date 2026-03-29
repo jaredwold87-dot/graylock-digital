@@ -22,7 +22,7 @@ export const PRICING_TIERS = [
     features: [
       "Custom 7-Page Website",
       "5 SEO-Optimized Funnel Pages",
-      "Google Business Profile Setup",
+      "Assistance with Google Business Profile Setup",
       "Monthly Performance Report",
       "Lead Activity Tracking",
       "Local SEO Optimization",
@@ -45,11 +45,10 @@ export const PRICING_TIERS = [
       "Advanced Lead Generation Form",
       "Full Analytics & Performance Reports",
       "Advanced SEO & Schema",
-      "Quarterly Strategy Call",
+      "Annual Strategy Call",
       "Edit All Business Info + Message Banner",
       "Easy Update Request Submission",
       "Quarterly SEO Review",
-      "Daily Backups & Scans",
       "Custom Integrations (Calendly, etc.)"
     ]
   },
@@ -60,11 +59,12 @@ export const PRICING_TIERS = [
     features: [
       "Everything in Growth",
       "Custom Page Count",
+      "Custom Applications & Dashboards",
+      "Operating System Builds",
       "Advanced SEO Strategy",
       "Dedicated Account Manager",
       "Custom Reporting Cadence",
-      "Priority Build Queue",
-      "Quarterly Strategy Sessions"
+      "Priority Build Queue"
     ]
   }
 ];
@@ -127,7 +127,7 @@ export const FAQS = [
     questions: [
       {
         q: "What's included in the monthly fee?",
-        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n• Website hosting on fast, secure servers\n• SSL certificate (the padlock that makes your site trusted and secure)\n• Dashboard access and support\n\nStarter plan ($79/mo): Dashboard + support\nStandard plan ($119/mo): Enhanced dashboard + priority support + Google Business Profile setup\nGrowth plan ($199/mo): Enhanced dashboard + custom integrations + priority support + quarterly strategy call\nCustom plan: Tailored to your needs — contact us for a quote\n\nYou can view all plan details on our Pricing page."
+        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n• Website hosting on fast, secure servers\n• SSL certificate (the padlock that makes your site trusted and secure)\n• Dashboard access and support\n\nStarter plan ($79/mo): Dashboard + support\nStandard plan ($119/mo): Enhanced dashboard + priority support + assistance with Google Business Profile setup\nGrowth plan ($199/mo): Enhanced dashboard + custom integrations + priority support + annual strategy call\nCustom plan: Tailored to your needs — contact us for a quote\n\nYou can view all plan details on our Pricing page."
       },
       {
         q: "Is there a setup fee, and what does it cover?",
@@ -171,7 +171,7 @@ export const FAQS = [
     questions: [
       {
         q: "Will my website show up on Google?",
-        a: "We build every website with a solid SEO foundation — clean code structure, fast load times, proper page titles and meta descriptions, schema markup, and mobile optimisation. These are the building blocks that help Google understand and rank your site.\n\nStandard and Growth plans also include local SEO optimisation and Google Business Profile setup, which is critical for service businesses that rely on local search traffic.\n\nSEO takes time — typically 3–6 months to start seeing meaningful movement. But starting with a properly built site is the difference between slow growth and no growth."
+        a: "We build every website with a solid SEO foundation — clean code structure, fast load times, proper page titles and meta descriptions, schema markup, and mobile optimisation. These are the building blocks that help Google understand and rank your site.\n\nStandard and Growth plans also include local SEO optimisation and assistance with Google Business Profile setup, which is critical for service businesses that rely on local search traffic.\n\nSEO takes time — typically 3–6 months to start seeing meaningful movement. But starting with a properly built site is the difference between slow growth and no growth."
       },
       {
         q: "What is the business dashboard, and do all plans include it?",
@@ -193,7 +193,7 @@ export const FAQS = [
       },
       {
         q: "What's the difference between basic SEO and local SEO optimization?",
-        a: "Basic SEO (included in all plans) covers the fundamentals — clean code, fast page speed, proper page titles and meta descriptions, mobile optimization, and a sitemap. These are the building blocks every website needs.\n\nLocal SEO optimization (Standard and Growth plans) goes significantly deeper. It includes:\n\n• Location-specific keyword targeting across your pages\n• Google Business Profile setup and optimization — so you show up in the local map pack\n• NAP consistency (Name, Address, Phone) across your site\n• Local schema markup that tells Google exactly where you operate and what you do\n• Geo-targeted content strategy for your service area\n\nFor service businesses that rely on local customers, this is often the difference between showing up on the first page of Google and being invisible. Most of your competitors aren't doing this — which is exactly why it works."
+        a: "Basic SEO (included in all plans) covers the fundamentals — clean code, fast page speed, proper page titles and meta descriptions, mobile optimization, and a sitemap. These are the building blocks every website needs.\n\nLocal SEO optimization (Standard and Growth plans) goes significantly deeper. It includes:\n\n• Location-specific keyword targeting across your pages\n• Assistance with Google Business Profile setup and optimization — so you show up in the local map pack\n• NAP consistency (Name, Address, Phone) across your site\n• Local schema markup that tells Google exactly where you operate and what you do\n• Geo-targeted content strategy for your service area\n\nFor service businesses that rely on local customers, this is often the difference between showing up on the first page of Google and being invisible. Most of your competitors aren't doing this — which is exactly why it works."
       },
       {
         q: "What is lead activity tracking?",
@@ -208,8 +208,8 @@ export const FAQS = [
         a: "Schema markup is code added to your website that helps Google understand exactly what your business does, where you're located, what services you offer, your hours, your reviews, and more. It doesn't change how your site looks to visitors — but it changes how Google sees and displays your site in search results.\n\nWith proper schema, your business can show up with rich results — star ratings, business hours, service lists, and location info displayed right in the search listing. This makes your result stand out and get more clicks than a plain text listing.\n\nAll plans include basic schema. The Growth plan includes advanced schema markup covering multiple service types, FAQ schema, and local business schema — giving you the best possible presence in search results."
       },
       {
-        q: "What happens during a quarterly strategy call?",
-        a: "The quarterly strategy call (Growth plan) is a 30-minute one-on-one session with our team where we review your website's performance and plan ahead. We cover:\n\n• Traffic trends — where your visitors are coming from and which pages perform best\n• Lead quality — whether your forms are attracting the right kind of customers\n• SEO progress — how your rankings are moving and where the opportunities are\n• Content recommendations — what pages or updates would drive the most impact next quarter\n• Competitive insights — what your competitors are doing online and how to stay ahead\n\nThink of it as having a marketing advisor on retainer. Most small businesses don't have anyone looking at this data for them — and that's exactly why they plateau. The strategy call keeps your site evolving with your business instead of sitting static."
+        q: "What happens during the annual strategy call?",
+        a: "The annual strategy call (Growth plan) is a 30-minute one-on-one session with our team where we review your website's performance and plan ahead. We cover:\n\n• Traffic trends — where your visitors are coming from and which pages perform best\n• Lead quality — whether your forms are attracting the right kind of customers\n• SEO progress — how your rankings are moving and where the opportunities are\n• Content recommendations — what pages or updates would drive the most impact next year\n• Competitive insights — what your competitors are doing online and how to stay ahead\n\nThink of it as having a marketing advisor on retainer. Most small businesses don't have anyone looking at this data for them — and that's exactly why they plateau. The strategy call keeps your site evolving with your business instead of sitting static."
       }
     ]
   },

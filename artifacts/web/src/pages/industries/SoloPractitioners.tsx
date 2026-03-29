@@ -159,7 +159,7 @@ const data: IndustryPageData = {
       },
       {
         icon: Search,
-        title: "Google Business Profile Setup (Standard & Growth)",
+        title: "Assistance with Google Business Profile Setup (Standard & Growth)",
         description: "Get found on Google Maps and local search results.",
       },
       {
@@ -235,7 +235,7 @@ const data: IndustryPageData = {
     },
     {
       q: "How do I show up on Google for my specialty and location?",
-      a: "Every Graylock site includes a local SEO foundation — your practice name, specialty, and city are optimized throughout the site. Standard and Growth plans include full local SEO optimization and Google Business Profile setup.",
+      a: "Every Graylock site includes a local SEO foundation — your practice name, specialty, and city are optimized throughout the site. Standard and Growth plans include full local SEO optimization and assistance with Google Business Profile setup.",
     },
     {
       q: "Can you include my bio, credentials, and approach on the site?",

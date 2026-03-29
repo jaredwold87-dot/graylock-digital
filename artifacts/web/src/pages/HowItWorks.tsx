@@ -74,7 +74,7 @@ export default function HowItWorks() {
             <ScrollReveal delay={0.1} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-2xl font-display text-charcoal mb-4">Total Maintenance</h3>
               <p className="text-gray-600 font-sans leading-relaxed">
-                We handle all the invisible technical work. Software updates, plugin management, security scans, uptime monitoring, and daily backups. You never have to log into a complicated dashboard or worry about your site getting hacked.
+                We handle all the invisible technical work. Software updates, plugin management, security scans, and uptime monitoring. You never have to log into a complicated dashboard or worry about your site getting hacked.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.2} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">

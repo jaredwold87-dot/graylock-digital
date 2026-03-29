@@ -88,7 +88,7 @@ const data: StrategyPageData = {
           "Location-specific page content, local keyword integration, NAP consistency (Name, Address, Phone), and schema markup that tells Google exactly where you operate.",
       },
       {
-        title: "Google Business Profile setup (Standard & Growth plans)",
+        title: "Assistance with Google Business Profile Setup (Standard & Growth)",
         description:
           "We create and optimize your GBP listing, which is the single most impactful local SEO action you can take.",
       },
@@ -203,7 +203,7 @@ const data: StrategyPageData = {
     },
     {
       q: "Does Graylock handle SEO for my website?",
-      a: "Every Graylock plan includes an SEO foundation: proper metadata, clean URL structure, mobile optimization, fast load times, and schema markup. Standard and Growth plans add full local SEO optimization and Google Business Profile setup. Growth plan clients receive quarterly SEO reviews. Custom plans include advanced SEO strategy.",
+      a: "Every Graylock plan includes an SEO foundation: proper metadata, clean URL structure, mobile optimization, fast load times, and schema markup. Standard and Growth plans add full local SEO optimization and assistance with Google Business Profile setup. Growth plan clients receive quarterly SEO reviews. Custom plans include advanced SEO strategy.",
     },
   ],
   bottomCta: {
@@ -245,7 +245,7 @@ const data: StrategyPageData = {
         name: "Does Graylock handle SEO for my website?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Every Graylock plan includes an SEO foundation. Standard and Growth plans add full local SEO optimization and Google Business Profile setup.",
+          text: "Every Graylock plan includes an SEO foundation. Standard and Growth plans add full local SEO optimization and assistance with Google Business Profile setup.",
         },
       },
     ],

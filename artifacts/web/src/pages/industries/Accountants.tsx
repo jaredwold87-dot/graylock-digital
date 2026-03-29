@@ -111,7 +111,7 @@ const data: IndustryPageData = {
           "The kind of polished, authoritative design that reassures high-value clients.",
       },
       {
-        title: "Google Business Profile Setup",
+        title: "Assistance with Google Business Profile Setup",
         description:
           "Included on Standard and Growth plans so you show up on Google Maps and local results.",
       },
@@ -229,7 +229,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Will my accounting website show up when locals search for a CPA?",
-      a: "Every Graylock site includes a local SEO foundation. Standard and Growth plans include full local SEO optimization and Google Business Profile setup — critical for showing up in 'CPA near me' searches.",
+      a: "Every Graylock site includes a local SEO foundation. Standard and Growth plans include full local SEO optimization and assistance with Google Business Profile setup — critical for showing up in 'CPA near me' searches.",
     },
     {
       q: "I'm too busy during tax season to work on a website. Can we start now?",
