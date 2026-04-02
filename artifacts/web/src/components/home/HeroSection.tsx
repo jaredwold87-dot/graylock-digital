@@ -185,12 +185,12 @@ export function HeroSection() {
               Website.
             </h1>
             <p className="text-stone text-lg md:text-xl font-sans mb-8 max-w-xl leading-relaxed">
-              We build and optimize websites that actually convert — then help growth-minded small and medium businesses dominate Google, generate more leads, and keep client lists full. No long-term contracts. No thousands upfront.
+              Your competitors are winning clients online right now — because their website works and yours doesn't. We fix that. No long-term contracts. No thousands upfront. Just a site that fills your calendar.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
               <CTAButton href="/get-started">
-                Book Your Free Website Review
+                Show Me What My Site Is Losing
               </CTAButton>
             </div>
 

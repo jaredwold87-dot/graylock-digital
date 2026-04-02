@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { CTAButton } from "@/components/ui/CTAButton";
 
 export function ProblemSection() {
   const problems = [
@@ -56,9 +57,12 @@ export function ProblemSection() {
         </div>
 
         <ScrollReveal delay={0.4} className="text-center">
-          <p className="text-xl font-display text-orange tracking-wide uppercase">
+          <p className="text-xl font-display text-orange tracking-wide uppercase mb-8">
             That's exactly why we review your site for free — so you finally know what to fix.
           </p>
+          <CTAButton href="/get-started">
+            Find Out What's Costing Me Leads
+          </CTAButton>
         </ScrollReveal>
 
       </div>

@@ -53,7 +53,7 @@ export function HowItWorksSection() {
         </div>
 
         <ScrollReveal delay={0.6} className="text-center">
-          <CTAButton href="/get-started">Book Your Free Website Review</CTAButton>
+          <CTAButton href="/get-started">See How It Works for My Business</CTAButton>
         </ScrollReveal>
 
       </div>

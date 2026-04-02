@@ -13,6 +13,9 @@ export function PricingSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         
         <ScrollReveal className="text-center mb-16">
+          <p className="text-orange font-sans font-semibold uppercase tracking-widest text-sm mb-4">
+            Most of our clients start on Standard. Here's what's right for where you are now.
+          </p>
           <h2 className="text-3xl md:text-5xl font-display text-offwhite mb-6">
             Simple, Transparent Pricing
           </h2>
@@ -37,7 +40,7 @@ export function PricingSection() {
               
               <div className="mb-6">
                 <h3 className="text-2xl font-display text-offwhite mb-2">{tier.name}</h3>
-                <p className="text-stone text-sm mb-5 min-h-[40px]">{tier.description}</p>
+                <p className="text-stone text-sm mb-5 min-h-[60px]">{tier.description}</p>
                 {tier.isCustom ? (
                   <div className="flex items-baseline gap-1">
                     <span className="text-3xl font-display text-gradient">Let's Talk</span>
@@ -78,7 +81,7 @@ export function PricingSection() {
                 variant={tier.popular ? 'primary' : 'outline'}
                 className="w-full"
               >
-                {tier.isCustom ? 'Contact Us' : 'Book Your Free Website Review'}
+                {tier.isCustom ? 'Contact Us' : tier.name === 'Starter' ? 'Start with a Free Review' : tier.name === 'Standard' ? 'Claim My Free Website Review' : "Let's Talk \u2014 Book a Free Review"}
               </CTAButton>
             </ScrollReveal>
           ))}

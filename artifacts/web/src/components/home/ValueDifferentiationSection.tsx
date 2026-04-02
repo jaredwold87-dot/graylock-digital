@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { CTAButton } from "@/components/ui/CTAButton";
 import { X, Check } from "lucide-react";
 
 export function ValueDifferentiationSection() {
@@ -50,6 +51,12 @@ export function ValueDifferentiationSection() {
               </div>
             ))}
           </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.3} className="text-center mt-12">
+          <CTAButton href="/get-started">
+            See What This Looks Like for My Business
+          </CTAButton>
         </ScrollReveal>
 
       </div>

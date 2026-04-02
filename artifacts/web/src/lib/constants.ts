@@ -3,7 +3,7 @@ export const PRICING_TIERS = [
     name: "Starter",
     price: "$79",
     setup: "$299 one-time setup",
-    description: "Perfect for single-operator service businesses needing a professional web presence.",
+    description: "You do great work. Your website should say so. This is your professional foundation \u2014 clean, fast, and built to make the right first impression.",
     features: [
       "Custom 5-Page Website",
       "Mobile-First Design",
@@ -18,7 +18,7 @@ export const PRICING_TIERS = [
     price: "$119",
     setup: "$499 one-time setup",
     popular: true,
-    description: "The sweet spot for growing businesses that want visibility and control.",
+    description: "You're ready to grow \u2014 and you want Google to know it. This is for the business owner who's tired of being invisible online and wants leads coming in consistently.",
     features: [
       "Custom 7-Page Website",
       "5 SEO-Optimized Funnel Pages",
@@ -36,7 +36,7 @@ export const PRICING_TIERS = [
     name: "Growth",
     price: "$199",
     setup: "$599 one-time setup",
-    description: "For established businesses that need full control and maximum performance.",
+    description: "You're not just competing locally \u2014 you're dominating. This is for the established business that wants maximum visibility, full control, and a site that works as hard as you do.",
     features: [
       "Custom 14-Page Website",
       "10 SEO-Optimized Funnel Pages",
@@ -71,6 +71,24 @@ export const PRICING_TIERS = [
 
 export const TESTIMONIALS = [
   {
+    name: "Bobbie W.",
+    title: "Montana Counseling Solutions",
+    location: "Montana",
+    quote: "Before Graylock, I was getting leads \u2014 but they weren't the right leads. People who weren't a good fit, who couldn't afford my services, or who just weren't aligned with the kind of work I do. Since launching my new site, my monthly leads have more than doubled, but more importantly, the clients coming through are exactly who I want to work with. It's like the website filters for me. I'm spending less time on consultations that go nowhere and more time doing the work I actually love."
+  },
+  {
+    name: "Kim W.",
+    title: "Senior Health Solutions",
+    location: "United States",
+    quote: "I had no website at all \u2014 I was doing everything through community outreach, showing up in person, handing out cards. It was exhausting and inconsistent. Graylock built me a site from scratch and within just a couple months, clients started finding me on Google without me doing anything. The funnel pages they set up drove real local search traffic almost immediately. Now leads come to me. I still love being in the community, but now it's by choice \u2014 not because I have no other option."
+  },
+  {
+    name: "Ben Lambright",
+    title: "West Coast Eye Clinic",
+    location: "West Coast",
+    quote: "We had two outdated websites that were creating confusion for patients and extra work for our staff. Graylock consolidated everything into one clean, professional site and completely restructured how new patients contact us. I didn't want people calling the front desk \u2014 I wanted a controlled, professional intake process. Now every inquiry comes through an online form, and based on what the patient submits, it routes directly to the right person on my team. No more missed calls, no more phone tag. It's streamlined our entire front-end workflow."
+  },
+  {
     name: "Sarah M.",
     title: "Licensed Therapist",
     location: "Reno, NV",
@@ -87,18 +105,6 @@ export const TESTIMONIALS = [
     title: "General Contractor",
     location: "Phoenix, AZ",
     quote: "Agencies wanted $10k+ to build a site for my construction business. Graylock got me up and running for the setup fee, and the monthly maintenance gives me total peace of mind."
-  },
-  {
-    name: "Elena R.",
-    title: "Family Attorney",
-    location: "Austin, TX",
-    quote: "The done-for-you aspect is exactly what I needed. I bill by the hour, so I can't afford to waste time messing with WordPress. Graylock handles everything perfectly."
-  },
-  {
-    name: "James L.",
-    title: "HVAC Specialist",
-    location: "Denver, CO",
-    quote: "Our new site looks so much more professional than what we had before. People tell us it's what made them call us over the competition."
   }
 ];
 
