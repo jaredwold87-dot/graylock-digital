@@ -221,7 +221,7 @@ export function Navbar() {
             <img
               src={`${import.meta.env.BASE_URL}logo-horizontal.png`}
               alt="Graylock Digital"
-              className="h-8 md:h-14 w-auto group-hover:opacity-90 transition-opacity"
+              className="h-8 md:h-11 w-auto group-hover:opacity-90 transition-opacity"
             />
           </Link>
 
