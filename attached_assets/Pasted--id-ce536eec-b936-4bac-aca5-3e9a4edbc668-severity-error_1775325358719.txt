@@ -1,0 +1,28 @@
+{
+  "id": "ce536eec-b936-4bac-aca5-3e9a4edbc668",
+  "severity": "error",
+  "attributes": {
+    "time": "1775325296485",
+    "err": {
+      "query": "insert into \"chat_conversations\" (\"id\", \"access_token\", \"visitor_name\", \"visitor_email\", \"created_at\") values (default, $1, $2, $3, default) returning \"id\", \"access_token\", \"visitor_name\", \"visitor_email\", \"created_at\"",
+      "type": "_DrizzleQueryError",
+      "message": "Failed query: insert into \"chat_conversations\" (\"id\", \"access_token\", \"visitor_name\", \"visitor_email\", \"created_at\") values (default, $1, $2, $3, default) returning \"id\", \"access_token\", \"visitor_name\", \"visitor_email\", \"created_at\"\nparams: b632f0e4e7eca5253b2a1eaf3baf124631e1556b2fc0182f21167b5fb885c6ea,Jared,jared.wold87@gmail.com: read ECONNRESET",
+      "params": [
+        "b632f0e4e7eca5253b2a1eaf3baf124631e1556b2fc0182f21167b5fb885c6ea",
+        "Jared",
+        "jared.wold87@gmail.com"
+      ],
+      "stack": "Error: Failed query: insert into \"chat_conversations\" (\"id\", \"access_token\", \"visitor_name\", \"visitor_email\", \"created_at\") values (default, $1, $2, $3, default) returning \"id\", \"access_token\", \"visitor_name\", \"visitor_email\", \"created_at\"\nparams: b632f0e4e7eca5253b2a1eaf3baf124631e1556b2fc0182f21167b5fb885c6ea,Jared,jared.wold87@gmail.com\n    at NodePgPreparedQuery.queryWithCache (file:///app/artifacts/api-server/dist/index.mjs:64476:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///app/artifacts/api-server/dist/index.mjs:64709:22\n    at async file:///app/artifacts/api-server/dist/index.mjs:76518:28\ncaused by: Error: read ECONNRESET\n    at file:///app/artifacts/api-server/dist/index.mjs:41177:15\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///app/artifacts/api-server/dist/index.mjs:64716:18\n    at async NodePgPreparedQuery.queryWithCache (file:///app/artifacts/api-server/dist/index.mjs:64474:16)\n    at async file:///app/artifacts/api-server/dist/index.mjs:64709:22\n    at async file:///app/artifacts/api-server/dist/index.mjs:76518:28"
+    },
+    "message": "Failed to create chat conversation",
+    "level": "error"
+  },
+  "tags": {
+    "idCompany": "3a5fe7fe-0739-4263-906b-b00e1721bcc9",
+    "idDeployment": "5f2a3c76-96b8-4afa-b171-abe755544b06",
+    "idApp": "5c9e8d8b-b938-4675-8c75-d13e3a578347",
+    "container": "stateless",
+    "podName": "graylock-digital-lmuwc-web-6fdcc8c795-nkd5t",
+    "idProcess": "937be03d-5db8-43bb-965b-9f32056275d0"
+  }
+}
