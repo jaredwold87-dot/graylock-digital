@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { PricingSection } from "@/components/home/PricingSection";
 import { FAQSection } from "@/components/home/FAQSection";
 import { FinalCTASection } from "@/components/home/FinalCTASection";
-import { Check, Minus, Shield, Activity, Headphones, BarChart3, Server, Lock } from "lucide-react";
+import { Check, Minus, Shield, Activity, Headphones, BarChart3, Server, Lock, FileCheck, Globe, Image, FolderOutput } from "lucide-react";
 
 export default function Pricing() {
   const featureRows = [
@@ -149,6 +149,48 @@ export default function Pricing() {
               </div>
               <p className="text-stone/60 font-sans text-sm text-center mt-6">
                 Our Standard plan covers all of this for $119/mo — less than most businesses pay for hosting and a single plugin alone.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="bg-navy py-24 px-6 md:px-12 relative overflow-hidden">
+        <div className="section-divider absolute top-0 left-0 right-0" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-orange/3 rounded-full blur-[150px] pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto relative z-10">
+          <ScrollReveal className="text-center mb-16">
+            <p className="text-orange font-sans font-semibold uppercase tracking-widest text-sm mb-4">No Lock-In</p>
+            <h2 className="text-3xl md:text-5xl font-display text-offwhite mb-6">What You Own</h2>
+            <p className="text-stone text-lg font-sans max-w-2xl mx-auto">
+              You're never locked in. Here's exactly what belongs to you — during your plan and after.
+            </p>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {[
+              { icon: <Globe className="text-orange" size={22} />, title: "Your Domain", desc: "Registered in your name. It goes with you no matter what — we never hold it hostage." },
+              { icon: <FileCheck className="text-orange" size={22} />, title: "Your Content & Copy", desc: "Every word of copy, every page of content. It's yours whether you stay or go." },
+              { icon: <Image className="text-orange" size={22} />, title: "Your Brand Assets", desc: "Logos, photos, brand elements — everything you provided or we created for your brand." },
+              { icon: <FolderOutput className="text-orange" size={22} />, title: "Exported Website Files", desc: "If you cancel, we export your full site files (HTML, CSS, assets) so you or another developer can host it elsewhere." },
+            ].map((item, i) => (
+              <ScrollReveal key={i} delay={i * 0.1} className="bg-charcoal/60 border border-gunmetal/50 rounded-xl p-6 flex items-start gap-4">
+                <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center flex-shrink-0 border border-orange/10">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="text-offwhite font-display text-lg mb-1">{item.title}</h3>
+                  <p className="text-stone font-sans text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.5} className="max-w-3xl mx-auto text-center">
+            <div className="bg-charcoal/40 border border-gunmetal/30 rounded-xl p-6">
+              <p className="text-stone font-sans leading-relaxed text-sm">
+                Our websites are built on a proprietary framework that allows us to deliver fast, maintain easily, and keep costs low. Continued development on our platform requires an active plan — but if you leave, you leave with everything you need to keep your site live somewhere else. We also provide a migration support window to help with the transition.
               </p>
             </div>
           </ScrollReveal>

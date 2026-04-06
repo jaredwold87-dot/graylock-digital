@@ -26,6 +26,10 @@ const homepageFaqs = [
     a: "All plans now include dashboard access. Starter includes basic features (view traffic, edit hours/phone/address). Standard and Growth plans include full features (announcement banner, lead activity, update requests, performance reports). The Custom plan offers a tailored dashboard configuration."
   },
   {
+    q: "What do I own, and what happens if I cancel?",
+    a: "You own your domain, content, copy, and brand assets — always. If you cancel, we export your full website files (HTML, CSS, and assets) so you or another developer can host your site elsewhere. Your domain is registered in your name and goes with you. We also provide a migration support window to help with the transition. You're never locked in."
+  },
+  {
     q: "What types of businesses do you work with?",
     a: "We work with any local service business that relies on trust, reputation, and local visibility to grow — accountants, therapists, contractors, consultants, dentists, physicians, lawyers, and more. If that sounds like you, we're a great fit."
   }

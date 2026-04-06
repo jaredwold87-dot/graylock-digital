@@ -127,7 +127,7 @@ export const FAQS = [
       },
       {
         q: "Can I cancel at any time?",
-        a: "Yes. There are no long-term contracts — all plans are month-to-month. You can cancel with 30 days' notice at any time.\n\nIf you cancel, you keep the website files and all the content. We'll provide everything you need to move your site to another host or developer. We'd rather earn your business every month than lock you into something that isn't working for you."
+        a: "Yes. There are no long-term contracts — all plans are month-to-month. You can cancel with 30 days' notice at any time.\n\nIf you cancel, you keep your domain, all written content, images, and brand assets. We also export your full website files (HTML, CSS, and assets) so you or another developer can host your site elsewhere. We provide a migration support window to help make the transition smooth.\n\nWe'd rather earn your business every month than lock you into something that isn't working for you."
       }
     ]
   },
@@ -136,8 +136,8 @@ export const FAQS = [
     id: "your-website",
     questions: [
       {
-        q: "What do I own, and what does my monthly fee cover?",
-        a: "You own your domain, your content, your copy, and your brand assets — always. Your monthly fee covers everything it takes to keep your website performing at its best: professional hosting, security updates, speed optimization, ongoing SEO maintenance, and unlimited content updates.\n\nThink of it like having a full web team on retainer for a fraction of the cost. If you ever decide to move on, your domain goes with you — it's registered in your name."
+        q: "What do I own, and what happens if I cancel?",
+        a: "You own your domain, your content, your copy, and your brand assets — always. Your domain is registered in your name, and it goes with you no matter what.\n\nIf you cancel, here's exactly what happens:\n\n• Your domain stays yours — we never hold it hostage.\n• All written content, images, and brand assets are yours to keep.\n• We export your full website files (HTML, CSS, and assets) so you or another developer can host and maintain your site elsewhere.\n• We provide a migration support window to help with the transition.\n\nOur websites are built on a proprietary framework that allows us to deliver fast, maintain easily, and keep costs low. Because of that, continued development on our platform requires an active plan — but you are never locked in. If you leave, you leave with everything you need to keep your site live somewhere else.\n\nWe'd rather be transparent about this upfront than have it become a question later."
       },
       {
         q: "Is my website built on a template or is it custom?",
