@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { PricingSection } from "@/components/home/PricingSection";
 import { FAQSection } from "@/components/home/FAQSection";
 import { FinalCTASection } from "@/components/home/FinalCTASection";
-import { Check, Minus, Shield, Activity, Headphones, BarChart3, Server, Lock, FileCheck, Globe, Image, FolderOutput } from "lucide-react";
+import { Check, Minus, Shield, Activity, Headphones, BarChart3, Server, Lock, FileCheck, Globe, Image as ImageIcon, Package } from "lucide-react";
 
 export default function Pricing() {
   const featureRows = [
@@ -170,10 +170,10 @@ export default function Pricing() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {[
-              { icon: <Globe className="text-orange" size={22} />, title: "Your Domain", desc: "Registered in your name. It goes with you no matter what — we never hold it hostage." },
-              { icon: <FileCheck className="text-orange" size={22} />, title: "Your Content & Copy", desc: "Every word of copy, every page of content. It's yours whether you stay or go." },
-              { icon: <Image className="text-orange" size={22} />, title: "Your Brand Assets", desc: "Logos, photos, brand elements — everything you provided or we created for your brand." },
-              { icon: <FolderOutput className="text-orange" size={22} />, title: "Exported Website Files", desc: "If you cancel, we export your full site files (HTML, CSS, assets) so you or another developer can host it elsewhere." },
+              { icon: <Globe className="text-orange" size={22} />, title: "Your Domain", desc: "Registered in your name. We transfer it to wherever you choose — no questions asked." },
+              { icon: <FileCheck className="text-orange" size={22} />, title: "Your Written Content", desc: "Every word of copy on every page. It's yours whether you stay or go." },
+              { icon: <ImageIcon className="text-orange" size={22} />, title: "Your Images & Brand Assets", desc: "Photos, logos, brand elements — everything you provided or we sourced for your brand." },
+              { icon: <Package className="text-orange" size={22} />, title: "Your Data, Packaged Up", desc: "If you cancel, we package all your content and data so you can take it to your next host." },
             ].map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.1} className="bg-charcoal/60 border border-gunmetal/50 rounded-xl p-6 flex items-start gap-4">
                 <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center flex-shrink-0 border border-orange/10">
@@ -188,9 +188,12 @@ export default function Pricing() {
           </div>
 
           <ScrollReveal delay={0.5} className="max-w-3xl mx-auto text-center">
-            <div className="bg-charcoal/40 border border-gunmetal/30 rounded-xl p-6">
+            <div className="bg-charcoal/40 border border-gunmetal/30 rounded-xl p-6 space-y-3">
               <p className="text-stone font-sans leading-relaxed text-sm">
-                Our websites are built on a proprietary framework that allows us to deliver fast, maintain easily, and keep costs low. Continued development on our platform requires an active plan — but if you leave, you leave with everything you need to keep your site live somewhere else. We also provide a migration support window to help with the transition.
+                Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure that keeps your site fast and secure. If you cancel, we package up all of your content and data, and transfer your domain to wherever you choose — with 30 days' notice and no cancellation fees.
+              </p>
+              <p className="text-stone font-sans leading-relaxed text-sm">
+                You will need to build a new site on your new host, but you will never lose your domain authority, your content, or your brand.
               </p>
             </div>
           </ScrollReveal>

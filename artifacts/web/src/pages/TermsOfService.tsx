@@ -36,14 +36,14 @@ export default function TermsOfService() {
           <ScrollReveal>
             <h2 className="text-2xl font-display text-offwhite mb-4">Cancellation</h2>
             <p className="text-stone font-sans leading-relaxed">
-              All plans are month-to-month with no long-term contracts. You may cancel at any time with 30 days' written notice. Upon cancellation, you retain ownership of your domain name, content, and brand assets. We will provide all files necessary to transfer your website to another provider.
+              All plans are month-to-month with no long-term contracts. You may cancel at any time with 30 days' written notice and no cancellation fees. Upon cancellation, we will package up all of your content and data, and transfer your domain to wherever you choose. You will need to build a new site on your new host, but you will never lose your domain authority, your content, or your brand.
             </p>
           </ScrollReveal>
 
           <ScrollReveal>
             <h2 className="text-2xl font-display text-offwhite mb-4">Intellectual Property</h2>
             <p className="text-stone font-sans leading-relaxed">
-              You own your domain, content, copy, logos, and brand assets. Graylock Digital retains ownership of proprietary code frameworks and design systems used to build your website. Upon cancellation, we provide exported website files for migration purposes.
+              You own your domain, your written content, your images, and your brand assets. Graylock Digital retains ownership of the code, the design framework, and the hosting infrastructure used to build and maintain your website. Upon cancellation, we package up all of your content and data, and transfer your domain to wherever you choose.
             </p>
           </ScrollReveal>
 

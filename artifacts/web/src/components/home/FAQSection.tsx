@@ -27,7 +27,7 @@ const homepageFaqs = [
   },
   {
     q: "What do I own, and what happens if I cancel?",
-    a: "You own your domain, content, copy, and brand assets — always. If you cancel, we export your full website files (HTML, CSS, and assets) so you or another developer can host your site elsewhere. Your domain is registered in your name and goes with you. We also provide a migration support window to help with the transition. You're never locked in."
+    a: "You own your domain, your written content, your images, and your brand assets — always. Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure. If you cancel, we package up all of your content and data, and transfer your domain to wherever you choose — with 30 days' notice and no cancellation fees. You'll never lose your domain authority, your content, or your brand."
   },
   {
     q: "What types of businesses do you work with?",
