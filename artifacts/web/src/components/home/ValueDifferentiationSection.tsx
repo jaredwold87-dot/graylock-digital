@@ -29,15 +29,6 @@ export function ValueDifferentiationSection() {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal className="text-center mb-16">
-          <h3 className="text-2xl md:text-4xl font-display text-offwhite mb-6">
-            This Isn't How Agencies Normally Work
-          </h3>
-          <p className="text-stone text-lg font-sans max-w-2xl mx-auto">
-            Most agencies ask you to commit before showing you anything. We believe you should see the value first — then decide.
-          </p>
-        </ScrollReveal>
-
         <ScrollReveal delay={0.15}>
           <div className="bg-navy rounded-2xl border border-gunmetal overflow-hidden">
             <div className="grid grid-cols-2 text-center">
