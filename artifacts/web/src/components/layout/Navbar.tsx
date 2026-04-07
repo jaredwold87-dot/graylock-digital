@@ -11,7 +11,7 @@ const WHO_WE_HELP = [
   { name: "Accountants", path: "/websites-for-accountants" },
   { name: "Lawyers", path: "/websites-for-lawyers" },
   { name: "House Cleaners", path: "/websites-for-house-cleaners" },
-  { name: "Dog Groomers", path: "/websites-for-dog-groomers" },
+  { name: "Pet Groomers", path: "/websites-for-pet-groomers" },
 ];
 
 const OUR_STRATEGY = [

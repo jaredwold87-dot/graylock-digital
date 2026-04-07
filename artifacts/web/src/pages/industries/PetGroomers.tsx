@@ -20,20 +20,20 @@ import {
 
 const data: IndustryPageData = {
   seo: {
-    title: "Websites for Dog Groomers & Pet Grooming Salons | $79/mo | Graylock Digital",
+    title: "Websites for Pet Groomers & Grooming Salons | $79/mo | Graylock Digital",
     description:
-      "Graylock builds professional, trust-building websites for dog groomers and pet grooming businesses. Appointment forms, service menus, local SEO. Built in 3–5 days. $79/mo. Free demo.",
-    url: "https://graylockdigital.com/websites-for-dog-groomers",
+      "Graylock builds professional, trust-building websites for pet groomers and grooming businesses. Appointment forms, service menus, local SEO. Built in 3–5 days. $79/mo. Free demo.",
+    url: "https://graylockdigital.com/websites-for-pet-groomers",
   },
   hero: {
-    badge: "For Dog Groomers & Pet Grooming Salons",
+    badge: "For Pet Groomers & Grooming Salons",
     badgeIcon: Scissors,
     h1: "A Website That Keeps Your Grooming Table —",
     h1Highlight: "Fully Booked.",
     subheadline:
-      "Pet owners want to see your work, read your reviews, and book online — before they ever call. A professional website makes you the obvious choice. Graylock builds clean, credible, SEO-optimized websites for dog groomers and pet grooming salons — fast, affordable, and fully managed.",
+      "Pet owners want to see your work, read your reviews, and book online — before they ever call. A professional website makes you the obvious choice. Graylock builds clean, credible, SEO-optimized websites for pet groomers and grooming salons — fast, affordable, and fully managed.",
     cta: "Get Your Free Website Review",
-    backgroundImage: `${import.meta.env.BASE_URL}hero-dog-groomers.png`,
+    backgroundImage: `${import.meta.env.BASE_URL}hero-pet-groomers.png`,
     trustSignals: [
       "3–5 day build",
       "Booking forms included",
@@ -45,7 +45,7 @@ const data: IndustryPageData = {
     headline: "Websites for Every Type of Grooming Business",
     tags: [
       "Full-Service Dog Grooming",
-      "Mobile Dog Grooming",
+      "Mobile Pet Grooming",
       "Breed-Specific Grooming",
       "Cat Grooming",
       "Puppy's First Groom",
@@ -62,7 +62,7 @@ const data: IndustryPageData = {
         icon: ShieldCheck,
         title: "Pet owners need to trust you with their baby",
         description:
-          "If your online presence looks unprofessional, pet parents won't feel confident handing over their dog. Trust starts with your website.",
+          "If your online presence looks unprofessional, pet parents won't feel confident handing over their pet. Trust starts with your website.",
       },
       {
         icon: Globe,
@@ -74,13 +74,13 @@ const data: IndustryPageData = {
         icon: Phone,
         title: "You're losing bookings to voicemail",
         description:
-          "You can't answer the phone when your hands are full of dog. Without an online booking form, those leads go to the groomer who has one.",
+          "You can't answer the phone when you're mid-groom. Without an online booking form, those leads go to the groomer who has one.",
       },
       {
         icon: Search,
         title: "New pet owners can't find you on Google",
         description:
-          "When someone searches 'dog groomer near me,' you're buried behind competitors with real websites.",
+          "When someone searches 'pet groomer near me,' you're buried behind competitors with real websites.",
       },
       {
         icon: Users,
@@ -102,7 +102,7 @@ const data: IndustryPageData = {
       {
         title: "Trust-Building Design",
         description:
-          "A professional site that makes pet owners feel confident booking you with their dog.",
+          "A professional site that makes pet owners feel confident booking you with their pet.",
       },
       {
         title: "Online Appointment Request Forms",
@@ -112,7 +112,7 @@ const data: IndustryPageData = {
       {
         title: "Local SEO That Works",
         description:
-          "Show up when pet owners search 'dog groomer near me'. We optimize for the searches that matter.",
+          "Show up when pet owners search 'pet groomer near me'. We optimize for the searches that matter.",
       },
       {
         title: "Service & Pricing Menu",
@@ -127,7 +127,7 @@ const data: IndustryPageData = {
       {
         title: "Monthly Maintenance Included",
         description:
-          "Updates, security, and fresh content handled for you. Focus on the dogs, not the website.",
+          "Updates, security, and fresh content handled for you. Focus on the pets, not the website.",
       },
     ],
   },
@@ -232,7 +232,7 @@ const data: IndustryPageData = {
       a: "Yes. Every Graylock plan includes an appointment request form so pet owners can book 24/7 — even when you're mid-groom. Standard and Growth plans include enhanced forms with lead tracking.",
     },
     {
-      q: "Will my grooming website show up when people search 'dog groomer near me'?",
+      q: "Will my grooming website show up when people search 'pet groomer near me'?",
       a: "Every Graylock site includes a local SEO foundation. Standard and Growth plans include full local SEO and assistance with Google Business Profile setup — essential for showing up in local 'near me' searches.",
     },
     {
@@ -263,8 +263,8 @@ const data: IndustryPageData = {
   schema: {
     "@context": "https://schema.org",
     "@type": ["WebPage", "FAQPage"],
-    name: "Websites for Dog Groomers | Graylock Digital",
-    url: "https://graylockdigital.com/websites-for-dog-groomers",
+    name: "Websites for Pet Groomers | Graylock Digital",
+    url: "https://graylockdigital.com/websites-for-pet-groomers",
     mainEntity: [
       {
         "@type": "Question",
@@ -278,6 +278,6 @@ const data: IndustryPageData = {
   },
 };
 
-export default function DogGroomers() {
+export default function PetGroomers() {
   return <IndustryLandingPage data={data} />;
 }
