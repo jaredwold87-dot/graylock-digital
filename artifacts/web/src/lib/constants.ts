@@ -11,8 +11,9 @@ export const PRICING_TIERS = [
       "Google Business Profile Setup",
       "Lead Capture Form",
       "Hosting, SSL & Daily Backups",
-      "Monthly Performance Report",
+      "3 SEO-Optimized Funnel Pages",
       "Business Dashboard Access",
+      "Dedicated Account Manager",
       "1 Hour Site Updates / Quarter",
       "Priority Email Support"
     ]
@@ -29,8 +30,7 @@ export const PRICING_TIERS = [
       "10 SEO-Optimized Funnel Pages",
       "Enhanced Lead Capture Form",
       "Full Local SEO Implementation",
-      "Monthly SEO Performance Report",
-      "Lead Activity Tracking Dashboard",
+      "Dedicated Account Manager",
       "1 Hour Site Updates / Month",
       "Custom Integrations (Calendly, scheduling, etc.)",
       "Priority Support"
@@ -47,9 +47,9 @@ export const PRICING_TIERS = [
       "20 SEO-Optimized Funnel Pages",
       "Multi-Location SEO Strategy",
       "Advanced Analytics & Reporting",
+      "Dedicated Account Manager",
       "2 Hours Site Updates / Month",
       "Priority Build Queue",
-      "Dedicated Account Management",
       "Custom Reporting Cadence"
     ]
   },
@@ -63,9 +63,9 @@ export const PRICING_TIERS = [
       "Custom Applications & Dashboards",
       "Operating System Builds",
       "Advanced SEO Strategy",
-      "Dedicated Account Manager",
       "Custom Reporting Cadence",
-      "Priority Build Queue"
+      "Priority Build Queue",
+      "Dedicated Account Manager"
     ]
   }
 ];
@@ -104,7 +104,7 @@ export const FAQS = [
     questions: [
       {
         q: "What\u2019s included in the monthly fee?",
-        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n\u2022 Website hosting on fast, secure servers\n\u2022 SSL certificate (the padlock that makes your site trusted and secure)\n\u2022 Daily backups\n\u2022 Dashboard access and support\n\nSolo Practice plan ($199/mo): Dashboard + priority email support + monthly performance report\nGroup Practice plan ($299/mo): Full dashboard + priority support + monthly SEO performance report\nEnterprise plan ($449/mo): Full dashboard + dedicated account management + monthly SEO performance report\nCustom plan: Tailored to your needs \u2014 contact us for a quote\n\nYou can view all plan details on our Pricing page."
+        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n\u2022 Website hosting on fast, secure servers\n\u2022 SSL certificate (the padlock that makes your site trusted and secure)\n\u2022 Daily backups\n\u2022 Dashboard access and support\n\nSolo Practice plan ($199/mo): Dashboard + dedicated account manager + priority email support\nGroup Practice plan ($299/mo): Dashboard + dedicated account manager + priority support\nEnterprise plan ($449/mo): Dashboard + dedicated account manager + advanced analytics & reporting\nCustom plan: Tailored to your needs \u2014 contact us for a quote\n\nYou can view all plan details on our Pricing page."
       },
       {
         q: "Is there a setup fee, and what does it cover?",
@@ -164,7 +164,7 @@ export const FAQS = [
       },
       {
         q: "What is the business dashboard, and do all plans include it?",
-        a: "Yes \u2014 all plans include dashboard access.\n\nSolo Practice plan: Basic dashboard + priority email support \u2014 view your website traffic, edit business hours, phone number, and address.\n\nGroup Practice plan: Full dashboard + priority support \u2014 all Solo features plus announcement banner editing, lead activity tracking, and full performance reports.\n\nEnterprise plan: Full dashboard + dedicated account management \u2014 all Group features plus easy update request submission and custom reporting.\n\nCustom plan: Custom dashboard configuration tailored to your specific needs.\n\nThe dashboard is a private, easy-to-use portal that puts you in control of your key business information without needing to contact a developer."
+        a: "Yes \u2014 all plans include the same dashboard access. Every client gets a private, easy-to-use portal where you can view your website traffic, edit business hours, phone number, and address, manage announcement banners, and submit update requests.\n\nAll plans also include a dedicated account manager, so you always have a real person to reach out to.\n\nCustom plan: Custom dashboard configuration tailored to your specific needs.\n\nThe dashboard puts you in control of your key business information without needing to contact a developer."
       }
     ]
   },
@@ -185,8 +185,8 @@ export const FAQS = [
         a: "Basic SEO (included in all plans) covers the fundamentals \u2014 clean code, fast page speed, proper page titles and meta descriptions, mobile optimization, and a sitemap. These are the building blocks every website needs.\n\nLocal SEO optimization (Group Practice and Enterprise plans) goes significantly deeper. It includes:\n\n\u2022 Location-specific keyword targeting across your pages\n\u2022 Google Business Profile setup and optimization \u2014 so you show up in the local map pack\n\u2022 NAP consistency (Name, Address, Phone) across your site\n\u2022 Local schema markup that tells Google exactly where you operate and what you do\n\u2022 Geo-targeted content strategy for your service area\n\nFor professional practices that rely on local clients, this is often the difference between showing up on the first page of Google and being invisible. Most of your competitors aren\u2019t doing this \u2014 which is exactly why it works."
       },
       {
-        q: "What is lead activity tracking?",
-        a: "Lead activity tracking (Group Practice and Enterprise plans) gives you visibility into every lead that comes through your website. Instead of just receiving a form submission in your inbox and hoping you follow up, you get a dashboard view that shows:\n\n\u2022 Every form submission with full details\n\u2022 When each lead came in and which page they submitted from\n\u2022 Whether you\u2019ve responded to them yet\n\u2022 A history of all your leads over time\n\nThis is important because most practices lose leads simply by forgetting to follow up. When you can see every inquiry in one place and know which ones still need a response, you close more cases. It\u2019s a simple tool that directly impacts your revenue."
+        q: "Do I get a dedicated account manager?",
+        a: "Yes \u2014 every plan includes a dedicated account manager. You\u2019ll have a real person you can reach out to whenever you need help, have questions, or want to make changes to your site. No support tickets, no chatbots \u2014 just a direct line to someone who knows your practice and your website."
       },
       {
         q: "What\u2019s the difference between the lead capture forms on each plan?",

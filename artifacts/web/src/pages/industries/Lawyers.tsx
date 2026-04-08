@@ -235,7 +235,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Can you include an online consultation request form?",
-      a: "Yes. Every Graylock plan includes an intake/consultation request form. Group Practice and Enterprise plans include enhanced forms with lead activity tracking in your dashboard.",
+      a: "Yes. Every Graylock plan includes an intake/consultation request form. Group Practice and Enterprise plans include enhanced forms with additional fields to pre-qualify your leads.",
     },
     {
       q: "How long does it take to build a law firm website?",

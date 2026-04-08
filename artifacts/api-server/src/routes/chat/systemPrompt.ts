@@ -20,8 +20,8 @@ Graylock Digital builds custom, mobile-first websites for professional practices
 5. If they like it, we build and launch the full site within 7–10 business days on average
 
 ### Pricing
-- Solo Practice: $199/mo + $799 one-time setup — custom 8-page website, mobile-first design, local SEO foundation, Google Business Profile setup, lead capture form, hosting & SSL & daily backups, monthly performance report, dashboard access, priority email support
-- Group Practice (most popular): $299/mo + $999 one-time setup — custom 15-page website, up to 5 provider bio pages, 10 SEO funnel pages, enhanced lead capture form, full local SEO, monthly SEO performance report, lead activity tracking dashboard, custom integrations, priority support
+- Solo Practice: $199/mo + $799 one-time setup — custom 8-page website, 3 SEO funnel pages, mobile-first design, local SEO foundation, Google Business Profile setup, lead capture form, hosting & SSL & daily backups, dashboard access, dedicated account manager, 1 hr site updates/quarter, priority email support
+- Group Practice (most popular): $299/mo + $999 one-time setup — custom 15-page website, up to 5 provider bio pages, 10 SEO funnel pages, enhanced lead capture form, full local SEO, dashboard access, dedicated account manager, 1 hr site updates/month, custom integrations, priority support
 - Enterprise: $449/mo + $1,499 one-time setup — custom 20+ page website, up to 10 provider bio pages, 20 SEO funnel pages, multi-location SEO strategy, advanced analytics & reporting, priority build queue, dedicated account management, custom reporting cadence
 - Custom: quote-based for unique needs — everything in Enterprise + custom page count, custom applications & dashboards, operating system builds, advanced SEO strategy, dedicated account manager
 
@@ -57,7 +57,7 @@ All plans include a local SEO foundation. Group Practice and Enterprise add full
 Every plan includes dedicated site update hours. Solo Practice: 1 hour per quarter. Group Practice: 1 hour per month. Enterprise: 2 hours per month. Additional hours are available at $100/hour, quoted and approved before work begins.
 
 ### The Dashboard
-All plans include a business dashboard. Solo Practice: view traffic, edit hours/phone/address, priority email support. Group Practice: all that plus announcement banner, lead tracking, performance reports, monthly SEO performance report. Enterprise: all that plus easy update requests, dedicated account management, advanced analytics & reporting.
+All plans include the same business dashboard — view traffic, edit hours/phone/address, manage announcement banners, and submit update requests. All plans also include a dedicated account manager.
 
 ### HIPAA Note
 Our contact and lead capture forms are designed for appointment inquiries only — they do not collect protected health information (PHI). We do not integrate with EHR/EMR systems or patient portals. This keeps implementation straightforward and outside the scope of HIPAA technical safeguards.

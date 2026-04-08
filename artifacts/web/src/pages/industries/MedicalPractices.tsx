@@ -242,7 +242,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Which plan is right for my medical practice?",
-      a: "Solo physicians typically start with our Solo Practice plan at $199/month. Multi-provider practices usually choose Group Practice at $299/month for up to 5 provider pages. Larger organizations should consider Enterprise at $449/month for up to 10 provider pages and dedicated account management.",
+      a: "Solo physicians typically start with our Solo Practice plan at $199/month. Multi-provider practices usually choose Group Practice at $299/month for up to 5 provider pages. Larger organizations should consider Enterprise at $449/month for up to 10 provider pages. All plans include a dedicated account manager.",
     },
     {
       q: "How long does it take to build a medical practice website?",

@@ -228,7 +228,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Which plan is right for our group practice?",
-      a: "Our Group Practice plan at $299/month is designed specifically for multi-provider practices. It includes up to 5 provider bio pages, 10 SEO funnel pages, and monthly SEO performance reports. Larger practices should consider the Enterprise plan at $449/month for up to 10 provider pages and dedicated account management.",
+      a: "Our Group Practice plan at $299/month is designed specifically for multi-provider practices. It includes up to 5 provider bio pages, 10 SEO funnel pages, a dedicated account manager, and 1 hour of site updates per month. Larger practices should consider the Enterprise plan at $449/month for up to 10 provider pages and 2 hours of site updates per month.",
     },
   ],
   bottomCta: {

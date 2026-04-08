@@ -86,14 +86,9 @@ const data: StrategyPageData = {
           "Answering objections proactively reduces friction and increases the conversion rate of visitors who are on the fence.",
       },
       {
-        title: "Lead activity tracking dashboard",
+        title: "Dedicated account manager",
         description:
-          "Group Practice and Enterprise plan clients can see every enquiry that comes in through their website, in real time, through their Graylock dashboard.",
-      },
-      {
-        title: "Monthly performance reporting",
-        description:
-          "Every plan includes a monthly report showing traffic, new enquiries, and key metrics. Group Practice and Enterprise clients receive detailed monthly SEO performance reports.",
+          "Every plan includes a dedicated account manager who knows your practice and your website. Real support from a real person — no tickets, no chatbots.",
       },
       {
         title: "Google Business Profile optimization",
@@ -152,9 +147,9 @@ const data: StrategyPageData = {
         fix: "We write specific, active CTAs tailored to each page's intent",
       },
       {
-        mistake: "No lead tracking",
+        mistake: "No way to track what's working",
         cost: "No idea what's working — can't improve what you can't measure",
-        fix: "Dashboard with lead activity tracking on Group Practice and Enterprise plans",
+        fix: "Dashboard access on every plan so you can see traffic and enquiries",
       },
       {
         mistake: "Phone number not clickable on mobile",
@@ -187,8 +182,8 @@ const data: StrategyPageData = {
       a: "Add clear, compelling calls-to-action on every key page, make sure your forms work and are easy to find, ensure your site loads fast on mobile, and optimize your Google Business Profile. These four changes alone can dramatically increase the leads your current site generates.",
     },
     {
-      q: "Does Graylock track the leads my website generates?",
-      a: "Yes. Group Practice and Enterprise plan clients get access to the Graylock dashboard, which includes real-time lead activity tracking. You can see every enquiry that comes in through your website — which page it came from, when it arrived, and the contact details submitted.",
+      q: "Can I see how my website is performing?",
+      a: "Yes. Every plan includes dashboard access where you can view your website traffic, see enquiries that come in, and track key metrics. Your dedicated account manager is also available to walk you through performance and suggest improvements.",
     },
     {
       q: "How is lead generation different from advertising?",
@@ -196,7 +191,7 @@ const data: StrategyPageData = {
     },
     {
       q: "Which Graylock plan is best for lead generation?",
-      a: "All plans include lead capture forms, click-to-call, and a monthly performance report. For active lead generation with tracking and optimization, the Group Practice plan ($299/mo) is ideal — it includes enhanced forms, lead activity tracking in the dashboard, and SEO funnel pages. The Enterprise plan ($449/mo) adds advanced analytics and dedicated account management.",
+      a: "All plans include lead capture forms, click-to-call, dashboard access, and a dedicated account manager. For active lead generation with more funnel pages and enhanced forms, the Group Practice plan ($299/mo) is ideal. The Enterprise plan ($449/mo) adds advanced analytics and more site update hours.",
     },
   ],
   bottomCta: {
@@ -227,10 +222,10 @@ const data: StrategyPageData = {
       },
       {
         "@type": "Question",
-        name: "Does Graylock track the leads my website generates?",
+        name: "Can I see how my website is performing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Group Practice and Enterprise plan clients get access to real-time lead activity tracking in the Graylock dashboard.",
+          text: "Yes. Every plan includes dashboard access to view website traffic, enquiries, and key metrics.",
         },
       },
       {

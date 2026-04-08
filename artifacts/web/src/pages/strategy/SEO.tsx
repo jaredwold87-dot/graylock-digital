@@ -98,9 +98,9 @@ const data: StrategyPageData = {
           "Every page gets a unique, keyword-rich title tag and meta description written to attract clicks from search results.",
       },
       {
-        title: "Monthly SEO reporting",
+        title: "Dedicated account manager",
         description:
-          "Every plan includes monthly performance reports showing keyword rankings, traffic trends, and opportunities. Group Practice and Enterprise clients receive detailed monthly SEO performance reports.",
+          "Every plan includes a dedicated account manager who monitors your site's performance and is available to discuss SEO progress, suggest improvements, and answer questions.",
       },
     ],
   },
@@ -203,7 +203,7 @@ const data: StrategyPageData = {
     },
     {
       q: "Does Graylock handle SEO for my website?",
-      a: "Every Graylock plan includes an SEO foundation: proper metadata, clean URL structure, mobile optimization, fast load times, and schema markup. Group Practice and Enterprise plans add full local SEO optimization, Google Business Profile setup, and monthly SEO performance reports. Custom plans include advanced SEO strategy.",
+      a: "Every Graylock plan includes an SEO foundation: proper metadata, clean URL structure, mobile optimization, fast load times, and schema markup. Group Practice and Enterprise plans add full local SEO optimization and Google Business Profile setup. Custom plans include advanced SEO strategy. All plans include a dedicated account manager.",
     },
   ],
   bottomCta: {

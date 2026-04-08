@@ -234,7 +234,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Can my website include an online client inquiry form?",
-      a: "Absolutely. Every Graylock plan includes a contact/inquiry form. Group Practice and Enterprise plans include enhanced lead forms with additional fields and lead activity tracking in your dashboard.",
+      a: "Absolutely. Every Graylock plan includes a contact/inquiry form. Group Practice and Enterprise plans include enhanced lead forms with additional fields to pre-qualify your leads.",
     },
     {
       q: "Are your forms HIPAA compliant?",
@@ -242,7 +242,7 @@ const data: IndustryPageData = {
     },
     {
       q: "What's included in the monthly fee?",
-      a: "Hosting, SSL, daily backups, dashboard access, monthly performance reporting, and priority support. Everything is included in your plan — no hidden fees.",
+      a: "Hosting, SSL, daily backups, dashboard access, a dedicated account manager, and priority support. Everything is included in your plan — no hidden fees.",
     },
   ],
   bottomCta: {

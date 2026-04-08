@@ -89,15 +89,15 @@ export default function HowItWorks() {
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="text-2xl font-display text-charcoal mb-4">Monthly Performance Reporting</h3>
+              <h3 className="text-2xl font-display text-charcoal mb-4">Dedicated Account Manager</h3>
               <p className="text-gray-600 font-sans leading-relaxed">
-                Every plan includes monthly performance reports so you always know how your site is performing. See visitor trends, lead activity, and key metrics — all in a clear, easy-to-understand format.
+                Every plan includes a dedicated account manager — a real person who knows your practice and your website. Need to discuss performance, request changes, or ask a question? You have a direct line. No support tickets, no chatbots.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
               <h3 className="text-2xl font-display text-charcoal mb-4">Ongoing SEO & Performance Monitoring</h3>
               <p className="text-gray-600 font-sans leading-relaxed">
-                Group Practice and Enterprise clients receive ongoing SEO monitoring and monthly performance reports to keep your site competitive in local search results. We also offer a long-term website refresh and strategy review at the 2-year mark — because great websites evolve with your practice.
+                Your dedicated account manager monitors your site's SEO performance and keeps your site competitive in local search results. We also offer a long-term website refresh and strategy review at the 2-year mark — because great websites evolve with your practice.
               </p>
             </ScrollReveal>
           </div>

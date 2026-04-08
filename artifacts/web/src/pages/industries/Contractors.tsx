@@ -246,7 +246,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Can I add an online quote request form?",
-      a: "Yes — every Graylock plan includes a lead capture / quote request form. Standard and Growth plans include enhanced forms with more fields and lead activity tracking.",
+      a: "Yes — every Graylock plan includes a lead capture / quote request form. Group Practice and Enterprise plans include enhanced forms with additional fields to pre-qualify your leads.",
     },
   ],
   bottomCta: {
