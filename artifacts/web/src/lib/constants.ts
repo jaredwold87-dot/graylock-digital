@@ -216,8 +216,8 @@ export const FAQS = [
         a: "We specialize in websites for law firms (solo attorneys and small firms), therapists and counseling groups, CPA and accounting firms, medical practices, group practices, and other professional service providers. We understand that your website needs to convey expertise, build trust quickly, and convert visitors into consultations or appointments \u2014 not just look nice."
       },
       {
-        q: "How is Graylock different from TherapySites, Brighter Vision, or LawLytics?",
-        a: "Those platforms offer templates or self-managed tools. Graylock builds genuinely custom websites \u2014 your site is designed from the ground up for your specific practice, your specialty, your location, and your ideal clients. We deliver in 3\u20135 business days (not weeks), you own your domain and all content, and our ongoing support means you never have to touch the technical side. Brighter Vision recently raised their prices to $149\u2013$349/month for a template site where you don\u2019t own the content. Graylock starts at $199/month for a truly custom site where you own everything."
+        q: "How is Graylock different from other website platforms?",
+        a: "Most industry-specific website platforms offer templates or self-managed tools at $149\u2013$349/month \u2014 and you don\u2019t own the content. Graylock builds genuinely custom websites designed from the ground up for your specific practice, your specialty, your location, and your ideal clients. We deliver in 7\u201310 business days, you own your domain and all content, and our ongoing support means you never have to touch the technical side. Starting at $199/month with no long-term contracts."
       }
     ]
   }

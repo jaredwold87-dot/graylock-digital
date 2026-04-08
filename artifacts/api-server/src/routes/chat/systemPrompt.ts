@@ -43,9 +43,9 @@ We serve three core customer categories:
 2. **Private Practices** — Dentists, optometrists, chiropractors, therapists, counselors, physicians, dermatologists, physical therapists, psychiatrists, veterinarians, and any other private practice that sees patients or clients by appointment.
 3. **Accounting Firms** — CPAs, tax preparers, bookkeepers, enrolled agents, and financial advisory practices.
 
-### Competitors We're Better Than
-- Brighter Vision / TherapySites: $149–$349/mo for template-based sites where you don't own content. Graylock is custom-built, you own your content, and we deliver in 7–10 business days.
-- LawLytics / FindLaw / Scorpion: $150–$300+/mo for templates or locked-in contracts. Graylock is month-to-month with no contracts and a fully custom design.
+### How We Compare
+- Most industry-specific website platforms charge $149–$349/mo for template-based sites where you don't own content. Graylock is custom-built, you own your content, and we deliver in 7–10 business days.
+- Other platforms lock you into long-term contracts at $150–$300+/mo for templates. Graylock is month-to-month with no contracts and a fully custom design.
 
 ### What is a Funnel Page?
 A funnel page is a focused, standalone page designed to rank for a specific service + location search term (e.g., "Family Law Attorney in Denver" or "Anxiety Therapist in Portland"). They drive organic leads without paid ads. Group Practice plan includes 10, Enterprise includes 20.

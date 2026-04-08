@@ -240,8 +240,8 @@ const data: IndustryPageData = {
       a: "Our contact and lead capture forms are designed for appointment inquiries only — they do not collect protected health information (PHI). We do not integrate with EHR/EMR systems or patient portals. This keeps your implementation straightforward and outside the scope of HIPAA technical safeguards.",
     },
     {
-      q: "How does your pricing compare to Brighter Vision, TherapySites, or other platforms?",
-      a: "Brighter Vision charges $149–$349/month for template-based sites. Other platforms are similar. Graylock starts at $199/month for a fully custom site where you own your content and domain. We deliver in 7–10 business days and handle everything for you. No long-term contracts.",
+      q: "How does your pricing compare to other website platforms?",
+      a: "Most industry-specific website platforms charge $149–$349/month for template-based sites where you don't own your content. Graylock starts at $199/month for a fully custom site where you own your content and domain. We deliver in 7–10 business days and handle everything for you. No long-term contracts.",
     },
     {
       q: "Can each provider in our practice have their own bio page?",
