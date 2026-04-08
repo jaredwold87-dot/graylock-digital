@@ -1,29 +1,36 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
+import { Award, SearchX, DollarSign, Copy, HelpCircle, Clock } from "lucide-react";
 
 export function ProblemSection() {
   const problems = [
     {
+      icon: <Award size={22} />,
       title: "Your Site Doesn't Reflect Your Expertise",
       desc: "You've built a respected practice — but your website tells a different story. Prospective clients judge your credibility in seconds. An outdated design undermines the trust you've spent years building."
     },
     {
+      icon: <SearchX size={22} />,
       title: "Prospective Clients Can't Find You on Google",
       desc: "Without a proper local SEO foundation, attorneys, therapists, CPAs, and physicians in your area are invisible. The clients searching for your services are finding your competitors instead."
     },
     {
+      icon: <DollarSign size={22} />,
       title: "Agencies Want $10K–$20K Upfront",
       desc: "Most agencies quote $5,000–$20,000 before showing you anything. That's a huge gamble — especially for a solo practitioner or small firm trying to grow responsibly."
     },
     {
+      icon: <Copy size={22} />,
       title: "Your Website Looks Like Every Other Practice",
       desc: "Template platforms like TherapySites, Brighter Vision, and LawLytics make every practice look the same. Your site should reflect your unique expertise — not a cookie-cutter layout that's broken on mobile."
     },
     {
+      icon: <HelpCircle size={22} />,
       title: "You Don't Know What's Holding Your Site Back",
       desc: "You know your site isn't converting — but is it the design? The copy? The SEO? You need someone to show you, clearly, what's costing you clients."
     },
     {
+      icon: <Clock size={22} />,
       title: "Every Month Without a Great Site Is Lost Referrals",
       desc: "While you put it off, prospective clients are choosing other practices with better online presences. Every month you wait is another month of lost consultations and referrals."
     }
@@ -47,8 +54,8 @@ export function ProblemSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {problems.map((prob, i) => (
             <ScrollReveal key={i} delay={i * 0.1} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange/20 transition-all duration-400 group">
-              <div className="w-10 h-10 rounded-lg bg-orange/5 flex items-center justify-center mb-4 group-hover:bg-orange/10 transition-colors">
-                <div className="w-2 h-2 rounded-full bg-orange" />
+              <div className="w-10 h-10 rounded-lg bg-orange/5 flex items-center justify-center mb-4 group-hover:bg-orange/10 transition-colors text-orange">
+                {prob.icon}
               </div>
               <h3 className="text-xl font-display text-charcoal mb-3">{prob.title}</h3>
               <p className="text-gray-600 font-sans leading-relaxed">{prob.desc}</p>
