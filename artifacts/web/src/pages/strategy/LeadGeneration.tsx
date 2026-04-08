@@ -93,7 +93,7 @@ const data: StrategyPageData = {
       {
         title: "Monthly performance reporting",
         description:
-          "Every plan includes a monthly report showing traffic, new enquiries, and key metrics. Group Practice clients receive quarterly strategy calls. Enterprise clients receive bi-annual strategy sessions.",
+          "Every plan includes a monthly report showing traffic, new enquiries, and key metrics. Group Practice and Enterprise clients receive detailed monthly SEO performance reports.",
       },
       {
         title: "Google Business Profile optimization",
@@ -135,7 +135,7 @@ const data: StrategyPageData = {
       {
         title: "Conversion Rate Optimization (CRO) for Lead Gen",
         description:
-          "CRO is the practice of systematically improving the percentage of visitors who take a desired action. For a lead-generation website, this means testing and refining: headline copy, CTA button text, form placement, social proof positioning, and page structure. Graylock builds with CRO best practices from day one, and Enterprise plan clients receive bi-annual strategy sessions that include CRO recommendations.",
+          "CRO is the practice of systematically improving the percentage of visitors who take a desired action. For a lead-generation website, this means testing and refining: headline copy, CTA button text, form placement, social proof positioning, and page structure. Graylock builds with CRO best practices from day one, and Enterprise plan clients receive advanced analytics and reporting that include CRO recommendations.",
       },
     ],
   },
@@ -196,7 +196,7 @@ const data: StrategyPageData = {
     },
     {
       q: "Which Graylock plan is best for lead generation?",
-      a: "All plans include lead capture forms, click-to-call, and a monthly performance report. For active lead generation with tracking and optimization, the Group Practice plan ($299/mo) is ideal — it includes enhanced forms, lead activity tracking in the dashboard, SEO funnel pages, and quarterly strategy calls. The Enterprise plan ($449/mo) adds advanced analytics, bi-annual strategy sessions, and dedicated account management.",
+      a: "All plans include lead capture forms, click-to-call, and a monthly performance report. For active lead generation with tracking and optimization, the Group Practice plan ($299/mo) is ideal — it includes enhanced forms, lead activity tracking in the dashboard, and SEO funnel pages. The Enterprise plan ($449/mo) adds advanced analytics and dedicated account management.",
     },
   ],
   bottomCta: {

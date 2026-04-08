@@ -28,10 +28,9 @@ export const PRICING_TIERS = [
       "10 SEO-Optimized Funnel Pages",
       "Enhanced Lead Capture Form",
       "Full Local SEO Implementation",
-      "Quarterly SEO Review",
+      "Monthly SEO Performance Report",
       "Lead Activity Tracking Dashboard",
       "Custom Integrations (Calendly, scheduling, etc.)",
-      "Quarterly Strategy Call",
       "Priority Support"
     ]
   },
@@ -46,7 +45,6 @@ export const PRICING_TIERS = [
       "20 SEO-Optimized Funnel Pages",
       "Multi-Location SEO Strategy",
       "Advanced Analytics & Reporting",
-      "Bi-Annual Strategy Sessions",
       "Priority Build Queue",
       "Dedicated Account Management",
       "Custom Reporting Cadence"
@@ -103,7 +101,7 @@ export const FAQS = [
     questions: [
       {
         q: "What\u2019s included in the monthly fee?",
-        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n\u2022 Website hosting on fast, secure servers\n\u2022 SSL certificate (the padlock that makes your site trusted and secure)\n\u2022 Daily backups\n\u2022 Dashboard access and support\n\nSolo Practice plan ($199/mo): Dashboard + priority email support + monthly performance report\nGroup Practice plan ($299/mo): Full dashboard + priority support + quarterly SEO review + strategy calls\nEnterprise plan ($449/mo): Full dashboard + dedicated account management + bi-annual strategy sessions\nCustom plan: Tailored to your needs \u2014 contact us for a quote\n\nYou can view all plan details on our Pricing page."
+        a: "Your monthly fee covers everything needed to keep your website running and performing:\n\n\u2022 Website hosting on fast, secure servers\n\u2022 SSL certificate (the padlock that makes your site trusted and secure)\n\u2022 Daily backups\n\u2022 Dashboard access and support\n\nSolo Practice plan ($199/mo): Dashboard + priority email support + monthly performance report\nGroup Practice plan ($299/mo): Full dashboard + priority support + monthly SEO performance report\nEnterprise plan ($449/mo): Full dashboard + dedicated account management + monthly SEO performance report\nCustom plan: Tailored to your needs \u2014 contact us for a quote\n\nYou can view all plan details on our Pricing page."
       },
       {
         q: "Is there a setup fee, and what does it cover?",
@@ -196,8 +194,8 @@ export const FAQS = [
         a: "Schema markup is code added to your website that helps Google understand exactly what your practice does, where you\u2019re located, what services you offer, your hours, your reviews, and more. It doesn\u2019t change how your site looks to visitors \u2014 but it changes how Google sees and displays your site in search results.\n\nWith proper schema, your practice can show up with rich results \u2014 star ratings, business hours, service lists, and location info displayed right in the search listing. This makes your result stand out and get more clicks than a plain text listing.\n\nAll plans include basic schema. The Enterprise plan includes advanced schema markup covering multiple practice areas, FAQ schema, and local business schema \u2014 giving you the best possible presence in search results."
       },
       {
-        q: "What happens during the strategy calls?",
-        a: "Strategy calls (Group Practice: quarterly, Enterprise: bi-annual deep sessions) are one-on-one sessions with our team where we review your website\u2019s performance and plan ahead. We cover:\n\n\u2022 Traffic trends \u2014 where your visitors are coming from and which pages perform best\n\u2022 Lead quality \u2014 whether your forms are attracting the right kind of clients\n\u2022 SEO progress \u2014 how your rankings are moving and where the opportunities are\n\u2022 Content recommendations \u2014 what pages or updates would drive the most impact\n\u2022 Competitive insights \u2014 what your competitors are doing online and how to stay ahead\n\nThink of it as having a marketing advisor on retainer. Most practices don\u2019t have anyone looking at this data for them \u2014 and that\u2019s exactly why they plateau."
+        q: "What kind of reporting do I receive?",
+        a: "Group Practice and Enterprise clients receive a monthly SEO performance report covering:\n\n\u2022 Traffic trends \u2014 where your visitors are coming from and which pages perform best\n\u2022 Lead quality \u2014 whether your forms are attracting the right kind of clients\n\u2022 SEO progress \u2014 how your rankings are moving and where the opportunities are\n\u2022 Content recommendations \u2014 what pages or updates would drive the most impact\n\u2022 Competitive insights \u2014 what your competitors are doing online and how to stay ahead\n\nMost practices don\u2019t have anyone looking at this data for them \u2014 and that\u2019s exactly why they plateau."
       }
     ]
   },

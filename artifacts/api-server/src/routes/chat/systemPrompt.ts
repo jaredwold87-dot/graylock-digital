@@ -21,8 +21,8 @@ Graylock Digital builds custom, mobile-first websites for professional practices
 
 ### Pricing
 - Solo Practice: $199/mo + $799 one-time setup — custom 8-page website, mobile-first design, local SEO foundation, Google Business Profile setup, lead capture form, hosting & SSL & daily backups, monthly performance report, dashboard access, priority email support
-- Group Practice (most popular): $299/mo + $999 one-time setup — custom 15-page website, up to 5 provider bio pages, 10 SEO funnel pages, enhanced lead capture form, full local SEO, quarterly SEO review, lead activity tracking dashboard, custom integrations, quarterly strategy call, priority support
-- Enterprise: $449/mo + $1,499 one-time setup — custom 20+ page website, up to 10 provider bio pages, 20 SEO funnel pages, multi-location SEO strategy, advanced analytics & reporting, bi-annual strategy sessions, priority build queue, dedicated account management, custom reporting cadence
+- Group Practice (most popular): $299/mo + $999 one-time setup — custom 15-page website, up to 5 provider bio pages, 10 SEO funnel pages, enhanced lead capture form, full local SEO, monthly SEO performance report, lead activity tracking dashboard, custom integrations, priority support
+- Enterprise: $449/mo + $1,499 one-time setup — custom 20+ page website, up to 10 provider bio pages, 20 SEO funnel pages, multi-location SEO strategy, advanced analytics & reporting, priority build queue, dedicated account management, custom reporting cadence
 - Custom: quote-based for unique needs — everything in Enterprise + custom page count, custom applications & dashboards, operating system builds, advanced SEO strategy, dedicated account manager
 
 ### No Hidden Fees
@@ -51,7 +51,7 @@ A funnel page is a focused, standalone page designed to rank for a specific serv
 All plans include a local SEO foundation. Group Practice and Enterprise add full local SEO optimization, Google Business Profile setup, and advanced schema markup. SEO takes 3–6 months to see meaningful results, but a properly built site is the foundation.
 
 ### The Dashboard
-All plans include a business dashboard. Solo Practice: view traffic, edit hours/phone/address, priority email support. Group Practice: all that plus announcement banner, lead tracking, performance reports, quarterly strategy calls. Enterprise: all that plus easy update requests, dedicated account management, bi-annual strategy sessions.
+All plans include a business dashboard. Solo Practice: view traffic, edit hours/phone/address, priority email support. Group Practice: all that plus announcement banner, lead tracking, performance reports, monthly SEO performance report. Enterprise: all that plus easy update requests, dedicated account management, advanced analytics & reporting.
 
 ### HIPAA Note
 Our contact and lead capture forms are designed for appointment inquiries only — they do not collect protected health information (PHI). We do not integrate with EHR/EMR systems or patient portals. This keeps implementation straightforward and outside the scope of HIPAA technical safeguards.

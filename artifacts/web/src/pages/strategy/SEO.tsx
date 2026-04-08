@@ -100,7 +100,7 @@ const data: StrategyPageData = {
       {
         title: "Monthly SEO reporting",
         description:
-          "Every plan includes monthly performance reports showing keyword rankings, traffic trends, and opportunities. Group Practice clients get quarterly SEO reviews. Enterprise clients receive bi-annual strategy sessions.",
+          "Every plan includes monthly performance reports showing keyword rankings, traffic trends, and opportunities. Group Practice and Enterprise clients receive detailed monthly SEO performance reports.",
       },
     ],
   },
@@ -203,7 +203,7 @@ const data: StrategyPageData = {
     },
     {
       q: "Does Graylock handle SEO for my website?",
-      a: "Every Graylock plan includes an SEO foundation: proper metadata, clean URL structure, mobile optimization, fast load times, and schema markup. Group Practice and Enterprise plans add full local SEO optimization and Google Business Profile setup. Group Practice clients receive quarterly SEO reviews. Enterprise clients receive bi-annual strategy sessions. Custom plans include advanced SEO strategy.",
+      a: "Every Graylock plan includes an SEO foundation: proper metadata, clean URL structure, mobile optimization, fast load times, and schema markup. Group Practice and Enterprise plans add full local SEO optimization, Google Business Profile setup, and monthly SEO performance reports. Custom plans include advanced SEO strategy.",
     },
   ],
   bottomCta: {

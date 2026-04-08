@@ -95,9 +95,9 @@ export default function HowItWorks() {
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-              <h3 className="text-2xl font-display text-charcoal mb-4">Quarterly SEO Reviews & Strategy Calls</h3>
+              <h3 className="text-2xl font-display text-charcoal mb-4">Ongoing SEO & Performance Monitoring</h3>
               <p className="text-gray-600 font-sans leading-relaxed">
-                Group Practice and Enterprise clients receive quarterly SEO reviews and strategy calls to keep your site competitive in local search results. We also offer a long-term website refresh and strategy review at the 2-year mark — because great websites evolve with your practice.
+                Group Practice and Enterprise clients receive ongoing SEO monitoring and monthly performance reports to keep your site competitive in local search results. We also offer a long-term website refresh and strategy review at the 2-year mark — because great websites evolve with your practice.
               </p>
             </ScrollReveal>
           </div>
