@@ -13,7 +13,7 @@ export const PRICING_TIERS = [
       "Hosting, SSL & Daily Backups",
       "Monthly Performance Report",
       "Business Dashboard Access",
-      "1 Hour Dev Requests / Quarter",
+      "1 Hour Site Updates / Quarter",
       "Priority Email Support"
     ]
   },
@@ -31,7 +31,7 @@ export const PRICING_TIERS = [
       "Full Local SEO Implementation",
       "Monthly SEO Performance Report",
       "Lead Activity Tracking Dashboard",
-      "1 Hour Dev Requests / Month",
+      "1 Hour Site Updates / Month",
       "Custom Integrations (Calendly, scheduling, etc.)",
       "Priority Support"
     ]
@@ -47,7 +47,7 @@ export const PRICING_TIERS = [
       "20 SEO-Optimized Funnel Pages",
       "Multi-Location SEO Strategy",
       "Advanced Analytics & Reporting",
-      "2 Hours Dev Requests / Month",
+      "2 Hours Site Updates / Month",
       "Priority Build Queue",
       "Dedicated Account Management",
       "Custom Reporting Cadence"
@@ -112,7 +112,7 @@ export const FAQS = [
       },
       {
         q: "Are there any hidden fees or extra charges?",
-        a: "No. The setup fee and monthly rate are all you pay. There are no surprise invoices for hosting renewals, plugin licences, or security certificates \u2014 those are all included.\n\nEvery plan includes dev request hours for site updates and changes: Solo Practice includes 1 hour per quarter, Group Practice includes 1 hour per month, and Enterprise includes 2 hours per month. If you need additional dev time beyond your plan\u2019s allocation, it\u2019s $100/hour \u2014 quoted and approved before any work begins. You\u2019ll never be surprised by a charge."
+        a: "No. The setup fee and monthly rate are all you pay. There are no surprise invoices for hosting renewals, plugin licences, or security certificates \u2014 those are all included.\n\nEvery plan includes dedicated site update hours: Solo Practice includes 1 hour per quarter, Group Practice includes 1 hour per month, and Enterprise includes 2 hours per month. If you need additional time beyond your plan\u2019s allocation, it\u2019s $100/hour \u2014 quoted and approved before any work begins. You\u2019ll never be surprised by a charge."
       },
       {
         q: "Can I cancel at any time?",
