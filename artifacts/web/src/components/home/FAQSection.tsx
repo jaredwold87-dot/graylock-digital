@@ -10,6 +10,10 @@ const homepageFaqs = [
     a: "Yes, 100%. We evaluate your current website, walk you through what's working and what isn't, and give you clear recommendations — all at no cost. You also receive a comprehensive written PDF report covering competitive analysis, website performance, SEO gaps, and market opportunities. You receive the full report and the custom homepage demo regardless of whether you choose to work with us. There's no hidden fee and no obligation."
   },
   {
+    q: "Why do you do this for free?",
+    a: "We absorb the upfront cost because our clients stay with us for years — we'd rather prove our value first than ask you to take our word for it. We use a high-converting structural framework, then customize it to your brand, services, and local market. That's how we deliver quality in 5 days. Your homepage demo, evaluation, and written report are built around your actual business, not pulled from a template library. Even if you don't move forward, you walk away with a professional-grade report and a clear picture of what's holding your website back. No strings attached."
+  },
+  {
     q: "Is the homepage demo actually custom to my business?",
     a: "Absolutely. We don't send you a generic template. We research your business, your market, and your competitors, then design a homepage concept that's specific to you — your brand, your services, your audience."
   },
