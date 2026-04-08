@@ -50,16 +50,13 @@ function LaptopMockup({ showAfter }: { showAfter: boolean }) {
               style={{ opacity: showAfter ? 0 : 1 }}
               loading="eager"
             />
-            <picture>
-              <source srcSet={`${BASE}mockup-laptop-after.webp`} type="image/webp" />
-              <img
-                src={`${BASE}mockup-laptop-after.png`}
-                alt=""
-                className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
-                style={{ opacity: showAfter ? 1 : 0 }}
-                loading="eager"
-              />
-            </picture>
+            <img
+              src={`${BASE}mockup-laptop-after.png`}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+              style={{ opacity: showAfter ? 1 : 0 }}
+              loading="eager"
+            />
           </div>
 
           <div className="h-[4%] bg-gradient-to-b from-[#3a3a3a] to-[#2a2a2a] rounded-b-md" />
@@ -102,16 +99,13 @@ function PhoneMockup({ showAfter }: { showAfter: boolean }) {
               style={{ opacity: showAfter ? 0 : 1 }}
               loading="eager"
             />
-            <picture>
-              <source srcSet={`${BASE}mockup-phone-after.webp`} type="image/webp" />
-              <img
-                src={`${BASE}mockup-phone-after.png`}
-                alt=""
-                className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
-                style={{ opacity: showAfter ? 1 : 0 }}
-                loading="eager"
-              />
-            </picture>
+            <img
+              src={`${BASE}mockup-phone-after.png`}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+              style={{ opacity: showAfter ? 1 : 0 }}
+              loading="eager"
+            />
           </div>
 
           <div className="h-[1.5%] bg-[#1a1a1a]" />
