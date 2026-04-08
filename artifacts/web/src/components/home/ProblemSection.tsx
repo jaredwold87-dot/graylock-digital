@@ -1,6 +1,6 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { Award, SearchX, DollarSign, Copy, HelpCircle } from "lucide-react";
+import { Award, SearchX, DollarSign, Copy, HelpCircle, Clock } from "lucide-react";
 
 export function ProblemSection() {
   const problems = [
@@ -17,7 +17,12 @@ export function ProblemSection() {
     {
       icon: <DollarSign size={22} />,
       title: "Agencies Want $10K–$30K Upfront",
-      desc: "Most agencies charge $10K–$30K just to build your site — then bill another $300–$800/month for hosting and maintenance. That's a huge gamble for a practice trying to grow responsibly."
+      desc: "Most agencies charge $10K–$30K just to build your site — before you've seen a single mockup. That's a huge gamble for a practice trying to grow responsibly."
+    },
+    {
+      icon: <Clock size={22} />,
+      title: "Then $300–$800/Month to Keep It Running",
+      desc: "After paying tens of thousands to build it, agencies charge $300–$800/month for hosting and maintenance. You're locked in and paying forever for a site you already paid for."
     },
     {
       icon: <Copy size={22} />,
