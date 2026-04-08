@@ -1,6 +1,6 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { Award, SearchX, DollarSign, Copy, HelpCircle, Clock } from "lucide-react";
+import { Award, SearchX, DollarSign, Copy, HelpCircle } from "lucide-react";
 
 export function ProblemSection() {
   const problems = [
@@ -16,8 +16,8 @@ export function ProblemSection() {
     },
     {
       icon: <DollarSign size={22} />,
-      title: "Agencies Want $10K–$20K Upfront",
-      desc: "Most agencies quote thousands before showing you a single thing. That's a huge gamble for a practice trying to grow responsibly."
+      title: "Agencies Want $10K–$30K Upfront",
+      desc: "Most agencies charge $10K–$30K just to build your site — then bill another $300–$800/month for hosting and maintenance. That's a huge gamble for a practice trying to grow responsibly."
     },
     {
       icon: <Copy size={22} />,
@@ -28,11 +28,6 @@ export function ProblemSection() {
       icon: <HelpCircle size={22} />,
       title: "You Don't Know What's Holding You Back",
       desc: "You know your site isn't converting — but is it the design? The copy? The SEO? You need someone to show you clearly."
-    },
-    {
-      icon: <Clock size={22} />,
-      title: "Every Month Is Lost Referrals",
-      desc: "While you put it off, prospective clients are choosing practices with better online presences. Every month you wait costs you."
     }
   ];
 
