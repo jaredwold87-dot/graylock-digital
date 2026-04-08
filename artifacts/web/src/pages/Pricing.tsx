@@ -193,15 +193,10 @@ export default function Pricing() {
             ))}
           </div>
 
-          <ScrollReveal delay={0.5} className="max-w-3xl mx-auto text-center">
-            <div className="bg-charcoal/40 border border-gunmetal/30 rounded-xl p-6 space-y-3">
-              <p className="text-stone font-sans leading-relaxed text-sm">
-                Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure that keeps your site fast and secure. If you cancel, we package up all of your content and data, and transfer your domain to wherever you choose — with 30 days' notice and no cancellation fees.
-              </p>
-              <p className="text-stone font-sans leading-relaxed text-sm">
-                You will need to build a new site on your new host, but you will never lose your domain authority, your content, or your brand.
-              </p>
-            </div>
+          <ScrollReveal delay={0.5} className="max-w-3xl mx-auto text-center mt-8">
+            <p className="text-stone/50 font-sans text-xs leading-relaxed">
+              Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure. You own your domain, your written content, and your brand assets. Cancel anytime with 30 days' notice — no cancellation fees.
+            </p>
           </ScrollReveal>
         </div>
       </section>
