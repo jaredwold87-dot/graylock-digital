@@ -7,12 +7,9 @@ export function ValueDifferentiationSection() {
     { theirs: "Charge $5,000–$20,000 before showing you anything", ours: "Show you a custom homepage demo before you pay a dollar" },
     { theirs: "Take weeks for a generic pitch deck", ours: "Walk you through real findings in a 20-minute call" },
     { theirs: "Lock you into long-term contracts", ours: "Month-to-month, cancel anytime" },
-    { theirs: "Leave you alone after launch", ours: "Handle hosting, updates, and maintenance every month" },
     { theirs: "Hand you a template and call it custom", ours: "Build a site designed specifically for your practice and specialty" },
-    { theirs: "No way to see what's happening on your site", ours: "Business dashboard with traffic insights and easy info updates" },
-    { theirs: "No visibility into how your site performs", ours: "Monthly performance reporting included on every plan" },
-    { theirs: "Set it and forget it — never revisit", ours: "Quarterly SEO reviews and a long-term refresh at the 2-year mark" },
-    { theirs: "Rarely — usually generic small business focus", ours: "Purpose-built for professional practices" },
+    { theirs: "Leave you alone after launch", ours: "Handle hosting, updates, and maintenance every month" },
+    { theirs: "No visibility into how your site performs", ours: "Business dashboard with traffic insights and performance reporting" },
   ];
 
   return (
@@ -25,16 +22,13 @@ export function ValueDifferentiationSection() {
             Every other agency wants you to pay first.{" "}
             <span className="text-orange">We think that's backwards.</span>
           </h2>
-          <p className="text-stone/80 text-lg md:text-xl font-sans max-w-2xl mx-auto">
-            We do the work first. You see the results first. Then you decide.
-          </p>
         </ScrollReveal>
 
         <ScrollReveal delay={0.15}>
           <div className="bg-navy rounded-2xl border border-gunmetal overflow-hidden">
             <div className="grid grid-cols-2 text-center">
               <div className="p-4 md:p-6 border-b border-r border-gunmetal">
-                <h3 className="font-display text-stone text-lg md:text-xl">Traditional Agencies & Template Platforms</h3>
+                <h3 className="font-display text-stone text-lg md:text-xl">Traditional Agencies</h3>
               </div>
               <div className="p-4 md:p-6 border-b border-gunmetal bg-orange/5">
                 <h3 className="font-display text-orange text-lg md:text-xl">Graylock Digital</h3>
@@ -57,7 +51,7 @@ export function ValueDifferentiationSection() {
 
         <ScrollReveal delay={0.3} className="text-center mt-12">
           <CTAButton href="/get-started">
-            See What This Looks Like for My Business
+            Book Your Free Website Review
           </CTAButton>
         </ScrollReveal>
 

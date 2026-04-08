@@ -1,13 +1,12 @@
 import { SEO } from "@/components/SEO";
 import { HeroSection } from "@/components/home/HeroSection";
-
+import { TrustBar } from "@/components/home/TrustBar";
 import { OfferBreakdownSection } from "@/components/home/OfferBreakdownSection";
+import { ProblemSection } from "@/components/home/ProblemSection";
 import { HowItWorksSection } from "@/components/home/HowItWorksSection";
 import { ValueDifferentiationSection } from "@/components/home/ValueDifferentiationSection";
-import { ProblemSection } from "@/components/home/ProblemSection";
-import { SolutionSection } from "@/components/home/SolutionSection";
-import { DashboardSection } from "@/components/home/DashboardSection";
 import { TestimonialSection } from "@/components/home/TestimonialSection";
+import { DashboardSection } from "@/components/home/DashboardSection";
 import { MissionBlurb } from "@/components/home/MissionBlurb";
 import { NicheExamplesSection } from "@/components/home/NicheExamplesSection";
 import { PricingSection } from "@/components/home/PricingSection";
@@ -19,12 +18,12 @@ export default function Home() {
     <>
       <SEO />
       <HeroSection />
+      <TrustBar />
       <OfferBreakdownSection />
       <ProblemSection />
       <HowItWorksSection />
       <ValueDifferentiationSection />
       <TestimonialSection />
-      <SolutionSection />
       <DashboardSection />
       <MissionBlurb />
       <NicheExamplesSection />

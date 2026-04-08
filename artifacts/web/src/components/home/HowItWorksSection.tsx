@@ -1,5 +1,6 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
+import { Clock, Wrench, Zap } from "lucide-react";
 
 export function HowItWorksSection() {
   const steps = [
@@ -16,20 +17,27 @@ export function HowItWorksSection() {
     {
       num: "03",
       title: "We Build You a Demo Homepage",
-      desc: "We create a custom homepage concept for your practice so you can see exactly how we'd improve your messaging, design, and brand presence. You also receive a comprehensive written report. Both are yours to keep — whether you work with us or not."
+      desc: "We create a custom homepage concept for your practice so you can see exactly how we'd improve your messaging, design, and brand presence. You also receive a comprehensive written report."
     },
     {
       num: "04",
       title: "You Decide — No Pressure",
-      desc: "Love it? We build the full site within 7–10 business days on average and launch. Not ready? No problem. You keep the evaluation insights, the full report, and the demo concept. Zero hard feelings."
+      desc: "Love it? We build the full site within 7–10 business days on average and launch. Not ready? No problem. You keep the evaluation insights, the report, and the demo. Zero hard feelings."
     }
   ];
 
+  const highlights = [
+    { icon: <Clock className="text-orange" size={24} />, title: "Built in 7–10 Days", desc: "Once you say go, we build and launch. No endless back and forth." },
+    { icon: <Wrench className="text-orange" size={24} />, title: "Maintained Monthly", desc: "Hosting, security, and content updates are all handled for you." },
+    { icon: <Zap className="text-orange" size={24} />, title: "Built to Convert", desc: "Every page is structured to turn visitors into booked appointments." },
+  ];
+
   return (
-    <section className="bg-offwhite py-24 px-6 md:px-12 border-b border-gray-200">
+    <section className="bg-offwhite py-24 px-6 md:px-12 border-y border-gray-200">
       <div className="max-w-7xl mx-auto">
         
         <ScrollReveal className="text-center mb-16">
+          <p className="text-orange font-sans font-semibold uppercase tracking-widest text-sm mb-4">Our Process</p>
           <h2 className="text-3xl md:text-5xl font-display text-charcoal mb-6">
             How It Works — Simple and Risk-Free
           </h2>
@@ -52,8 +60,22 @@ export function HowItWorksSection() {
           ))}
         </div>
 
-        <ScrollReveal delay={0.5} className="text-center mt-12">
-          <CTAButton href="/get-started">See How It Works for My Practice</CTAButton>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {highlights.map((h, i) => (
+            <ScrollReveal key={i} delay={0.5 + i * 0.1} className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex gap-4 items-start">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange/15 to-orange/5 rounded-xl flex items-center justify-center flex-shrink-0 border border-orange/10">
+                {h.icon}
+              </div>
+              <div>
+                <h4 className="text-lg font-display text-charcoal mb-1">{h.title}</h4>
+                <p className="text-gray-600 font-sans text-sm leading-relaxed">{h.desc}</p>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal delay={0.6} className="text-center">
+          <CTAButton href="/get-started">Book Your Free Website Review</CTAButton>
         </ScrollReveal>
 
       </div>

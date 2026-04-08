@@ -7,25 +7,25 @@ export function OfferBreakdownSection() {
     {
       icon: <Search className="text-orange" size={28} />,
       title: "Full Website Evaluation",
-      desc: "We evaluate your current site and identify every issue that's costing you leads — from design and messaging problems to mobile usability and SEO gaps. You'll see exactly what's broken and why.",
+      desc: "We evaluate your current site and identify every issue that's costing you leads — from design and messaging problems to mobile usability and SEO gaps.",
       value: "Most agencies charge $500+ for this alone"
     },
     {
       icon: <MessageSquare className="text-orange" size={28} />,
       title: "Live Strategy Walkthrough",
-      desc: "We hop on a 20-minute call with you and walk through the findings in plain English. No jargon, no fluff — just a clear explanation of what's hurting your site and what we'd do differently.",
+      desc: "We hop on a 20-minute call with you and walk through the findings in plain English. No jargon, no fluff — just a clear explanation of what we'd do differently.",
       value: "Clarity you can act on, whether you hire us or not"
     },
     {
       icon: <FileText className="text-orange" size={28} />,
       title: "Comprehensive Written Report",
-      desc: "You receive a full PDF report covering competitive analysis, customer and audience insights, website performance analysis, and strategic opportunity recommendations. It's a high-value deliverable you keep regardless of whether you move forward.",
-      value: "A professional-grade report — yours to keep forever"
+      desc: "You receive a full PDF report covering competitive analysis, audience insights, website performance, and strategic recommendations. Yours to keep forever.",
+      value: "A professional-grade report — yours to keep"
     },
     {
       icon: <Monitor className="text-orange" size={28} />,
       title: "Custom Homepage Demo",
-      desc: "We design a custom homepage concept for your business showing exactly how we'd improve your messaging, layout, and brand presentation. You get to see what your site could become.",
+      desc: "We design a custom homepage concept for your business showing exactly how we'd improve your messaging, layout, and brand presentation.",
       value: "A real design, not a generic mockup"
     }
   ];
@@ -58,7 +58,7 @@ export function OfferBreakdownSection() {
 
         <ScrollReveal delay={0.5} className="text-center mt-12">
           <CTAButton href="/get-started">
-            Get My Free Website Evaluation
+            Book Your Free Website Review
           </CTAButton>
           <p className="text-stone/60 text-sm font-sans mt-4">No credit card. No obligation. Just answers.</p>
         </ScrollReveal>

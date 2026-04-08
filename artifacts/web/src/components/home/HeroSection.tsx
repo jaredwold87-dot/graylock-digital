@@ -158,14 +158,6 @@ export function HeroSection() {
       <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(15,30,53,0.92) 0%, rgba(15,30,53,0.85) 40%, rgba(15,30,53,0.7) 70%, rgba(15,30,53,0.5) 100%)" }} />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        {!isLg && (
-          <div className="mb-10">
-            <ScrollReveal>
-              <DeviceShowcase />
-            </ScrollReveal>
-          </div>
-        )}
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <ScrollReveal>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-display text-offwhite leading-[1.1] mb-6">
@@ -199,11 +191,9 @@ export function HeroSection() {
             </div>
           </ScrollReveal>
 
-          {isLg && (
-            <ScrollReveal delay={0.2}>
-              <DeviceShowcase />
-            </ScrollReveal>
-          )}
+          <ScrollReveal delay={0.2}>
+            <DeviceShowcase />
+          </ScrollReveal>
         </div>
       </div>
     </section>
