@@ -41,7 +41,7 @@ export function ValueDifferentiationSection() {
               </div>
             </div>
             {comparisons.map((row, i) => (
-              <div key={i} className={`grid grid-cols-2 ${i === comparisons.length - 1 ? '' : ''}`}>
+              <div key={i} className="grid grid-cols-2">
                 <div className="p-3 md:p-5 border-b border-r border-gunmetal/60 flex items-start gap-2.5">
                   <X className="text-red-400/50 flex-shrink-0 mt-0.5" size={16} />
                   <span className="text-stone/60 font-sans text-xs md:text-sm leading-relaxed">{row.theirs}</span>

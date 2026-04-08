@@ -11,7 +11,7 @@ const homepageFaqs = [
   },
   {
     q: "Why do you do this for free?",
-    a: "We absorb the upfront cost because our clients stay with us for years — we'd rather prove our value first than ask you to take our word for it. We use a high-converting structural framework, then customize it to your brand, services, and local market. That's how we deliver quality in 5 days. Your homepage demo, evaluation, and written report are built around your actual business, not pulled from a template library. Even if you don't move forward, you walk away with a professional-grade report and a clear picture of what's holding your website back. No strings attached."
+    a: "We absorb the upfront cost because our clients stay with us for years — we'd rather prove our value first than ask you to take our word for it. We use a high-converting structural framework, then customize it to your brand, services, and local market. That's how we deliver quality in 7–10 business days. Your homepage demo, evaluation, and written report are built around your actual business, not pulled from a template library. Even if you don't move forward, you walk away with a professional-grade report and a clear picture of what's holding your website back. No strings attached."
   },
   {
     q: "Is the homepage demo actually custom to my business?",
@@ -34,7 +34,7 @@ const homepageFaqs = [
     a: "You own your domain, your written content, your images, and your brand assets — always. Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure. If you cancel, we package up all of your content and data, and transfer your domain to wherever you choose — with 30 days' notice and no cancellation fees. You'll never lose your domain authority, your content, or your brand."
   },
   {
-    q: "How do you build a website in just 5 days?",
+    q: "How do you build a website in 7–10 business days?",
     a: "We don't reinvent the wheel for every client. We use a proven, high-converting structural framework — then we customize the design, copy, and SEO strategy entirely around your practice. Think of it like a custom-built home using tested construction methods. The foundation and engineering are proven — but the layout, finishes, and details are designed specifically for you. Not a prefab kit. Not a template. A real website built on a system that works."
   },
   {
