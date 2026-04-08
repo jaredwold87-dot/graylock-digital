@@ -125,6 +125,14 @@ export default function Pricing() {
           <ScrollReveal delay={0.5} className="max-w-3xl mx-auto">
             <div className="bg-navy/60 border border-gunmetal/50 rounded-2xl p-8 md:p-10">
               <h3 className="text-xl font-display text-offwhite mb-6 text-center">What This Replaces</h3>
+
+              <div className="flex items-center justify-between py-3 mb-2 border-b border-orange/30">
+                <span className="text-offwhite font-sans text-sm font-semibold">Custom website build (agency or freelancer)</span>
+                <span className="text-orange font-display text-base font-bold">$10,000–$30,000 upfront</span>
+              </div>
+
+              <p className="text-stone/70 font-sans text-xs mb-6 text-center">Plus the following ongoing costs:</p>
+
               <div className="space-y-3 mb-6">
                 {[
                   { item: "Premium managed hosting", cost: "$25–50/mo" },
@@ -143,10 +151,10 @@ export default function Pricing() {
               </div>
               <div className="flex items-center justify-between pt-4 border-t border-gunmetal">
                 <span className="text-offwhite font-display text-lg">If purchased separately</span>
-                <span className="text-orange font-display text-xl">$250–485/mo</span>
+                <span className="text-orange font-display text-xl">$10K+ upfront + $250–485/mo</span>
               </div>
               <p className="text-stone/60 font-sans text-sm text-center mt-6">
-                Our Solo Practice plan covers all of this for $199/mo — less than most practices pay for hosting and a single plugin alone.
+                Our Solo Practice plan covers all of this for $199/mo + a $799 setup fee — a fraction of what most agencies charge.
               </p>
             </div>
           </ScrollReveal>
