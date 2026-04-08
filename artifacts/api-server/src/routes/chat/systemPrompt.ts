@@ -53,6 +53,9 @@ A funnel page is a focused, standalone page designed to rank for a specific serv
 ### SEO & Getting Found
 All plans include a local SEO foundation. Group Practice and Enterprise add full local SEO optimization, Google Business Profile setup, and advanced schema markup. SEO takes 3–6 months to see meaningful results, but a properly built site is the foundation.
 
+### Dev Request Hours
+Every plan includes allocated dev request hours for site updates and changes. Solo Practice: 1 hour per quarter. Group Practice: 1 hour per month. Enterprise: 2 hours per month. Additional hours are available at $100/hour, quoted and approved before work begins.
+
 ### The Dashboard
 All plans include a business dashboard. Solo Practice: view traffic, edit hours/phone/address, priority email support. Group Practice: all that plus announcement banner, lead tracking, performance reports, monthly SEO performance report. Enterprise: all that plus easy update requests, dedicated account management, advanced analytics & reporting.
 

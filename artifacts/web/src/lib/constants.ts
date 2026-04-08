@@ -13,6 +13,7 @@ export const PRICING_TIERS = [
       "Hosting, SSL & Daily Backups",
       "Monthly Performance Report",
       "Business Dashboard Access",
+      "1 Hour Dev Requests / Quarter",
       "Priority Email Support"
     ]
   },
@@ -30,6 +31,7 @@ export const PRICING_TIERS = [
       "Full Local SEO Implementation",
       "Monthly SEO Performance Report",
       "Lead Activity Tracking Dashboard",
+      "1 Hour Dev Requests / Month",
       "Custom Integrations (Calendly, scheduling, etc.)",
       "Priority Support"
     ]
@@ -45,6 +47,7 @@ export const PRICING_TIERS = [
       "20 SEO-Optimized Funnel Pages",
       "Multi-Location SEO Strategy",
       "Advanced Analytics & Reporting",
+      "2 Hours Dev Requests / Month",
       "Priority Build Queue",
       "Dedicated Account Management",
       "Custom Reporting Cadence"
@@ -109,7 +112,7 @@ export const FAQS = [
       },
       {
         q: "Are there any hidden fees or extra charges?",
-        a: "No. The setup fee and monthly rate are all you pay. There are no surprise invoices for hosting renewals, plugin licences, or security certificates \u2014 those are all included.\n\nIf you ever want something outside the scope of your plan \u2014 like a major redesign, a new section, or additional pages beyond your plan\u2019s limit \u2014 we\u2019ll quote that separately and clearly before any work begins. You\u2019ll never be surprised by a charge."
+        a: "No. The setup fee and monthly rate are all you pay. There are no surprise invoices for hosting renewals, plugin licences, or security certificates \u2014 those are all included.\n\nEvery plan includes dev request hours for site updates and changes: Solo Practice includes 1 hour per quarter, Group Practice includes 1 hour per month, and Enterprise includes 2 hours per month. If you need additional dev time beyond your plan\u2019s allocation, it\u2019s $100/hour \u2014 quoted and approved before any work begins. You\u2019ll never be surprised by a charge."
       },
       {
         q: "Can I cancel at any time?",
