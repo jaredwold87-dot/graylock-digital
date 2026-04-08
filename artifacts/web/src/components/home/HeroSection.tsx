@@ -152,11 +152,17 @@ export function HeroSection() {
   const isLg = useIsLg();
   return (
     <section className="bg-charcoal pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden relative">
-      <div className="absolute inset-0 opacity-[0.04]" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5L55 20V40L30 55L5 40V20L30 5Z' fill='none' stroke='%232E7BB4' stroke-width='0.5'/%3E%3C/svg%3E")`,
-        backgroundSize: "60px 60px",
-      }} />
-      <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(15,30,53,1) 0%, rgba(15,30,53,1) 25%, rgba(15,30,53,1) 60%, rgba(15,30,53,0.73) 80%, rgba(15,30,53,0.65) 100%)" }} />
+      <div className="absolute inset-0">
+        <picture>
+          <img
+            src={`${BASE}hero-bg-blue.png`}
+            alt=""
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+        </picture>
+      </div>
+      <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(15,30,53,0.92) 0%, rgba(15,30,53,0.85) 40%, rgba(15,30,53,0.7) 70%, rgba(15,30,53,0.5) 100%)" }} />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         {!isLg && (
