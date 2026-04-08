@@ -22,7 +22,7 @@ export function CaseStudySection() {
         <ScrollReveal className="text-center mb-16">
           <p className="text-orange font-sans font-semibold uppercase tracking-widest text-sm mb-4">Featured Project</p>
           <h2 className="text-3xl md:text-5xl font-display text-charcoal mb-4">
-            See What We Built for West Coast Eye Institute
+            How We Helped West Coast Eye Institute
           </h2>
           <p className="text-stone text-lg font-sans max-w-2xl mx-auto leading-relaxed">
             A real project. A real transformation. Here's how we took an outdated, confusing web presence and turned it into a modern patient acquisition engine.
