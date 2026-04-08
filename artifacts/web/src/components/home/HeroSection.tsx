@@ -144,7 +144,6 @@ function DeviceShowcase() {
 }
 
 export function HeroSection() {
-  const isLg = useIsLg();
   return (
     <section className="bg-charcoal pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden relative">
       <div className="absolute inset-0 overflow-hidden">

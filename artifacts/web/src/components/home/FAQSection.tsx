@@ -30,8 +30,8 @@ const homepageFaqs = [
     a: "You own your domain, your written content, your images, and your brand assets — always. Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure. If you cancel, we package up all of your content and data, and transfer your domain to wherever you choose — with 30 days' notice and no cancellation fees. You'll never lose your domain authority, your content, or your brand."
   },
   {
-    q: "What types of businesses do you work with?",
-    a: "We work with any local service business that relies on trust, reputation, and local visibility to grow — accountants, therapists, contractors, consultants, dentists, physicians, lawyers, and more. If that sounds like you, we're a great fit."
+    q: "What types of practices do you work with?",
+    a: "We specialize in websites for professional practices — attorneys, therapists, CPAs, physicians, and group practices. We understand that your website needs to convey expertise, build trust quickly, and convert visitors into consultations or appointments."
   }
 ];
 

@@ -78,7 +78,7 @@ export function PricingSection() {
                 variant={tier.popular ? 'primary' : 'outline'}
                 className="w-full"
               >
-                {tier.isCustom ? 'Contact Us' : tier.popular ? 'Claim My Free Website Review' : "Book a Free Review"}
+                {tier.isCustom ? 'Contact Us' : 'Book Your Free Website Review'}
               </CTAButton>
             </ScrollReveal>
           ))}

@@ -111,8 +111,8 @@ export function DashboardSection() {
               </div>
 
               <div className="mt-10">
-                <CTAButton href="/pricing">
-                  See Plans With Dashboard Access
+                <CTAButton href="/get-started">
+                  Book Your Free Website Review
                 </CTAButton>
               </div>
             </ScrollReveal>
