@@ -7,13 +7,11 @@ import {
   Clock,
   Eye,
   ShieldCheck,
-  Users,
   FileText,
   Smartphone,
   UserCheck,
   Heart,
   BookOpen,
-  Building2,
 } from "lucide-react";
 
 const data: IndustryPageData = {
