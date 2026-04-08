@@ -230,8 +230,8 @@ const data: IndustryPageData = {
       a: "Yes — separate practice area pages are essential for legal SEO and for clearly communicating your expertise. Each page targets specific keywords and helps the right clients find you.",
     },
     {
-      q: "How does your pricing compare to LawLytics or FindLaw?",
-      a: "LawLytics starts at approximately $150–$225/month for a template. FindLaw and Scorpion can run $300+/month. Graylock starts at $199/month with a $799 setup fee — with a fully custom design, 7–10 day build, and month-to-month flexibility. No long-term contracts.",
+      q: "How does Graylock compare to hiring an agency or freelancer?",
+      a: "Most agencies charge $10,000–$30,000 upfront to build a custom law firm website, then $300–$800/month to keep it running. Graylock starts at $199/month with a $799 setup fee — you get the same fully custom design, delivered in 7–10 business days, with month-to-month flexibility and no long-term contracts.",
     },
     {
       q: "Can you include an online consultation request form?",
