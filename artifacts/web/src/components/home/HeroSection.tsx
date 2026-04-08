@@ -160,11 +160,11 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <ScrollReveal>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-display text-offwhite leading-[1.1] mb-6">
-              Your Practice Deserves a Website That Works as Hard as{" "}
-              <span className="text-gradient">You Do.</span>
+              Stop Losing Clients to Practices With{" "}
+              <span className="text-gradient">Better Websites.</span>
             </h1>
             <p className="text-stone text-lg md:text-xl font-sans mb-8 max-w-xl leading-relaxed">
-              We build custom, high-converting websites for law firms, medical practices, accounting firms, and therapy groups — and deliver them in 7–10 business days. Starting at $199/month. No long-term contracts.
+              We build fully custom websites for law firms, therapy practices, medical groups, and CPAs — delivered in 3–5 business days. Starting at $199/month. No long-term contracts. You own everything.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
