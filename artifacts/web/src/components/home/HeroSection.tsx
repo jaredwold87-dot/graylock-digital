@@ -39,33 +39,32 @@ function LaptopMockup({ showAfter }: { showAfter: boolean }) {
           opacity: showAfter ? 1 : 0.6,
         }}
       />
-      <div
-        className="relative w-full"
-        style={{ aspectRatio: "1948/1036" }}
-        aria-label="Website redesign comparison on monitor"
-        role="img"
-      >
-        <img
-          src={`${BASE}mockup-laptop-before.png`}
-          alt=""
-          className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-          style={{ opacity: showAfter ? 0 : 1 }}
-          width={2916}
-          height={1588}
-          loading="eager"
-        />
-        <picture>
-          <source srcSet={`${BASE}mockup-laptop-after.webp`} type="image/webp" />
-          <img
-            src={`${BASE}mockup-laptop-after.png`}
-            alt=""
-            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-            style={{ opacity: showAfter ? 1 : 0 }}
-            width={1948}
-            height={1036}
-            loading="eager"
-          />
-        </picture>
+
+      <div className="relative w-full" style={{ aspectRatio: "16/10.5" }}>
+        <div className="absolute inset-0 flex flex-col">
+          <div className="flex-1 relative rounded-t-lg overflow-hidden border-[3px] border-b-0 border-[#2a2a2a] bg-[#1a1a1a]">
+            <img
+              src={`${BASE}mockup-laptop-before.png`}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+              style={{ opacity: showAfter ? 0 : 1 }}
+              loading="eager"
+            />
+            <picture>
+              <source srcSet={`${BASE}mockup-laptop-after.webp`} type="image/webp" />
+              <img
+                src={`${BASE}mockup-laptop-after.png`}
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+                style={{ opacity: showAfter ? 1 : 0 }}
+                loading="eager"
+              />
+            </picture>
+          </div>
+
+          <div className="h-[4%] bg-gradient-to-b from-[#3a3a3a] to-[#2a2a2a] rounded-b-md" />
+          <div className="h-[3%] bg-gradient-to-b from-[#333] to-[#222] mx-[15%] rounded-b-lg" />
+        </div>
       </div>
 
       <span
@@ -88,33 +87,35 @@ function PhoneMockup({ showAfter }: { showAfter: boolean }) {
           opacity: showAfter ? 1 : 0.6,
         }}
       />
-      <div
-        className="relative w-full"
-        style={{ aspectRatio: "410/864" }}
-        aria-label="Website redesign comparison on mobile"
-        role="img"
-      >
-        <img
-          src={`${BASE}mockup-phone-before.png`}
-          alt=""
-          className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-          style={{ opacity: showAfter ? 0 : 1 }}
-          width={824}
-          height={1374}
-          loading="eager"
-        />
-        <picture>
-          <source srcSet={`${BASE}mockup-phone-after.webp`} type="image/webp" />
-          <img
-            src={`${BASE}mockup-phone-after.png`}
-            alt=""
-            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-            style={{ opacity: showAfter ? 1 : 0 }}
-            width={410}
-            height={864}
-            loading="eager"
-          />
-        </picture>
+
+      <div className="relative w-full" style={{ aspectRatio: "9/19" }}>
+        <div className="absolute inset-0 rounded-[clamp(12px,3vw,28px)] overflow-hidden border-[3px] border-[#2a2a2a] bg-[#1a1a1a] flex flex-col">
+          <div className="h-[3.5%] bg-[#1a1a1a] flex items-center justify-center">
+            <div className="w-[30%] h-[45%] bg-[#111] rounded-full" />
+          </div>
+
+          <div className="flex-1 relative overflow-hidden">
+            <img
+              src={`${BASE}mockup-phone-before.png`}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+              style={{ opacity: showAfter ? 0 : 1 }}
+              loading="eager"
+            />
+            <picture>
+              <source srcSet={`${BASE}mockup-phone-after.webp`} type="image/webp" />
+              <img
+                src={`${BASE}mockup-phone-after.png`}
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
+                style={{ opacity: showAfter ? 1 : 0 }}
+                loading="eager"
+              />
+            </picture>
+          </div>
+
+          <div className="h-[1.5%] bg-[#1a1a1a]" />
+        </div>
       </div>
 
       <span
@@ -146,15 +147,13 @@ export function HeroSection() {
   const isLg = useIsLg();
   return (
     <section className="bg-charcoal pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden relative">
-      <div className="absolute inset-0">
-        <picture>
-          <img
-            src={`${BASE}hero-bg-blue.png`}
-            alt=""
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-        </picture>
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src={`${BASE}hero-bg-blue.png`}
+          alt=""
+          className="w-full h-full object-cover hero-bg-animate"
+          loading="eager"
+        />
       </div>
       <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(15,30,53,0.92) 0%, rgba(15,30,53,0.85) 40%, rgba(15,30,53,0.7) 70%, rgba(15,30,53,0.5) 100%)" }} />
 
