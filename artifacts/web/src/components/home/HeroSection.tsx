@@ -161,6 +161,10 @@ export function HeroSection() {
               We build fully custom websites for law firms, private practices, and accounting firms — delivered in 7–10 business days. Starting at $199/month. No long-term contracts. You own everything.
             </p>
 
+            <div className="block lg:hidden mb-8">
+              <DeviceShowcase />
+            </div>
+
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
               <CTAButton href="/get-started">
                 Book Your Free Website Review
@@ -184,7 +188,7 @@ export function HeroSection() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.2}>
+          <ScrollReveal delay={0.2} className="hidden lg:block">
             <DeviceShowcase />
           </ScrollReveal>
         </div>
