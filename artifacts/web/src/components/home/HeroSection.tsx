@@ -154,7 +154,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <ScrollReveal>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-display text-offwhite leading-[1.1] mb-6">
-              Stop Losing Clients to Practices With{" "}
+              Stop Losing Clients to Competitors With{" "}
               <span className="text-gradient">Better Websites.</span>
             </h1>
             <p className="text-stone text-lg md:text-xl font-sans mb-8 max-w-xl leading-relaxed">
