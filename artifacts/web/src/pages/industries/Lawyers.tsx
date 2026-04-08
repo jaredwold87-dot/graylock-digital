@@ -25,10 +25,10 @@ const data: IndustryPageData = {
   hero: {
     badge: "For Attorneys & Law Firms",
     badgeIcon: Scale,
-    h1: "A Law Firm Website That",
-    h1Highlight: "Converts Searchers Into Clients.",
+    h1: "Clients Are Searching for an Attorney Right Now.",
+    h1Highlight: "Will They Find You — or Your Competitor?",
     subheadline:
-      "One new client from your website pays for years of service. We build credible, SEO-optimized websites for solo attorneys and law firms — with practice area pages, attorney bios, and intake forms that turn visitors into consultations. Starting at $199/month.",
+      "Most law firm websites look like they were built in 2012. Meanwhile, the firm down the street is ranking above you, looking sharper, and capturing every lead. We build fast, credible, SEO-optimized websites for attorneys — with practice area pages, intake forms, and attorney bios that turn Google searches into signed retainers. Starting at $199/month.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-lawyers.jpg`,
     trustSignals: [

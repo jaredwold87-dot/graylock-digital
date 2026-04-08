@@ -24,10 +24,10 @@ const data: IndustryPageData = {
   hero: {
     badge: "For Private Practices",
     badgeIcon: Stethoscope,
-    h1: "A Website That Fills Your Schedule —",
-    h1Highlight: "Not Just Your Waiting Room.",
+    h1: "Your Reputation Took Years to Build.",
+    h1Highlight: "Your Website Should Reflect That.",
     subheadline:
-      "Whether you're a dentist, therapist, physician, chiropractor, or any other private practice owner — your website should be your best referral source. We build credible, SEO-optimized websites that turn searchers into patients and clients. Starting at $199/month.",
+      "Patients and clients Google you before they ever call. If your site looks outdated or doesn't show up at all, they're booking with someone else. We build professional, SEO-optimized websites for dentists, therapists, physicians, chiropractors, and every type of private practice — designed to turn searches into booked appointments. Starting at $199/month.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [

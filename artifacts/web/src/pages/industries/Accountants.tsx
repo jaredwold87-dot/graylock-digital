@@ -24,10 +24,10 @@ const data: IndustryPageData = {
   hero: {
     badge: "For CPAs & Accounting Firms",
     badgeIcon: Calculator,
-    h1: "A Website That Reflects Your Expertise —",
-    h1Highlight: "and Brings In the Clients to Prove It.",
+    h1: "Your Clients Trust You With Their Finances.",
+    h1Highlight: "Does Your Website Earn That Same Trust?",
     subheadline:
-      "Your clients trust you with their finances. Your website should reflect that level of professionalism. We build credible, SEO-optimized websites for CPAs and accounting firms — fast, affordable, and fully managed. Starting at $199/month.",
+      "When a business owner searches for a new CPA, your website is your first impression — and for most accounting firms, it's the weakest link. We build sharp, professional websites for CPAs and accounting firms that rank locally, showcase your expertise, and make it easy for prospects to reach out. Starting at $199/month.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-accountants.jpg`,
     trustSignals: [
