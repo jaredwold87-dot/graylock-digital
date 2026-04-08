@@ -45,18 +45,15 @@ function LaptopMockup({ showAfter }: { showAfter: boolean }) {
         aria-label="Website redesign comparison on monitor"
         role="img"
       >
-        <picture>
-          <source srcSet={`${BASE}mockup-laptop-before.webp`} type="image/webp" />
-          <img
-            src={`${BASE}mockup-laptop-before.png`}
-            alt=""
-            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-            style={{ opacity: showAfter ? 0 : 1 }}
-            width={1948}
-            height={1036}
-            loading="eager"
-          />
-        </picture>
+        <img
+          src={`${BASE}mockup-laptop-before.png`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+          style={{ opacity: showAfter ? 0 : 1 }}
+          width={2916}
+          height={1588}
+          loading="eager"
+        />
         <picture>
           <source srcSet={`${BASE}mockup-laptop-after.webp`} type="image/webp" />
           <img
@@ -97,18 +94,15 @@ function PhoneMockup({ showAfter }: { showAfter: boolean }) {
         aria-label="Website redesign comparison on mobile"
         role="img"
       >
-        <picture>
-          <source srcSet={`${BASE}mockup-phone-before.webp`} type="image/webp" />
-          <img
-            src={`${BASE}mockup-phone-before.png`}
-            alt=""
-            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
-            style={{ opacity: showAfter ? 0 : 1 }}
-            width={410}
-            height={864}
-            loading="eager"
-          />
-        </picture>
+        <img
+          src={`${BASE}mockup-phone-before.png`}
+          alt=""
+          className="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+          style={{ opacity: showAfter ? 0 : 1 }}
+          width={824}
+          height={1374}
+          loading="eager"
+        />
         <picture>
           <source srcSet={`${BASE}mockup-phone-after.webp`} type="image/webp" />
           <img
