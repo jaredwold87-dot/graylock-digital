@@ -1,45 +1,68 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { Check } from "lucide-react";
+import { ArrowRight, Clock, FileText, Sparkles } from "lucide-react";
 
 export function FinalCTASection() {
   return (
-    <section className="bg-gradient-to-br from-orange via-orange to-orange/90 py-24 px-6 md:px-12 text-center overflow-hidden relative">
-      <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
-      <div className="absolute -top-40 -left-40 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-black/10 rounded-full blur-3xl"></div>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+    <section className="relative py-28 px-6 md:px-12 overflow-hidden">
+      <div className="absolute inset-0 bg-navy" />
+      <div className="absolute inset-0 bg-gradient-to-b from-orange/15 via-orange/5 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-orange/8 rounded-full blur-[120px]" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange/30 to-transparent" />
 
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10">
         <ScrollReveal>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-display text-white mb-6 leading-tight">
-            See What Your Website Could Become — Free
-          </h2>
-          <p className="text-white/85 text-lg md:text-xl font-sans mb-8 max-w-2xl mx-auto leading-relaxed">
-            Book a free 20-minute call. We'll review your current site, show you exactly what's not working, and build you a custom homepage demo — all before you pay us anything.
-          </p>
+          <div className="text-center mb-12">
+            <span className="inline-block text-orange font-sans text-sm font-semibold tracking-widest uppercase mb-4">
+              Get Started in 20 Minutes
+            </span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-white mb-6 leading-tight">
+              Your Practice Deserves a<br className="hidden md:block" /> Website That Works as Hard as You Do
+            </h2>
+            <p className="text-stone text-lg md:text-xl font-sans max-w-2xl mx-auto leading-relaxed">
+              Book a free 20-minute call. We'll walk through your current site, identify what's holding you back, and show you exactly what we'd build — before you spend a dime.
+            </p>
+          </div>
+        </ScrollReveal>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-10 text-left max-w-lg mx-auto">
+        <ScrollReveal delay={0.15}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto mb-12">
             {[
-              "Free website evaluation",
-              "Custom homepage demo",
-              "Zero obligation"
+              {
+                icon: <FileText size={20} />,
+                title: "Free Website Evaluation",
+                desc: "A clear breakdown of what's working and what's not"
+              },
+              {
+                icon: <Sparkles size={20} />,
+                title: "Custom Homepage Mockup",
+                desc: "See your new site before you commit to anything"
+              },
+              {
+                icon: <Clock size={20} />,
+                title: "Live in 7–10 Business Days",
+                desc: "From sign-off to launch — we move fast"
+              }
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Check className="text-white" size={12} />
+              <div key={i} className="bg-charcoal/50 border border-gunmetal/40 rounded-xl p-5 text-center hover:border-orange/30 transition-colors duration-300">
+                <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-orange border border-orange/10">
+                  {item.icon}
                 </div>
-                <span className="text-white/90 font-sans text-sm font-semibold">{item}</span>
+                <h3 className="text-white font-display text-sm mb-1">{item.title}</h3>
+                <p className="text-stone/70 font-sans text-xs leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
+        </ScrollReveal>
 
-          <div className="flex flex-col items-center gap-4">
-            <CTAButton href="/get-started" variant="dark" className="px-10 py-5 text-lg">
+        <ScrollReveal delay={0.25}>
+          <div className="flex flex-col items-center gap-3">
+            <CTAButton href="/get-started" className="px-10 py-5 text-lg group">
               Book Your Free Website Review
+              <ArrowRight className="inline-block ml-2 group-hover:translate-x-1 transition-transform" size={18} />
             </CTAButton>
-            <p className="text-white/75 text-sm font-sans mt-2">
-              No pressure. No obligation. Just a clear look at what your website could become.
+            <p className="text-stone/40 text-xs font-sans mt-2">
+              No contracts. No obligation. Just a clear look at what's possible.
             </p>
           </div>
         </ScrollReveal>
