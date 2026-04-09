@@ -3,10 +3,24 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const WHO_WE_HELP = [
-  { name: "Private Practices", path: "/websites-for-private-practices" },
+const WHO_WE_HELP_PRACTICES = [
+  { name: "Chiropractors", path: "/websites-for-chiropractors" },
+  { name: "Dentists", path: "/websites-for-dentists" },
+  { name: "Dermatologists", path: "/websites-for-dermatologists" },
+  { name: "Ophthalmologists", path: "/websites-for-ophthalmologists" },
+  { name: "Optometrists", path: "/websites-for-optometrists" },
+  { name: "Physical Therapists", path: "/websites-for-physical-therapists" },
+  { name: "Physicians", path: "/websites-for-physicians" },
+  { name: "Psychologists", path: "/websites-for-psychologists" },
+  { name: "Therapists & Counselors", path: "/websites-for-therapists" },
+  { name: "Veterinarians", path: "/websites-for-veterinarians" },
+];
+
+const WHO_WE_HELP_OTHER = [
   { name: "Accounting Firms", path: "/websites-for-accountants" },
 ];
+
+const WHO_WE_HELP_ALL = [...WHO_WE_HELP_PRACTICES, ...WHO_WE_HELP_OTHER];
 
 const OUR_STRATEGY = [
   { name: "Strategy Overview", path: "/our-strategy" },
@@ -17,6 +31,129 @@ const OUR_STRATEGY = [
   { name: "Google Business Profiles", path: "/google-business-profile" },
   { name: "Lead Generation", path: "/lead-generation-for-small-business" },
 ];
+
+function DesktopMegaMenu({
+  isActive,
+  location,
+}: {
+  isActive: boolean;
+  location: string;
+}) {
+  const [open, setOpen] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setOpen(false), 150);
+  };
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location]);
+
+  const col1 = WHO_WE_HELP_PRACTICES.slice(0, 5);
+  const col2 = WHO_WE_HELP_PRACTICES.slice(5);
+
+  return (
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button
+        className={cn(
+          "text-sm font-sans font-semibold transition-all duration-300 relative flex items-center gap-1",
+          isActive ? "text-orange" : "text-stone hover:text-offwhite"
+        )}
+        onClick={() => setOpen(!open)}
+      >
+        Who We Help
+        <ChevronDown
+          size={14}
+          className={cn(
+            "transition-transform duration-200",
+            open ? "rotate-180" : ""
+          )}
+        />
+        <span
+          className={cn(
+            "absolute -bottom-1 left-0 h-0.5 bg-orange transition-all duration-300",
+            isActive ? "w-full" : "w-0"
+          )}
+        />
+      </button>
+
+      <div
+        className={cn(
+          "absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[480px] rounded-xl border border-gunmetal/60 bg-charcoal/95 backdrop-blur-xl shadow-2xl shadow-black/40 transition-all duration-200 overflow-hidden",
+          open
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none"
+        )}
+      >
+        <div className="p-4">
+          <p className="text-[10px] font-sans font-bold uppercase tracking-widest text-stone/60 mb-2 px-1">Private Practices</p>
+          <div className="grid grid-cols-2 gap-x-2">
+            <div>
+              {col1.map((item) => (
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  className={cn(
+                    "block px-3 py-2 text-sm font-sans rounded-lg transition-all duration-200",
+                    location === item.path
+                      ? "text-orange bg-orange/5"
+                      : "text-stone hover:text-offwhite hover:bg-white/5"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+            <div>
+              {col2.map((item) => (
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  className={cn(
+                    "block px-3 py-2 text-sm font-sans rounded-lg transition-all duration-200",
+                    location === item.path
+                      ? "text-orange bg-orange/5"
+                      : "text-stone hover:text-offwhite hover:bg-white/5"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="border-t border-gunmetal/40 mt-3 pt-3">
+            {WHO_WE_HELP_OTHER.map((item) => (
+              <Link
+                key={item.path}
+                href={item.path}
+                className={cn(
+                  "block px-3 py-2 text-sm font-sans rounded-lg transition-all duration-200",
+                  location === item.path
+                    ? "text-orange bg-orange/5"
+                    : "text-stone hover:text-offwhite hover:bg-white/5"
+                )}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function DesktopDropdown({
   label,
@@ -141,7 +278,7 @@ function MobileAccordion({
       <div
         className={cn(
           "overflow-hidden transition-all duration-300",
-          open ? "max-h-96 mt-4" : "max-h-0"
+          open ? "max-h-[600px] mt-4" : "max-h-0"
         )}
       >
         <div className="flex flex-col gap-3">
@@ -186,7 +323,7 @@ export function Navbar() {
     setMobileStrategyOpen(false);
   }, [location]);
 
-  const isWhoWeHelpActive = WHO_WE_HELP.some((item) => location === item.path);
+  const isWhoWeHelpActive = WHO_WE_HELP_ALL.some((item) => location === item.path);
   const isStrategyActive =
     OUR_STRATEGY.some((item) => location === item.path) || location === "/our-strategy";
 
@@ -242,9 +379,7 @@ export function Navbar() {
                 </Link>
               ))}
 
-              <DesktopDropdown
-                label="Who We Help"
-                items={WHO_WE_HELP}
+              <DesktopMegaMenu
                 isActive={isWhoWeHelpActive}
                 location={location}
               />
@@ -321,7 +456,7 @@ export function Navbar() {
 
           <MobileAccordion
             label="Who We Help"
-            items={WHO_WE_HELP}
+            items={WHO_WE_HELP_ALL}
             isActive={isWhoWeHelpActive}
             location={location}
             open={mobileWhoWeHelpOpen}

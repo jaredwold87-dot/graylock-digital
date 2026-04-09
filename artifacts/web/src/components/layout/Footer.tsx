@@ -28,25 +28,25 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="md:col-span-2">
           <h4 className="font-display text-offwhite text-lg mb-6 tracking-wide">WHO WE HELP</h4>
-          <ul className="space-y-4 flex flex-col">
-            <Link href="/websites-for-private-practices" className="text-stone hover:text-offwhite transition-colors">Private Practices</Link>
-            <Link href="/websites-for-accountants" className="text-stone hover:text-offwhite transition-colors">Accounting Firms</Link>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-display text-offwhite text-lg mb-6 tracking-wide">OUR STRATEGY</h4>
-          <ul className="space-y-4 flex flex-col">
-            <Link href="/our-strategy" className="text-stone hover:text-offwhite transition-colors">Strategy Overview</Link>
-            <Link href="/website-design" className="text-stone hover:text-offwhite transition-colors">Website Design</Link>
-            <Link href="/seo-for-small-business" className="text-stone hover:text-offwhite transition-colors">SEO</Link>
-            <Link href="/geo-generative-engine-optimization" className="text-stone hover:text-offwhite transition-colors">GEO</Link>
-            <Link href="/funnel-pages" className="text-stone hover:text-offwhite transition-colors">Funnel Pages</Link>
-            <Link href="/google-business-profile" className="text-stone hover:text-offwhite transition-colors">Google Business Profiles</Link>
-            <Link href="/lead-generation-for-small-business" className="text-stone hover:text-offwhite transition-colors">Lead Generation</Link>
-          </ul>
+          <div className="grid grid-cols-2 gap-x-6">
+            <ul className="space-y-4 flex flex-col">
+              <Link href="/websites-for-chiropractors" className="text-stone hover:text-offwhite transition-colors">Chiropractors</Link>
+              <Link href="/websites-for-dentists" className="text-stone hover:text-offwhite transition-colors">Dentists</Link>
+              <Link href="/websites-for-dermatologists" className="text-stone hover:text-offwhite transition-colors">Dermatologists</Link>
+              <Link href="/websites-for-ophthalmologists" className="text-stone hover:text-offwhite transition-colors">Ophthalmologists</Link>
+              <Link href="/websites-for-optometrists" className="text-stone hover:text-offwhite transition-colors">Optometrists</Link>
+              <Link href="/websites-for-accountants" className="text-stone hover:text-offwhite transition-colors">Accounting Firms</Link>
+            </ul>
+            <ul className="space-y-4 flex flex-col">
+              <Link href="/websites-for-physical-therapists" className="text-stone hover:text-offwhite transition-colors">Physical Therapists</Link>
+              <Link href="/websites-for-physicians" className="text-stone hover:text-offwhite transition-colors">Physicians</Link>
+              <Link href="/websites-for-psychologists" className="text-stone hover:text-offwhite transition-colors">Psychologists</Link>
+              <Link href="/websites-for-therapists" className="text-stone hover:text-offwhite transition-colors">Therapists & Counselors</Link>
+              <Link href="/websites-for-veterinarians" className="text-stone hover:text-offwhite transition-colors">Veterinarians</Link>
+            </ul>
+          </div>
         </div>
 
         <div>
