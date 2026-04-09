@@ -116,7 +116,7 @@ export const FAQS = [
       },
       {
         q: "Can I cancel at any time?",
-        a: "Yes. There are no long-term contracts \u2014 all plans are month-to-month. You can cancel with 30 days\u2019 notice at any time.\n\nIf you cancel, we package up all of your content and data, and transfer your domain to wherever you choose \u2014 no cancellation fees. You will need to build a new site on your new host, but you will never lose your domain authority, your content, or your brand.\n\nWe\u2019d rather earn your business every month than lock you into something that isn\u2019t working for you."
+        a: "Yes. There are no long-term contracts \u2014 all plans are month-to-month. You can cancel with 30 days\u2019 notice at any time.\n\nWhen you cancel, we package up all of your content and data, transfer your domain wherever you choose, and make sure the handoff is clean \u2014 all within 30 days, no cancellation fees. We\u2019ve done it before and we do it without drama. You keep your domain authority, your content, and your brand.\n\nWe\u2019d rather earn your business every month than lock you into something that isn\u2019t working for you."
       },
       {
         q: "What is your minimum monthly price?",
@@ -134,7 +134,7 @@ export const FAQS = [
     questions: [
       {
         q: "What do I own, and what happens if I cancel?",
-        a: "You own your domain, your written content, your images, and your brand assets \u2014 always.\n\nOur service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure that keeps your site fast and secure. If you cancel, we will package up all of your content and data, and transfer your domain to wherever you choose \u2014 with 30 days\u2019 notice and no cancellation fees.\n\nYou will need to build a new site on your new host, but you will never lose your domain authority, your content, or your brand. We just ask for 30 days\u2019 notice so we can make the handoff clean."
+        a: "You own your domain, your written content, your images, and your brand assets \u2014 always. That never changes, whether you stay with us for ten years or ten months.\n\nThe only thing we retain is the underlying code and hosting infrastructure, which is standard for any subscription-based web service. If you ever cancel, we package up all of your content and data, transfer your domain wherever you choose, and make sure the handoff is clean \u2014 all within 30 days, no cancellation fees. We\u2019ve done it before and we do it without drama.\n\nYou keep your domain authority, your content, and your brand."
       },
       {
         q: "Is my website built on a template or is it custom?",

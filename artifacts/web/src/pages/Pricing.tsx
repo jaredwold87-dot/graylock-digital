@@ -201,7 +201,7 @@ export default function Pricing() {
 
           <ScrollReveal delay={0.5} className="max-w-3xl mx-auto text-center mt-8">
             <p className="text-stone/50 font-sans text-xs leading-relaxed">
-              Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure. You own your domain, your written content, and your brand assets. Cancel anytime with 30 days' notice — no cancellation fees.
+              You own your domain, your written content, and your brand assets — always. The only thing we retain is the underlying code and hosting infrastructure, which is standard for any subscription-based web service. Cancel anytime with 30 days' notice — no cancellation fees.
             </p>
           </ScrollReveal>
         </div>

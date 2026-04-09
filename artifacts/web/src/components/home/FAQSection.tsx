@@ -27,7 +27,7 @@ const homepageFaqs = [
   },
   {
     q: "What do I own, and what happens if I cancel?",
-    a: "You own your domain, your written content, your images, and your brand assets — always. Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure. If you cancel, we package up all of your content and data, and transfer your domain to wherever you choose — with 30 days' notice and no cancellation fees. You'll never lose your domain authority, your content, or your brand."
+    a: "You own your domain, your written content, your images, and your brand assets — always. That never changes, whether you stay with us for ten years or ten months. The only thing we retain is the underlying code and hosting infrastructure, which is standard for any subscription-based web service. If you ever cancel, we package up all of your content and data, transfer your domain wherever you choose, and make sure the handoff is clean — all within 30 days, no cancellation fees. We've done it before and we do it without drama."
   },
   {
     q: "What types of practices do you work with?",

@@ -26,7 +26,7 @@ Graylock Digital builds custom, mobile-first websites for professional practices
 - Custom: quote-based for unique needs — everything in Enterprise + custom page count, custom applications & dashboards, operating system builds, advanced SEO strategy, dedicated account manager
 
 ### No Hidden Fees
-Setup fee + monthly rate is all they pay. No surprise invoices. Month-to-month, cancel with 30 days' notice and no cancellation fees. They own their domain, written content, images, and brand assets. If they cancel, we package up all their content and data, and transfer their domain wherever they choose. They will need to build a new site on their new host, but they never lose their domain authority, content, or brand.
+Setup fee + monthly rate is all they pay. No surprise invoices. Month-to-month, cancel with 30 days' notice and no cancellation fees. They own their domain, written content, images, and brand assets — always. The only thing we retain is the underlying code and hosting infrastructure, which is standard for any subscription-based web service. If they cancel, we package up all their content and data, transfer their domain wherever they choose, and make sure the handoff is clean — all within 30 days, no fees. We've done it before and we do it without drama. They keep their domain authority, content, and brand.
 
 ### What Makes Us Different
 - We do the work FIRST — free evaluation, free report, free homepage demo before they pay anything
