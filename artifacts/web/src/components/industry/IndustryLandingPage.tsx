@@ -270,6 +270,15 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
               ))}
             </div>
           </div>
+
+          <ScrollReveal className="text-center mt-14">
+            <p className="text-stone font-sans text-lg mb-5">
+              That's exactly why we review your site for free — so you finally know what to fix.
+            </p>
+            <CTAButton href="/get-started" className="px-8 py-4">
+              Book Your Free Website Review
+            </CTAButton>
+          </ScrollReveal>
         </div>
       </section>
 

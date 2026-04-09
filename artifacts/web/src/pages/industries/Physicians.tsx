@@ -57,6 +57,7 @@ const data: IndustryPageData = {
   painPoints: {
     sectionLabel: "SOUND FAMILIAR?",
     headline: "Patients Choose Their Doctor Online Before They Ever Call Your Office",
+    image: `${import.meta.env.BASE_URL}mockup-laptop-before.png`,
     cards: [
       {
         icon: Eye,
