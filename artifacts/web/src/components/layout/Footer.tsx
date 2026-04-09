@@ -37,16 +37,30 @@ export function Footer() {
               <Link href="/websites-for-dermatologists" className="text-stone hover:text-offwhite transition-colors">Dermatologists</Link>
               <Link href="/websites-for-ophthalmologists" className="text-stone hover:text-offwhite transition-colors">Ophthalmologists</Link>
               <Link href="/websites-for-optometrists" className="text-stone hover:text-offwhite transition-colors">Optometrists</Link>
-              <Link href="/websites-for-accountants" className="text-stone hover:text-offwhite transition-colors">Accounting Firms</Link>
+              <Link href="/websites-for-physical-therapists" className="text-stone hover:text-offwhite transition-colors">Physical Therapists</Link>
             </ul>
             <ul className="space-y-4 flex flex-col">
-              <Link href="/websites-for-physical-therapists" className="text-stone hover:text-offwhite transition-colors">Physical Therapists</Link>
               <Link href="/websites-for-physicians" className="text-stone hover:text-offwhite transition-colors">Physicians</Link>
               <Link href="/websites-for-psychologists" className="text-stone hover:text-offwhite transition-colors">Psychologists</Link>
               <Link href="/websites-for-therapists" className="text-stone hover:text-offwhite transition-colors">Therapists & Counselors</Link>
               <Link href="/websites-for-veterinarians" className="text-stone hover:text-offwhite transition-colors">Veterinarians</Link>
+              <li className="border-t border-gunmetal pt-4 mt-1">
+                <Link href="/websites-for-accountants" className="text-stone hover:text-offwhite transition-colors">Accounting Firms</Link>
+              </li>
             </ul>
           </div>
+        </div>
+
+        <div>
+          <h4 className="font-display text-offwhite text-lg mb-6 tracking-wide">OUR STRATEGY</h4>
+          <ul className="space-y-4 flex flex-col">
+            <Link href="/website-design" className="text-stone hover:text-offwhite transition-colors">Website Design</Link>
+            <Link href="/seo-for-small-business" className="text-stone hover:text-offwhite transition-colors">SEO</Link>
+            <Link href="/geo-generative-engine-optimization" className="text-stone hover:text-offwhite transition-colors">GEO</Link>
+            <Link href="/funnel-pages" className="text-stone hover:text-offwhite transition-colors">Funnel Pages</Link>
+            <Link href="/google-business-profile" className="text-stone hover:text-offwhite transition-colors">Google Business Profile</Link>
+            <Link href="/lead-generation-for-small-business" className="text-stone hover:text-offwhite transition-colors">Lead Generation</Link>
+          </ul>
         </div>
 
         <div>
@@ -57,16 +71,14 @@ export function Footer() {
             <Link href="/privacy-policy" className="text-stone hover:text-offwhite transition-colors">Privacy Policy</Link>
             <Link href="/terms-of-service" className="text-stone hover:text-offwhite transition-colors">Terms of Service</Link>
           </ul>
-        </div>
-
-        <div>
-          <h4 className="font-display text-offwhite text-lg mb-6 tracking-wide">READY?</h4>
-          <Link href="/get-started" className="inline-block bg-orange text-white font-sans font-bold px-6 py-3 rounded hover:bg-orange/90 transition-colors w-full text-center shadow-lg shadow-orange/20 mb-6">
-            Get a Free Evaluation
-          </Link>
-          <p className="text-stone text-sm text-center">
-            hello@graylockdigital.com
-          </p>
+          <div className="mt-8">
+            <Link href="/get-started" className="inline-block bg-orange text-white font-sans font-bold px-6 py-3 rounded hover:bg-orange/90 transition-colors w-full text-center shadow-lg shadow-orange/20">
+              Get a Free Evaluation
+            </Link>
+            <p className="text-stone text-sm text-center mt-4">
+              hello@graylockdigital.com
+            </p>
+          </div>
         </div>
 
       </div>

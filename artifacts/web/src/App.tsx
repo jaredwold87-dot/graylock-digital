@@ -1,5 +1,5 @@
 import { Switch, Route, Router as WouterRouter, useLocation, Redirect } from "wouter";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
@@ -18,34 +18,36 @@ import ThankYou from "@/pages/ThankYou";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
 import AccountantsFunnel from "@/pages/AccountantsFunnel";
-import SmallBusinessOwners from "@/pages/industries/SmallBusinessOwners";
-import Contractors from "@/pages/industries/Contractors";
-import SoloPractitioners from "@/pages/industries/SoloPractitioners";
-import GroupPractices from "@/pages/industries/GroupPractices";
-import AccountantsIndustry from "@/pages/industries/Accountants";
-import LawyersIndustry from "@/pages/industries/Lawyers";
-import MedicalPractices from "@/pages/industries/MedicalPractices";
-import PrivatePractices from "@/pages/industries/PrivatePractices";
-import HouseCleaners from "@/pages/industries/HouseCleaners";
-import PetGroomers from "@/pages/industries/PetGroomers";
-import Chiropractors from "@/pages/industries/Chiropractors";
-import Dentists from "@/pages/industries/Dentists";
-import Dermatologists from "@/pages/industries/Dermatologists";
-import Ophthalmologists from "@/pages/industries/Ophthalmologists";
-import Optometrists from "@/pages/industries/Optometrists";
-import PhysicalTherapists from "@/pages/industries/PhysicalTherapists";
-import Physicians from "@/pages/industries/Physicians";
-import Psychologists from "@/pages/industries/Psychologists";
-import Therapists from "@/pages/industries/Therapists";
-import Veterinarians from "@/pages/industries/Veterinarians";
-import OurStrategy from "@/pages/strategy/OurStrategy";
-import WebsiteDesign from "@/pages/strategy/WebsiteDesign";
-import SEOPage from "@/pages/strategy/SEO";
-import GEOPage from "@/pages/strategy/GEO";
-import FunnelPagesPage from "@/pages/strategy/FunnelPages";
-import GoogleBusinessProfilePage from "@/pages/strategy/GoogleBusinessProfile";
-import LeadGenerationPage from "@/pages/strategy/LeadGeneration";
 import NotFound from "@/pages/not-found";
+
+const SmallBusinessOwners = lazy(() => import("@/pages/industries/SmallBusinessOwners"));
+const Contractors = lazy(() => import("@/pages/industries/Contractors"));
+const SoloPractitioners = lazy(() => import("@/pages/industries/SoloPractitioners"));
+const GroupPractices = lazy(() => import("@/pages/industries/GroupPractices"));
+const AccountantsIndustry = lazy(() => import("@/pages/industries/Accountants"));
+const LawyersIndustry = lazy(() => import("@/pages/industries/Lawyers"));
+const MedicalPractices = lazy(() => import("@/pages/industries/MedicalPractices"));
+const PrivatePractices = lazy(() => import("@/pages/industries/PrivatePractices"));
+const HouseCleaners = lazy(() => import("@/pages/industries/HouseCleaners"));
+const PetGroomers = lazy(() => import("@/pages/industries/PetGroomers"));
+const Chiropractors = lazy(() => import("@/pages/industries/Chiropractors"));
+const Dentists = lazy(() => import("@/pages/industries/Dentists"));
+const Dermatologists = lazy(() => import("@/pages/industries/Dermatologists"));
+const Ophthalmologists = lazy(() => import("@/pages/industries/Ophthalmologists"));
+const Optometrists = lazy(() => import("@/pages/industries/Optometrists"));
+const PhysicalTherapists = lazy(() => import("@/pages/industries/PhysicalTherapists"));
+const Physicians = lazy(() => import("@/pages/industries/Physicians"));
+const Psychologists = lazy(() => import("@/pages/industries/Psychologists"));
+const Therapists = lazy(() => import("@/pages/industries/Therapists"));
+const Veterinarians = lazy(() => import("@/pages/industries/Veterinarians"));
+
+const OurStrategy = lazy(() => import("@/pages/strategy/OurStrategy"));
+const WebsiteDesign = lazy(() => import("@/pages/strategy/WebsiteDesign"));
+const SEOPage = lazy(() => import("@/pages/strategy/SEO"));
+const GEOPage = lazy(() => import("@/pages/strategy/GEO"));
+const FunnelPagesPage = lazy(() => import("@/pages/strategy/FunnelPages"));
+const GoogleBusinessProfilePage = lazy(() => import("@/pages/strategy/GoogleBusinessProfile"));
+const LeadGenerationPage = lazy(() => import("@/pages/strategy/LeadGeneration"));
 
 const queryClient = new QueryClient();
 
@@ -59,55 +61,57 @@ function ScrollToTop() {
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/how-it-works" component={HowItWorks} />
-      <Route path="/pricing" component={Pricing} />
-      <Route path="/work" component={Work} />
-      <Route path="/about" component={About} />
-      <Route path="/faq" component={FAQ} />
-      <Route path="/get-started" component={GetStarted} />
-      <Route path="/contact" component={ContactRedirect} />
-      <Route path="/thank-you" component={ThankYou} />
-      <Route path="/accountants" component={AccountantsFunnel} />
-      <Route path="/websites-for-small-business-owners" component={SmallBusinessOwners} />
-      <Route path="/websites-for-contractors" component={Contractors} />
-      <Route path="/websites-for-solo-practitioners" component={SoloPractitioners} />
-      <Route path="/websites-for-group-practices" component={GroupPractices} />
-      <Route path="/websites-for-accountants" component={AccountantsIndustry} />
-      <Route path="/websites-for-lawyers" component={LawyersIndustry} />
-      <Route path="/websites-for-medical-practices" component={MedicalPractices} />
-      <Route path="/websites-for-private-practices" component={PrivatePractices} />
-      <Route path="/websites-for-house-cleaners" component={HouseCleaners} />
-      <Route path="/websites-for-pet-groomers" component={PetGroomers} />
-      <Route path="/websites-for-chiropractors" component={Chiropractors} />
-      <Route path="/websites-for-dentists" component={Dentists} />
-      <Route path="/websites-for-dermatologists" component={Dermatologists} />
-      <Route path="/websites-for-ophthalmologists" component={Ophthalmologists} />
-      <Route path="/websites-for-optometrists" component={Optometrists} />
-      <Route path="/websites-for-physical-therapists" component={PhysicalTherapists} />
-      <Route path="/websites-for-physicians" component={Physicians} />
-      <Route path="/websites-for-psychologists" component={Psychologists} />
-      <Route path="/websites-for-therapists" component={Therapists} />
-      <Route path="/websites-for-veterinarians" component={Veterinarians} />
-      <Route path="/our-strategy" component={OurStrategy} />
-      <Route path="/website-design" component={WebsiteDesign} />
-      <Route path="/seo-for-small-business" component={SEOPage} />
-      <Route path="/geo-generative-engine-optimization" component={GEOPage} />
-      <Route path="/funnel-pages" component={FunnelPagesPage} />
-      <Route path="/google-business-profile" component={GoogleBusinessProfilePage} />
-      <Route path="/lead-generation-for-small-business" component={LeadGenerationPage} />
-      <Route path="/privacy-policy" component={PrivacyPolicy} />
-      <Route path="/terms-of-service" component={TermsOfService} />
+    <Suspense fallback={<div className="min-h-screen bg-navy" />}>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/how-it-works" component={HowItWorks} />
+        <Route path="/pricing" component={Pricing} />
+        <Route path="/work" component={Work} />
+        <Route path="/about" component={About} />
+        <Route path="/faq" component={FAQ} />
+        <Route path="/get-started" component={GetStarted} />
+        <Route path="/contact" component={ContactRedirect} />
+        <Route path="/thank-you" component={ThankYou} />
+        <Route path="/accountants" component={AccountantsFunnel} />
+        <Route path="/websites-for-small-business-owners" component={SmallBusinessOwners} />
+        <Route path="/websites-for-contractors" component={Contractors} />
+        <Route path="/websites-for-solo-practitioners" component={SoloPractitioners} />
+        <Route path="/websites-for-group-practices" component={GroupPractices} />
+        <Route path="/websites-for-accountants" component={AccountantsIndustry} />
+        <Route path="/websites-for-lawyers" component={LawyersIndustry} />
+        <Route path="/websites-for-medical-practices" component={MedicalPractices} />
+        <Route path="/websites-for-private-practices" component={PrivatePractices} />
+        <Route path="/websites-for-house-cleaners" component={HouseCleaners} />
+        <Route path="/websites-for-pet-groomers" component={PetGroomers} />
+        <Route path="/websites-for-chiropractors" component={Chiropractors} />
+        <Route path="/websites-for-dentists" component={Dentists} />
+        <Route path="/websites-for-dermatologists" component={Dermatologists} />
+        <Route path="/websites-for-ophthalmologists" component={Ophthalmologists} />
+        <Route path="/websites-for-optometrists" component={Optometrists} />
+        <Route path="/websites-for-physical-therapists" component={PhysicalTherapists} />
+        <Route path="/websites-for-physicians" component={Physicians} />
+        <Route path="/websites-for-psychologists" component={Psychologists} />
+        <Route path="/websites-for-therapists" component={Therapists} />
+        <Route path="/websites-for-veterinarians" component={Veterinarians} />
+        <Route path="/our-strategy" component={OurStrategy} />
+        <Route path="/website-design" component={WebsiteDesign} />
+        <Route path="/seo-for-small-business" component={SEOPage} />
+        <Route path="/geo-generative-engine-optimization" component={GEOPage} />
+        <Route path="/funnel-pages" component={FunnelPagesPage} />
+        <Route path="/google-business-profile" component={GoogleBusinessProfilePage} />
+        <Route path="/lead-generation-for-small-business" component={LeadGenerationPage} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-of-service" component={TermsOfService} />
 
-      <Route path="/our-work">{() => <Redirect to="/work" />}</Route>
-      <Route path="/strategy">{() => <Redirect to="/our-strategy" />}</Route>
-      <Route path="/geo">{() => <Redirect to="/geo-generative-engine-optimization" />}</Route>
-      <Route path="/terms">{() => <Redirect to="/terms-of-service" />}</Route>
-      <Route path="/privacy">{() => <Redirect to="/privacy-policy" />}</Route>
+        <Route path="/our-work">{() => <Redirect to="/work" />}</Route>
+        <Route path="/strategy">{() => <Redirect to="/our-strategy" />}</Route>
+        <Route path="/geo">{() => <Redirect to="/geo-generative-engine-optimization" />}</Route>
+        <Route path="/terms">{() => <Redirect to="/terms-of-service" />}</Route>
+        <Route path="/privacy">{() => <Redirect to="/privacy-policy" />}</Route>
 
-      <Route component={NotFound} />
-    </Switch>
+        <Route component={NotFound} />
+      </Switch>
+    </Suspense>
   );
 }
 
