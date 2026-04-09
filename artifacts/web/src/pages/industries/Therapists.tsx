@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Asking for Help Is the Hardest Part.",
     h1Highlight: "Your Website Should Make It Easier.",
     subheadline:
-      "When someone finally decides to look for a therapist, they're already anxious. If your website feels cold, confusing, or generic, they won't reach out — they'll keep scrolling. We build warm, professional, SEO-optimized websites for therapists and counselors that help the right clients find you and feel safe enough to make that first call. Starting at $199/month.",
+      "When someone finally decides to look for a therapist, they're already anxious. If your website feels cold, confusing, or generic, they won't reach out — they'll keep scrolling. We build warm, professional, SEO-optimized websites for therapists and counselors that help the right clients find you and feel safe enough to make that first call. Fully managed — so you can focus on your clients.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for therapists & counselors",
       "Client inquiry forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -107,9 +107,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Clients",
         description:
-          "Less than what most therapist directories charge in annual fees. You get a fully custom site you own.",
+          "Hosting, updates, SEO, and support all included. One new client covers months of service — and you'll never touch a line of code.",
       },
     ],
   },

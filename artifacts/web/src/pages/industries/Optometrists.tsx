@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Patients Pick Their Eye Doctor Online.",
     h1Highlight: "Are They Picking You?",
     subheadline:
-      "When someone needs a new eye doctor — whether for an annual exam, contact lens fitting, or something more urgent — they Google it. If your practice doesn't show up or your website looks like it belongs to a different decade, they're booking with the optometrist whose site does. We build modern, SEO-optimized websites for optometry practices. Starting at $199/month.",
+      "When someone needs a new eye doctor — whether for an annual exam, contact lens fitting, or something more urgent — they Google it. If your practice doesn't show up or your website looks like it belongs to a different decade, they're booking with the optometrist whose site does. We build modern, SEO-optimized websites for optometry practices. Fully managed — so you can focus on patient care.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for optometry practices",
       "Online appointment requests",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -105,9 +105,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Patients",
         description:
-          "Less than what most optometry website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One new patient exam covers months of service.",
       },
     ],
   },

@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Pet Owners Choose Their Vet Online.",
     h1Highlight: "What Does Your Website Say About Your Practice?",
     subheadline:
-      "When someone moves to a new area or their pet needs care, the first thing they do is Google 'vet near me.' If your website looks outdated, doesn't showcase your services, or doesn't let them request an appointment — they're calling the animal hospital down the road instead. We build modern, SEO-optimized websites for veterinary practices that turn pet owners into loyal clients. Starting at $199/month.",
+      "When someone moves to a new area or their pet needs care, the first thing they do is Google 'vet near me.' If your website looks outdated, doesn't showcase your services, or doesn't let them request an appointment — they're calling the animal hospital down the road instead. We build modern, SEO-optimized websites for veterinary practices that turn pet owners into loyal clients. Fully managed — so you can focus on animal care.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for veterinary practices",
       "Online appointment requests",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -107,9 +107,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Animal Care",
         description:
-          "Less than what most veterinary website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One new pet owner visit covers months of service.",
       },
     ],
   },

@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Patients Don't Pick the Best Chiropractor.",
     h1Highlight: "They Pick the One They Find First.",
     subheadline:
-      "When someone's back goes out at 9pm, they Google 'chiropractor near me' — not your name. If your website doesn't show up or doesn't look credible when they find it, that new patient walks into someone else's office. We build professional, SEO-optimized websites for chiropractors that convert searches into booked appointments. Starting at $199/month.",
+      "When someone's back goes out at 9pm, they Google 'chiropractor near me' — not your name. If your website doesn't show up or doesn't look credible when they find it, that new patient walks into someone else's office. We build professional, SEO-optimized websites for chiropractors that convert searches into booked appointments. Fully managed — so you can focus on patient care.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for chiropractic practices",
       "Online appointment requests",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -105,9 +105,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Patients",
         description:
-          "Less than what most chiropractic website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One new patient covers months of service.",
       },
     ],
   },

@@ -27,7 +27,7 @@ const data: IndustryPageData = {
     h1: "A Website That Represents",
     h1Highlight: "the Full Strength of Your Practice.",
     subheadline:
-      "Your group practice has grown. Your website should reflect that. We build multi-provider, specialty-rich websites for therapy groups, medical practices, accounting firms, and multi-provider organizations — showcasing every provider, every service area, and every reason clients should choose you. Starting at $299/month.",
+      "Your group practice has grown. Your website should reflect that. We build multi-provider, specialty-rich websites for therapy groups, medical practices, accounting firms, and multi-provider organizations — showcasing every provider, every service area, and every reason clients should choose you. Fully managed — every provider page, every update, handled for you.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-group-practices.jpg`,
     trustSignals: [

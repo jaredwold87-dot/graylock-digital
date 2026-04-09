@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Patients Choose Their Dentist Online.",
     h1Highlight: "What Does Your Website Say About You?",
     subheadline:
-      "When someone moves to a new city or loses their dentist, the first thing they do is Google it. If your website looks outdated, loads slowly, or doesn't show up at all — they're booking with the practice that does. We build custom, SEO-optimized websites for dental practices that turn searches into scheduled appointments. Starting at $199/month.",
+      "When someone moves to a new city or loses their dentist, the first thing they do is Google it. If your website looks outdated, loads slowly, or doesn't show up at all — they're booking with the practice that does. We build custom, SEO-optimized websites for dental practices that turn searches into scheduled appointments. Fully managed — so you can focus on your patients.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for dental practices",
       "Online appointment requests",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -107,9 +107,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Patients",
         description:
-          "Less than what most dental website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One new patient appointment covers months of service.",
       },
     ],
   },

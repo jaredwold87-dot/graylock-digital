@@ -36,7 +36,7 @@ const data: IndustryPageData = {
       "7–10 day build",
       "Quote forms included",
       "Local SEO optimized",
-      "$79/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -118,9 +118,9 @@ const data: IndustryPageData = {
           "Deep clean, recurring, move-in/out, vacation rental — each service gets its own page.",
       },
       {
-        title: "Built in 7–10 Days for $79/month",
+        title: "Built in 7–10 Business Days",
         description:
-          "Less than one cleaning job per month. The ROI pays for itself with your first online booking.",
+          "Your first online booking covers months of service. No tech headaches — we handle everything.",
       },
       {
         title: "Monthly Maintenance Included",

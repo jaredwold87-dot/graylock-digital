@@ -28,14 +28,14 @@ const data: IndustryPageData = {
     h1: "A Medical Practice Website That",
     h1Highlight: "Brings in New Patients.",
     subheadline:
-      "Patients choose their doctor online before they ever walk through your door. We build credible, SEO-optimized websites for medical practices — with provider bios, service pages, and patient inquiry forms that turn searchers into appointments. Starting at $199/month.",
+      "Patients choose their doctor online before they ever walk through your door. We build credible, SEO-optimized websites for medical practices — with provider bios, service pages, and patient inquiry forms that turn searchers into appointments. Fully managed — so you can focus on patient care.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-group-practices.jpg`,
     trustSignals: [
       "Provider bio pages",
       "Patient inquiry forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {

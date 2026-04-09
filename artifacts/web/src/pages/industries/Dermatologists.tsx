@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Your Expertise Is World-Class.",
     h1Highlight: "Your Website Should Match.",
     subheadline:
-      "Patients searching for a dermatologist judge your competence by your website before they ever walk through your door. A dated site with stock photos and generic copy doesn't reflect the care you provide. We build modern, SEO-optimized websites for dermatology practices that attract the right patients and convert searches into consultations. Starting at $199/month.",
+      "Patients searching for a dermatologist judge your competence by your website before they ever walk through your door. A dated site with stock photos and generic copy doesn't reflect the care you provide. We build modern, SEO-optimized websites for dermatology practices that attract the right patients and convert searches into consultations. Fully managed — so you can focus on patient care.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for dermatology practices",
       "Consultation request forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -105,9 +105,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Patients",
         description:
-          "Less than what most medical website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One cosmetic consultation covers months of service.",
       },
     ],
   },

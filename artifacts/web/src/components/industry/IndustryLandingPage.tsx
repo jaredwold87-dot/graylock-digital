@@ -163,8 +163,8 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
                       <div className="text-offwhite/70 text-xs font-sans uppercase tracking-wider">Day Build</div>
                     </div>
                     <div className="bg-navy/80 border border-gunmetal rounded-xl p-6 text-center">
-                      <div className="text-3xl font-display text-orange font-bold mb-1">{PRICING_TIERS[0].price}</div>
-                      <div className="text-offwhite/70 text-xs font-sans uppercase tracking-wider">/Month Start</div>
+                      <div className="text-3xl font-display text-orange font-bold mb-1">SEO</div>
+                      <div className="text-offwhite/70 text-xs font-sans uppercase tracking-wider">Built In</div>
                     </div>
                     <div className="bg-navy/80 border border-gunmetal rounded-xl p-6 text-center">
                       <div className="text-3xl font-display text-orange font-bold mb-1">100%</div>

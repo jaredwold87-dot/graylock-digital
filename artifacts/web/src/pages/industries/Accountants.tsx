@@ -27,7 +27,7 @@ const data: IndustryPageData = {
     h1: "Your Clients Trust You With Their Finances.",
     h1Highlight: "Does Your Website Earn That Same Trust?",
     subheadline:
-      "When a business owner searches for a new CPA, your website is your first impression — and for most accounting firms, it's the weakest link. We build sharp, professional websites for CPAs and accounting firms that rank locally, showcase your expertise, and make it easy for prospects to reach out. Starting at $199/month.",
+      "When a business owner searches for a new CPA, your website is your first impression — and for most accounting firms, it's the weakest link. We build sharp, professional websites for CPAs and accounting firms that rank locally, showcase your expertise, and make it easy for prospects to reach out. Fully managed — so you can focus on your clients.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-accountants.jpg`,
     trustSignals: [

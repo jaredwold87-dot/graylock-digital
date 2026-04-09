@@ -27,7 +27,7 @@ const data: IndustryPageData = {
     h1: "A Website That Fills Your Practice —",
     h1Highlight: "Not Just Your Time.",
     subheadline:
-      "Your expertise changes lives. Your website should make it easy for the right clients to find you, trust you, and book with you. We build warm, conversion-focused websites for therapists and counselors — fast, affordable, and entirely done for you. Starting at $199/month.",
+      "Your expertise changes lives. Your website should make it easy for the right clients to find you, trust you, and book with you. We build warm, conversion-focused websites for therapists and counselors — fast, affordable, and entirely done for you. Everything included — hosting, SEO, updates, and support.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
@@ -122,9 +122,9 @@ const data: IndustryPageData = {
           "No months of delays. Your new professional website is live within one business week.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Clients",
         description:
-          "A fraction of one new client's revenue. The ROI pays for itself immediately.",
+          "Hosting, updates, SEO, and support all included. One new client covers months of service — and you'll never touch a line of code.",
       },
     ],
   },

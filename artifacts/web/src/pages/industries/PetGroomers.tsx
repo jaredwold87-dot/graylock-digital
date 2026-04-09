@@ -38,7 +38,7 @@ const data: IndustryPageData = {
       "7–10 day build",
       "Booking forms included",
       "Local SEO optimized",
-      "$79/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -120,9 +120,9 @@ const data: IndustryPageData = {
           "Bath & brush, full groom, de-shed, nail trim — each service clearly listed with pricing transparency.",
       },
       {
-        title: "Built in 7–10 Days for $79/month",
+        title: "Built in 7–10 Business Days",
         description:
-          "Less than one grooming session per month. The ROI pays for itself with your first online booking.",
+          "Your first online grooming booking covers months of service. No tech headaches — we handle everything.",
       },
       {
         title: "Monthly Maintenance Included",

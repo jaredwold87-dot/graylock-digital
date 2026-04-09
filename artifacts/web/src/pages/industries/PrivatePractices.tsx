@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Your Reputation Took Years to Build.",
     h1Highlight: "Your Website Should Reflect That.",
     subheadline:
-      "Patients and clients Google you before they ever call. If your site looks outdated or doesn't show up at all, they're booking with someone else. We build professional, SEO-optimized websites for dentists, therapists, physicians, chiropractors, and every type of private practice — designed to turn searches into booked appointments. Starting at $199/month.",
+      "Patients and clients Google you before they ever call. If your site looks outdated or doesn't show up at all, they're booking with someone else. We build professional, SEO-optimized websites for dentists, therapists, physicians, chiropractors, and every type of private practice — designed to turn searches into booked appointments. Fully managed — so you can focus on your practice.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for every practice type",
       "Patient/client inquiry forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -129,9 +129,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Your Practice",
         description:
-          "Less than what most practice website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One new client or patient covers months of service.",
       },
     ],
   },

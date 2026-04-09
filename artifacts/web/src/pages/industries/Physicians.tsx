@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Your Patients' First Impression Isn't in Your Office.",
     h1Highlight: "It's on Your Website.",
     subheadline:
-      "Before a patient ever walks through your door, they've already Googled you, read reviews, and visited your website. If your site looks outdated or generic, they move on to the next physician in the search results. We build professional, SEO-optimized websites for physicians and medical practices that convert online searches into new patient appointments. Starting at $199/month.",
+      "Before a patient ever walks through your door, they've already Googled you, read reviews, and visited your website. If your site looks outdated or generic, they move on to the next physician in the search results. We build professional, SEO-optimized websites for physicians and medical practices that convert online searches into new patient appointments. Fully managed — so you can focus on patient care.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for medical practices",
       "Patient inquiry forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -107,9 +107,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Patients",
         description:
-          "A fraction of what most medical website companies charge. You get a fully custom site, not a template.",
+          "Hosting, updates, SEO, and support all included. One new patient visit covers months of service.",
       },
     ],
   },

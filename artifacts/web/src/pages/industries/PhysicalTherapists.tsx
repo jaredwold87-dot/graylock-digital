@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Patients Don't Know They Need PT.",
     h1Highlight: "Until They Google Their Pain.",
     subheadline:
-      "When someone's knee aches or their back won't stop hurting, they Google their symptoms — not 'physical therapist.' If your website doesn't show up for those searches and clearly explain how you can help, they'll end up at someone else's clinic. We build SEO-optimized websites for physical therapy practices that turn pain-driven searches into booked evaluations. Starting at $199/month.",
+      "When someone's knee aches or their back won't stop hurting, they Google their symptoms — not 'physical therapist.' If your website doesn't show up for those searches and clearly explain how you can help, they'll end up at someone else's clinic. We build SEO-optimized websites for physical therapy practices that turn pain-driven searches into booked evaluations. Fully managed — so you can focus on patient outcomes.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for PT practices",
       "Patient inquiry forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -107,9 +107,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Outcomes",
         description:
-          "Less than what most PT website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One new patient evaluation covers months of service.",
       },
     ],
   },

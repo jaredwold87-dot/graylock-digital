@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Your Patients Trust You With Their Vision.",
     h1Highlight: "Your Website Should Earn That Trust First.",
     subheadline:
-      "Patients considering LASIK, cataract surgery, or any eye procedure research extensively online before choosing a surgeon. If your website doesn't communicate your expertise, credentials, and results — they'll schedule a consultation with the ophthalmologist whose site does. We build authoritative, SEO-optimized websites for ophthalmology practices. Starting at $199/month.",
+      "Patients considering LASIK, cataract surgery, or any eye procedure research extensively online before choosing a surgeon. If your website doesn't communicate your expertise, credentials, and results — they'll schedule a consultation with the ophthalmologist whose site does. We build authoritative, SEO-optimized websites for ophthalmology practices. Fully managed — so you can focus on your patients.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for ophthalmology practices",
       "Consultation request forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -105,9 +105,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Patients",
         description:
-          "A fraction of what most medical web firms charge. You get a fully custom site, not a template.",
+          "Hosting, updates, SEO, and support all included. One LASIK consultation covers months of service.",
       },
     ],
   },

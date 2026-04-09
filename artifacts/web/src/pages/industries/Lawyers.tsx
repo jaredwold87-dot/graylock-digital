@@ -28,14 +28,14 @@ const data: IndustryPageData = {
     h1: "Clients Are Searching for an Attorney Right Now.",
     h1Highlight: "Will They Find You — or Your Competitor?",
     subheadline:
-      "Most law firm websites look like they were built in 2012. Meanwhile, the firm down the street is ranking above you, looking sharper, and capturing every lead. We build fast, credible, SEO-optimized websites for attorneys — with practice area pages, intake forms, and attorney bios that turn Google searches into signed retainers. Starting at $199/month.",
+      "Most law firm websites look like they were built in 2012. Meanwhile, the firm down the street is ranking above you, looking sharper, and capturing every lead. We build fast, credible, SEO-optimized websites for attorneys — with practice area pages, intake forms, and attorney bios that turn Google searches into signed retainers. Fully managed — so you can focus on your cases.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-lawyers.jpg`,
     trustSignals: [
       "Practice area pages",
       "24/7 intake forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -84,7 +84,7 @@ const data: IndustryPageData = {
         icon: DollarSign,
         title: "Custom builds cost $10K+ before you see a single page",
         description:
-          "Most agencies charge $10,000–$30,000 upfront for a custom law firm website — and then $300–$800/month to maintain it. Graylock starts at $199/month with a small setup fee.",
+          "Most agencies charge $10,000–$30,000 upfront for a custom law firm website — and then $300–$800/month to maintain it. Graylock delivers the same quality for a fraction of the cost, with no long-term contracts.",
       },
       {
         icon: Clock,
@@ -113,9 +113,9 @@ const data: IndustryPageData = {
           "Build personal credibility and connection with prospects through professional, well-written bios.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Cases",
         description:
-          "Less than what most legal website platforms charge for a template. You get a fully custom site.",
+          "Hosting, updates, SEO, and support all included. One new signed retainer covers months of service.",
       },
       {
         title: "Built in 7–10 Business Days",

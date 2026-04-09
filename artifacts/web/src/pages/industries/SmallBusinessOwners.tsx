@@ -32,7 +32,7 @@ const data: IndustryPageData = {
     backgroundImage: `${import.meta.env.BASE_URL}hero-small-business.jpg`,
     trustSignals: [
       "7–10 business days",
-      "$79/month",
+      "Fully managed for you",
       "Free demo first",
       "100% American team",
     ],
@@ -88,9 +88,9 @@ const data: IndustryPageData = {
           "No endless back-and-forth. You approve, we launch. Your new website is live and working within one business week.",
       },
       {
-        title: "Starting at $79/month",
+        title: "Everything Included",
         description:
-          "Includes hosting, maintenance, SSL, and monthly updates. Everything you need, nothing you don't.",
+          "Hosting, maintenance, SSL, SEO, and monthly updates. One new customer covers months of service.",
       },
       {
         title: "Free Custom Demo First",

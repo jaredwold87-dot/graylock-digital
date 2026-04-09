@@ -27,14 +27,14 @@ const data: IndustryPageData = {
     h1: "Finding a Psychologist Is Hard Enough.",
     h1Highlight: "Your Website Shouldn't Make It Harder.",
     subheadline:
-      "When someone finally decides to reach out to a psychologist, they need to feel safe, understood, and confident before they ever pick up the phone. If your website is clinical, impersonal, or hard to navigate, they'll keep searching. We build warm, professional, SEO-optimized websites for psychologists that make it easy for the right clients to find you and feel comfortable reaching out. Starting at $199/month.",
+      "When someone finally decides to reach out to a psychologist, they need to feel safe, understood, and confident before they ever pick up the phone. If your website is clinical, impersonal, or hard to navigate, they'll keep searching. We build warm, professional, SEO-optimized websites for psychologists that make it easy for the right clients to find you and feel comfortable reaching out. Fully managed — so you can focus on your clients.",
     cta: "Book Your Free Website Review",
     backgroundImage: `${import.meta.env.BASE_URL}hero-solo-practitioners.jpg`,
     trustSignals: [
       "Built for psychology practices",
       "Client inquiry forms",
       "Local SEO included",
-      "Starting at $199/month",
+      "Fully managed for you",
     ],
   },
   specialties: {
@@ -107,9 +107,9 @@ const data: IndustryPageData = {
           "No months of waiting. From consultation to live website in under two weeks.",
       },
       {
-        title: "Starting at $199/month",
+        title: "Fully Managed — You Focus on Clients",
         description:
-          "Less than what most therapist directory sites charge in annual fees. You get a fully custom site you own.",
+          "Hosting, updates, SEO, and support all included. One new client covers months of service — and you'll never touch a line of code.",
       },
     ],
   },
