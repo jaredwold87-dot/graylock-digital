@@ -30,63 +30,63 @@ export function DashboardSection() {
 
           <div className="lg:col-span-3 order-2 lg:order-1">
             <ScrollReveal delay={0.1}>
-              <div className="bg-charcoal rounded-2xl border border-gunmetal overflow-hidden shadow-2xl">
-                <div className="bg-charcoal border-b border-gunmetal px-6 py-4 flex items-center gap-3">
+              <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-2xl">
+                <div className="bg-gray-50 border-b border-gray-200 px-6 py-4 flex items-center gap-3">
                   <div className="flex gap-1.5">
-                    <div className="w-3 h-3 rounded-full bg-red-500/60"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/60"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500/60"></div>
+                    <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-400"></div>
                   </div>
-                  <span className="text-stone/60 text-xs font-sans ml-2">dashboard.graylockdigital.com</span>
+                  <span className="text-gray-400 text-xs font-sans ml-2">dashboard.graylockdigital.com</span>
                 </div>
 
                 <div className="p-6 md:p-8 space-y-6">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-display text-offwhite text-xl">Your Business Dashboard</h4>
-                    <span className="text-xs text-stone bg-navy px-3 py-1 rounded-full border border-gunmetal">Live</span>
+                    <h4 className="font-display text-charcoal text-xl">Your Business Dashboard</h4>
+                    <span className="text-xs text-green-600 bg-green-50 px-3 py-1 rounded-full border border-green-200">Live</span>
                   </div>
 
                   <div className="grid grid-cols-3 gap-4">
-                    <div className="bg-navy rounded-xl p-4 border border-gunmetal text-center">
+                    <div className="bg-gray-50 rounded-xl p-4 border border-gray-200 text-center">
                       <div className="text-2xl md:text-3xl font-display text-orange">342</div>
-                      <div className="text-stone text-xs font-sans mt-1">Visitors This Month</div>
+                      <div className="text-gray-500 text-xs font-sans mt-1">Visitors This Month</div>
                     </div>
-                    <div className="bg-navy rounded-xl p-4 border border-gunmetal text-center">
+                    <div className="bg-gray-50 rounded-xl p-4 border border-gray-200 text-center">
                       <div className="text-2xl md:text-3xl font-display text-orange">18</div>
-                      <div className="text-stone text-xs font-sans mt-1">New Inquiries</div>
+                      <div className="text-gray-500 text-xs font-sans mt-1">New Inquiries</div>
                     </div>
-                    <div className="bg-navy rounded-xl p-4 border border-gunmetal text-center">
+                    <div className="bg-gray-50 rounded-xl p-4 border border-gray-200 text-center">
                       <div className="text-2xl md:text-3xl font-display text-orange">4.2s</div>
-                      <div className="text-stone text-xs font-sans mt-1">Avg. Page Load</div>
+                      <div className="text-gray-500 text-xs font-sans mt-1">Avg. Page Load</div>
                     </div>
                   </div>
 
-                  <div className="bg-navy rounded-xl p-5 border border-gunmetal">
+                  <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
                     <div className="flex items-center justify-between mb-4">
-                      <h5 className="text-offwhite font-sans font-semibold text-sm">Quick Edit: Business Info</h5>
+                      <h5 className="text-charcoal font-sans font-semibold text-sm">Quick Edit: Business Info</h5>
                       <span className="text-orange text-xs font-sans font-semibold cursor-pointer">Save Changes</span>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      <div className="bg-charcoal rounded-lg px-4 py-3 border border-gunmetal">
-                        <div className="text-stone/60 text-[10px] uppercase tracking-wider font-sans mb-1">Phone</div>
-                        <div className="text-offwhite text-sm font-sans">(555) 867-5309</div>
+                      <div className="bg-white rounded-lg px-4 py-3 border border-gray-200">
+                        <div className="text-gray-400 text-[10px] uppercase tracking-wider font-sans mb-1">Phone</div>
+                        <div className="text-charcoal text-sm font-sans">(555) 867-5309</div>
                       </div>
-                      <div className="bg-charcoal rounded-lg px-4 py-3 border border-gunmetal">
-                        <div className="text-stone/60 text-[10px] uppercase tracking-wider font-sans mb-1">Hours</div>
-                        <div className="text-offwhite text-sm font-sans">Mon–Fri 8am–5pm</div>
+                      <div className="bg-white rounded-lg px-4 py-3 border border-gray-200">
+                        <div className="text-gray-400 text-[10px] uppercase tracking-wider font-sans mb-1">Hours</div>
+                        <div className="text-charcoal text-sm font-sans">Mon–Fri 8am–5pm</div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="bg-navy rounded-xl p-5 border border-gunmetal">
+                  <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
                     <div className="flex items-center justify-between mb-3">
-                      <h5 className="text-offwhite font-sans font-semibold text-sm">Announcement Banner</h5>
+                      <h5 className="text-charcoal font-sans font-semibold text-sm">Announcement Banner</h5>
                       <div className="w-9 h-5 bg-orange rounded-full relative">
-                        <div className="w-4 h-4 bg-white rounded-full absolute right-0.5 top-0.5"></div>
+                        <div className="w-4 h-4 bg-white rounded-full absolute right-0.5 top-0.5 shadow-sm"></div>
                       </div>
                     </div>
-                    <div className="bg-charcoal rounded-lg px-4 py-3 border border-gunmetal">
-                      <div className="text-offwhite text-sm font-sans">Now accepting new clients — book a free consultation!</div>
+                    <div className="bg-white rounded-lg px-4 py-3 border border-gray-200">
+                      <div className="text-charcoal text-sm font-sans">Now accepting new clients — book a free consultation!</div>
                     </div>
                   </div>
                 </div>
