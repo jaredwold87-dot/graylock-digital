@@ -150,7 +150,7 @@ export const FAQS = [
       },
       {
         q: "Do you work with medical practices? Are your forms HIPAA compliant?",
-        a: "Yes, we build websites for medical practices, physicians, therapists, and other healthcare providers. Our contact and lead capture forms are designed for appointment inquiries only \u2014 they do not collect protected health information (PHI). We do not integrate with EHR/EMR systems or patient portals. This keeps your implementation straightforward and outside the scope of HIPAA technical safeguards for websites. If you require a full HIPAA-compliant patient portal or health record integration, that falls outside our scope, and we\u2019ll tell you that upfront."
+        a: "Yes — we build websites for medical practices, physicians, therapists, and other healthcare providers. Our inquiry forms collect contact information only: name, phone, email, and a brief message about what they're looking for. This is how most private practice websites handle initial contact.\n\nIf you use an EHR or scheduling system with HIPAA-compliant forms — like SimplePractice, TherapyNotes, or Jane App — we can link directly to those intake portals from your site. Your marketing website handles the first impression; your clinical tools handle everything after that."
       }
     ]
   },
@@ -208,19 +208,19 @@ export const FAQS = [
     questions: [
       {
         q: "Are your contact forms HIPAA compliant?",
-        a: "Our contact forms are designed for appointment inquiries only and do not collect Protected Health Information (PHI). This keeps your implementation simple and outside the technical scope of HIPAA safeguards. We do not integrate with EHR/EMR systems or patient portals. If your practice requires a HIPAA-compliant patient portal, we'll tell you that upfront and refer you to the right solution."
+        a: "Our inquiry forms collect contact information only — name, phone, email, and a brief message about what they're looking for. This is how most private practice websites handle initial contact, and it's intentionally simple.\n\nIf you use a HIPAA-compliant platform like SimplePractice, TherapyNotes, or Jane App for intake, we link directly to those portals from your website. Your marketing site handles the first impression; your clinical tools handle everything after that."
       },
       {
         q: "Do you integrate with EHR or EMR systems?",
-        a: "No. We build marketing websites designed to attract and convert new patients — not clinical software. We do not integrate with EHR/EMR systems, patient portals, or health record platforms. Our forms capture appointment inquiries only: name, contact information, and the reason for their visit. If you need a patient portal or clinical integration, we'll be upfront about that and point you to the right vendor."
+        a: "We don't build clinical software — we build marketing websites that get new patients to contact you. Your website captures the inquiry (name, phone, email, reason for visit), and your EHR or scheduling platform handles intake from there.\n\nIf you use SimplePractice, TherapyNotes, Jane App, or another platform with its own intake forms, we link directly to those from your site. The two systems complement each other — your website generates the lead, your clinical tools manage the relationship."
       },
       {
         q: "What data do your forms actually collect?",
-        a: "Our lead capture and appointment request forms collect basic contact information only — name, email, phone number, and a message or reason for their inquiry. They do not collect medical records, diagnoses, treatment histories, insurance IDs, or any information classified as Protected Health Information under HIPAA. This is by design. It keeps your website simple, effective, and outside the scope of HIPAA technical safeguards."
+        a: "Name, email, phone number, and a brief message — that's it. Our forms are designed for appointment inquiries, not clinical intake. They don't collect medical records, diagnoses, treatment histories, insurance IDs, or any health-related information.\n\nThis is by design. It keeps your website focused on what it does best — making a strong first impression and converting visitors into inquiries — while your clinical tools handle everything that comes after."
       },
       {
         q: "What if my practice needs a HIPAA-compliant patient portal?",
-        a: "That's outside what we build — and we'll tell you that upfront. Our websites are marketing tools designed to get new patients to contact you. If your practice requires a secure patient portal for medical records, messaging, or intake forms that collect PHI, you'll need a dedicated platform built for that purpose. We're happy to refer you to the right solution."
+        a: "That's a different tool for a different job, and we'll tell you that upfront. Platforms like SimplePractice, TherapyNotes, and Jane App are purpose-built for secure intake, patient messaging, and health records.\n\nWhat we build is the marketing website that gets patients to your door in the first place. We can link directly to your portal's intake forms from your site so the handoff is seamless. Most of our medical practice clients use both — a Graylock website for visibility, and their EHR platform for clinical workflow."
       }
     ]
   },

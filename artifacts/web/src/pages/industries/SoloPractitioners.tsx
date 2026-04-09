@@ -238,7 +238,7 @@ const data: IndustryPageData = {
     },
     {
       q: "Are your forms HIPAA compliant?",
-      a: "Our contact and lead capture forms are designed for appointment inquiries only — they do not collect protected health information (PHI). We do not integrate with EHR/EMR systems or patient portals. This keeps your implementation straightforward and outside the scope of HIPAA technical safeguards.",
+      a: "Our inquiry forms collect contact information only — name, phone, email, and a brief message about what they're looking for. This is how most solo practice websites handle initial contact.\n\nIf you use a HIPAA-compliant platform like SimplePractice, TherapyNotes, or Jane App for intake, we link directly to those portals from your website. Your marketing site handles the first impression; your clinical tools handle everything after that.",
     },
     {
       q: "What's included in the monthly fee?",

@@ -526,7 +526,7 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
             </CTAButton>
             {data.showPrivacyNote && (
               <p className="text-white/70 font-sans text-sm mt-6 max-w-xl mx-auto">
-                Our intake forms are designed for appointment inquiries only and do not collect Protected Health Information.
+                Our forms collect contact information only. If you use a HIPAA-compliant platform for intake, we link directly to it from your site.
               </p>
             )}
           </ScrollReveal>

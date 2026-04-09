@@ -219,10 +219,10 @@ export default function Pricing() {
                 <h3 className="text-xl font-display text-offwhite">Privacy & Compliance</h3>
               </div>
               <p className="text-stone font-sans leading-relaxed mb-4">
-                Our contact forms are designed for appointment inquiries only and do not collect Protected Health Information (PHI). This keeps your implementation simple and outside the technical scope of HIPAA safeguards.
+                Our inquiry forms collect contact information only — name, phone, email, and a brief message. This is how most private practice websites handle initial contact, and it's intentionally simple.
               </p>
               <p className="text-stone font-sans leading-relaxed mb-4">
-                We do not integrate with EHR/EMR systems or patient portals. If your practice requires a HIPAA-compliant patient portal, we'll tell you that upfront and refer you to the right solution.
+                If you use a HIPAA-compliant platform like SimplePractice, TherapyNotes, or Jane App, we link directly to your intake portals from your website. Your marketing site handles the first impression; your clinical tools handle everything after that.
               </p>
               <p className="text-stone/60 font-sans text-sm">
                 Have questions? See our <a href="/faq#privacy-compliance" className="text-orange hover:underline">Privacy & Compliance FAQ</a> for more details.
