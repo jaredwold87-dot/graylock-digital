@@ -4,6 +4,12 @@ import {
   Sparkles,
   Zap,
   TrendingUp,
+  Code,
+  Shield,
+  MapPin,
+  MessageSquare,
+  BarChart3,
+  FileSearch,
 } from "lucide-react";
 
 const data: StrategyPageData = {
@@ -97,6 +103,94 @@ const data: StrategyPageData = {
       },
     ],
   },
+  deliverables: {
+    heading: "GEO Deliverables From Graylock",
+    subtitle: "Concrete services we provide to get your business recommended by AI search tools.",
+    items: [
+      {
+        icon: Code,
+        title: "Structured Schema Markup",
+        description:
+          "Comprehensive JSON-LD schema (LocalBusiness, Service, FAQ, Review) implemented across your entire site so AI crawlers can accurately classify your business.",
+      },
+      {
+        icon: Shield,
+        title: "E-E-A-T Content Signals",
+        description:
+          "Authoritative, entity-rich copy that establishes your expertise, credentials, and trustworthiness — the signals AI models weigh most heavily.",
+      },
+      {
+        icon: MapPin,
+        title: "Google Business Profile Optimization",
+        description:
+          "Full GBP setup and optimization — the single most impactful source for Google AI Overviews and external AI recommendation engines.",
+      },
+      {
+        icon: MessageSquare,
+        title: "Conversational FAQ Content",
+        description:
+          "Natural-language Q&A sections on every page, structured to match the way users phrase queries to ChatGPT, Perplexity, and voice assistants.",
+      },
+      {
+        icon: BarChart3,
+        title: "AI Citation Monitoring",
+        description:
+          "Ongoing tracking of how and where AI tools reference your business, so we can measure progress and adjust strategy over time.",
+      },
+      {
+        icon: FileSearch,
+        title: "Structured Data Audits",
+        description:
+          "Regular audits of your schema markup, NAP consistency, and citation profile to ensure AI models always have accurate, up-to-date information.",
+      },
+    ],
+  },
+  planTiers: {
+    heading: "GEO at Every Level",
+    subtitle: "GEO fundamentals are built into every Graylock website. Advanced GEO strategy scales with your plan.",
+    tiers: [
+      {
+        name: "Solo Practice",
+        price: "$199",
+        description: "GEO fundamentals baked into your website from day one — schema markup, E-E-A-T copy, and FAQ sections on every page.",
+        features: [
+          "Comprehensive schema markup (LocalBusiness, Service, FAQ)",
+          "E-E-A-T structured website copy",
+          "Conversational FAQ sections",
+          "Consistent NAP across site",
+          "Google Business Profile setup",
+          "Review schema implementation",
+        ],
+      },
+      {
+        name: "Group Practice",
+        price: "$299",
+        description: "Full GEO strategy with advanced optimization, monitoring, and ongoing structured data management.",
+        features: [
+          "Everything in Solo Practice",
+          "Full Google Business Profile optimization",
+          "Structured data audits (quarterly)",
+          "AI citation monitoring",
+          "Multi-provider schema markup",
+          "Enhanced local SEO + GEO integration",
+        ],
+        highlighted: true,
+      },
+      {
+        name: "Enterprise",
+        price: "$449",
+        description: "Maximum AI visibility with multi-location GEO, advanced analytics, and dedicated strategy management.",
+        features: [
+          "Everything in Group Practice",
+          "Multi-location GEO strategy",
+          "Monthly structured data audits",
+          "Advanced AI citation analytics",
+          "Custom GEO reporting cadence",
+          "Priority GEO strategy updates",
+        ],
+      },
+    ],
+  },
   statsStrip: {
     stats: [
       { value: "25%+", label: "of US search queries now show Google AI Overviews" },
@@ -183,7 +277,7 @@ const data: StrategyPageData = {
     headline: "Is Your Business Ready for the AI Search Era?",
     subtext:
       "Book a free 20-minute review. We'll check your GEO readiness — schema markup, GBP status, review presence, and structured content — and show you exactly where you stand.",
-    button: "Book Your Free Website Review",
+    button: "Get Your Free GEO Readiness Report",
   },
   relatedStrategy: [
     { name: "SEO", path: "/seo-for-small-business" },

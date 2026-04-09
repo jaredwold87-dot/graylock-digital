@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { useState } from "react";
 import { Link } from "wouter";
-import { ChevronDown, ArrowRight, LucideIcon } from "lucide-react";
+import { ChevronDown, ArrowRight, Check, LucideIcon } from "lucide-react";
 
 export interface StrategyPageData {
   seo: {
@@ -29,6 +29,22 @@ export interface StrategyPageData {
   };
   howGraylockDoesIt: {
     steps: { title: string; description: string }[];
+  };
+  deliverables?: {
+    heading: string;
+    subtitle: string;
+    items: { icon: LucideIcon; title: string; description: string }[];
+  };
+  planTiers?: {
+    heading: string;
+    subtitle: string;
+    tiers: {
+      name: string;
+      price: string;
+      description: string;
+      features: string[];
+      highlighted?: boolean;
+    }[];
   };
   statsStrip: {
     stats: { value: string; label: string }[];
@@ -240,6 +256,136 @@ export default function StrategyLandingPage({ data }: { data: StrategyPageData }
           </div>
         </div>
       </section>
+
+      {data.deliverables && (
+        <section className="bg-[#1A1A1A] py-20 md:py-28 px-6 md:px-12">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal className="text-center mb-16">
+              <p className="text-orange text-xs font-sans font-bold uppercase tracking-widest mb-3">
+                WHAT WE DO
+              </p>
+              <h2 className="text-3xl md:text-5xl font-display text-offwhite mb-4">
+                {data.deliverables.heading}
+              </h2>
+              <p className="text-stone font-sans text-lg max-w-2xl mx-auto">
+                {data.deliverables.subtitle}
+              </p>
+            </ScrollReveal>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {data.deliverables.items.map((item, i) => (
+                <ScrollReveal key={i} delay={i * 0.05}>
+                  <div className="bg-[#242424] border border-[#333] rounded-xl p-6 hover:border-orange/30 transition-all duration-300 h-full">
+                    <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center mb-4">
+                      <item.icon size={20} className="text-orange" />
+                    </div>
+                    <h3 className="text-offwhite font-sans font-semibold text-lg mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-stone font-sans text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {data.planTiers && (
+        <section className="bg-[#F5F5F5] py-20 md:py-28 px-6 md:px-12">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal className="text-center mb-16">
+              <p className="text-orange text-xs font-sans font-bold uppercase tracking-widest mb-3">
+                WHAT'S INCLUDED IN YOUR PLAN
+              </p>
+              <h2 className="text-3xl md:text-5xl font-display text-[#1A1A1A] mb-4">
+                {data.planTiers.heading}
+              </h2>
+              <p className="text-[#4A4A4A] font-sans text-lg max-w-2xl mx-auto">
+                {data.planTiers.subtitle}
+              </p>
+            </ScrollReveal>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {data.planTiers.tiers.map((tier, i) => (
+                <ScrollReveal key={i} delay={i * 0.08}>
+                  <div
+                    className={`rounded-2xl p-8 h-full flex flex-col ${
+                      tier.highlighted
+                        ? "bg-charcoal text-offwhite border-2 border-orange shadow-lg shadow-orange/10"
+                        : "bg-white border border-gray-200"
+                    }`}
+                  >
+                    {tier.highlighted && (
+                      <span className="inline-block bg-orange text-white text-xs font-sans font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4 self-start">
+                        Most Popular
+                      </span>
+                    )}
+                    <h3
+                      className={`font-display text-2xl mb-1 ${
+                        tier.highlighted ? "text-offwhite" : "text-[#1A1A1A]"
+                      }`}
+                    >
+                      {tier.name}
+                    </h3>
+                    <div className="mb-3">
+                      <span
+                        className={`font-display text-3xl font-bold ${
+                          tier.highlighted ? "text-orange" : "text-charcoal"
+                        }`}
+                      >
+                        {tier.price}
+                      </span>
+                      <span
+                        className={`font-sans text-sm ${
+                          tier.highlighted ? "text-stone" : "text-[#4A4A4A]"
+                        }`}
+                      >
+                        /mo
+                      </span>
+                    </div>
+                    <p
+                      className={`font-sans text-sm leading-relaxed mb-6 ${
+                        tier.highlighted ? "text-stone" : "text-[#4A4A4A]"
+                      }`}
+                    >
+                      {tier.description}
+                    </p>
+                    <ul className="space-y-3 mb-8 flex-grow">
+                      {tier.features.map((feature, fi) => (
+                        <li key={fi} className="flex items-start gap-2">
+                          <Check
+                            size={16}
+                            className={`flex-shrink-0 mt-0.5 ${
+                              tier.highlighted ? "text-orange" : "text-orange"
+                            }`}
+                          />
+                          <span
+                            className={`font-sans text-sm ${
+                              tier.highlighted ? "text-offwhite/90" : "text-[#4A4A4A]"
+                            }`}
+                          >
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    <CTAButton
+                      href="/get-started"
+                      variant={tier.highlighted ? "primary" : "dark"}
+                      className="w-full py-4 text-center justify-center"
+                    >
+                      Get Started
+                    </CTAButton>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="bg-navy py-8 border-y border-gunmetal">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
