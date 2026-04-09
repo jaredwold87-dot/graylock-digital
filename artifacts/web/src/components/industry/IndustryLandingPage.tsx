@@ -241,7 +241,7 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
             <ScrollReveal>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gunmetal/50">
                 <img
-                  src={data.painPoints.image || `${import.meta.env.BASE_URL}mockup-laptop-before.png`}
+                  src={data.painPoints.image || `${import.meta.env.BASE_URL}outdated-practice-website.png`}
                   alt="Example of an outdated practice website"
                   className="w-full h-auto"
                   loading="lazy"

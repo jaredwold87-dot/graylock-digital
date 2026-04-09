@@ -57,7 +57,7 @@ const data: IndustryPageData = {
   painPoints: {
     sectionLabel: "SOUND FAMILIAR?",
     headline: "Someone Is Looking for a Therapist in Your Area Right Now — Will They Find You?",
-    image: `${import.meta.env.BASE_URL}mockup-laptop-before.png`,
+    image: `${import.meta.env.BASE_URL}outdated-practice-website.png`,
     cards: [
       {
         icon: Eye,

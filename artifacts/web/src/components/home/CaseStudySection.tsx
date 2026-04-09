@@ -22,7 +22,7 @@ export function CaseStudySection() {
         <ScrollReveal className="text-center mb-16">
           <p className="text-orange font-sans font-semibold uppercase tracking-widest text-sm mb-4">Featured Project</p>
           <h2 className="text-3xl md:text-5xl font-display text-charcoal mb-4">
-            How We Helped West Coast Eye Institute
+            How We Helped a Multi-Location Eye Care Practice
           </h2>
           <p className="text-stone text-lg font-sans max-w-2xl mx-auto leading-relaxed">
             A real project. A real transformation. Here's how we took an outdated, confusing web presence and turned it into a modern patient acquisition engine.
@@ -35,7 +35,7 @@ export function CaseStudySection() {
               <div>
                 <h3 className="text-xl font-display text-charcoal mb-3">The Challenge</h3>
                 <p className="text-stone font-sans leading-relaxed">
-                  West Coast Eye Institute had two separate, outdated websites creating confusion for patients and extra work for staff. The intake process relied entirely on phone calls — leading to missed calls, phone tag, and lost new-patient opportunities.
+                  This multi-location eye care practice had two separate, outdated websites creating confusion for patients and extra work for staff. The intake process relied entirely on phone calls — leading to missed calls, phone tag, and lost new-patient opportunities.
                 </p>
               </div>
 
@@ -70,11 +70,11 @@ export function CaseStudySection() {
                     <div className="w-2 h-2 rounded-full bg-red-500/50" />
                     <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
                     <div className="w-2 h-2 rounded-full bg-green-500/50" />
-                    <span className="ml-2 text-[10px] text-stone/40 font-sans">westcoasteyeinstitute.com</span>
+                    <span className="ml-2 text-[10px] text-stone/40 font-sans">yourpracticename.com</span>
                   </div>
                   <img
                     src={`${BASE}mockup-laptop-after.png`}
-                    alt="West Coast Eye Institute — after redesign"
+                    alt="Practice website — after redesign"
                     className="w-full rounded-md"
                     loading="lazy"
                   />
@@ -87,8 +87,8 @@ export function CaseStudySection() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative bg-charcoal rounded-xl border border-gray-200 overflow-hidden p-1.5 shadow-lg">
                   <img
-                    src={`${BASE}mockup-laptop-before.png`}
-                    alt="West Coast Eye Institute — before redesign"
+                    src={`${BASE}outdated-practice-website.png`}
+                    alt="Example of an outdated practice website — before redesign"
                     className="w-full rounded-md opacity-60"
                     loading="lazy"
                   />
@@ -99,7 +99,7 @@ export function CaseStudySection() {
                 <div className="relative bg-charcoal rounded-xl border border-gray-200 overflow-hidden p-1.5 shadow-lg flex flex-col items-center">
                   <img
                     src={`${BASE}mockup-phone-after.png`}
-                    alt="West Coast Eye Institute — mobile view"
+                    alt="Practice website — mobile view after redesign"
                     className="w-auto h-44 rounded-md object-cover object-top"
                     loading="lazy"
                   />

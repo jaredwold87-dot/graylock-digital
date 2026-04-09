@@ -44,7 +44,7 @@ function LaptopMockup({ showAfter }: { showAfter: boolean }) {
         <div className="absolute inset-0 flex flex-col">
           <div className="flex-1 relative rounded-t-lg overflow-hidden border-[3px] border-b-0 border-[#2a2a2a] bg-[#1a1a1a]">
             <img
-              src={`${BASE}mockup-laptop-before.png`}
+              src={`${BASE}outdated-practice-website.png`}
               alt=""
               className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ease-in-out"
               style={{ opacity: showAfter ? 0 : 1 }}

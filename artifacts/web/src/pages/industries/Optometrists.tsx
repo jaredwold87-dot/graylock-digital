@@ -184,8 +184,8 @@ const data: IndustryPageData = {
   testimonials: {
     featured: {
       name: "Ben L.",
-      title: "West Coast Eye Clinic",
-      location: "West Coast",
+      title: "Optometrist, Multi-Location Practice",
+      location: "Pacific Northwest",
       quote:
         "We had two outdated websites creating confusion for patients. Graylock consolidated everything into one clean site and restructured how new patients contact us. Every inquiry now routes directly to the right person on my team. No more missed calls, no more phone tag.",
     },
