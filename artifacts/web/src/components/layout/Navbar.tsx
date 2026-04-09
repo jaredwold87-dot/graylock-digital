@@ -245,6 +245,7 @@ function DesktopDropdown({
 function MobileAccordion({
   label,
   items,
+  extraItems,
   isActive,
   location,
   open,
@@ -252,6 +253,7 @@ function MobileAccordion({
 }: {
   label: string;
   items: { name: string; path: string }[];
+  extraItems?: { name: string; path: string }[];
   isActive: boolean;
   location: string;
   open: boolean;
@@ -296,6 +298,25 @@ function MobileAccordion({
               {item.name}
             </Link>
           ))}
+          {extraItems && extraItems.length > 0 && (
+            <>
+              <div className="border-t border-gunmetal my-1" />
+              {extraItems.map((item) => (
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  className={cn(
+                    "text-base font-sans py-1",
+                    location === item.path
+                      ? "text-orange"
+                      : "text-stone hover:text-offwhite transition-colors"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </>
+          )}
         </div>
       </div>
     </div>
@@ -456,7 +477,8 @@ export function Navbar() {
 
           <MobileAccordion
             label="Who We Help"
-            items={WHO_WE_HELP_ALL}
+            items={WHO_WE_HELP_PRACTICES}
+            extraItems={WHO_WE_HELP_OTHER}
             isActive={isWhoWeHelpActive}
             location={location}
             open={mobileWhoWeHelpOpen}
