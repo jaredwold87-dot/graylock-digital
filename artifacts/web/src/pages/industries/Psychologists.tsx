@@ -232,6 +232,7 @@ const data: IndustryPageData = {
       "Book a free 20-minute call. We'll show you exactly what your psychology practice website could look like — and build you a custom homepage demo before you commit to anything.",
     button: "Book Your Free Website Review",
   },
+  showPrivacyNote: true,
   relatedPages: [
     { name: "Therapists & Counselors", path: "/websites-for-therapists" },
     { name: "Physicians", path: "/websites-for-physicians" },

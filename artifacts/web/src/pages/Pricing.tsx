@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { PricingSection } from "@/components/home/PricingSection";
 import { FAQSection } from "@/components/home/FAQSection";
 import { FinalCTASection } from "@/components/home/FinalCTASection";
-import { Check, Minus, Shield, Activity, Headphones, BarChart3, Server, Lock, FileCheck, Globe, Image as ImageIcon, Package } from "lucide-react";
+import { Check, Minus, Shield, Activity, Headphones, BarChart3, Server, Lock, FileCheck, Globe, Image as ImageIcon, Package, ShieldCheck } from "lucide-react";
 
 export default function Pricing() {
   const featureRows = [
@@ -197,6 +197,31 @@ export default function Pricing() {
             <p className="text-stone/50 font-sans text-xs leading-relaxed">
               Our service is an all-inclusive subscription. We own the code, the design framework, and the hosting infrastructure. You own your domain, your written content, and your brand assets. Cancel anytime with 30 days' notice — no cancellation fees.
             </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="bg-charcoal py-20 px-6 md:px-12 relative">
+        <div className="section-divider absolute top-0 left-0 right-0" />
+        <div className="max-w-3xl mx-auto">
+          <ScrollReveal>
+            <div className="bg-navy/60 border border-gunmetal/50 rounded-2xl p-8 md:p-10">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center flex-shrink-0 border border-orange/10">
+                  <ShieldCheck className="text-orange" size={22} />
+                </div>
+                <h3 className="text-xl font-display text-offwhite">Privacy & Compliance</h3>
+              </div>
+              <p className="text-stone font-sans leading-relaxed mb-4">
+                Our contact forms are designed for appointment inquiries only and do not collect Protected Health Information (PHI). This keeps your implementation simple and outside the technical scope of HIPAA safeguards.
+              </p>
+              <p className="text-stone font-sans leading-relaxed mb-4">
+                We do not integrate with EHR/EMR systems or patient portals. If your practice requires a HIPAA-compliant patient portal, we'll tell you that upfront and refer you to the right solution.
+              </p>
+              <p className="text-stone/60 font-sans text-sm">
+                Have questions? See our <a href="/faq#privacy-compliance" className="text-orange hover:underline">Privacy & Compliance FAQ</a> for more details.
+              </p>
+            </div>
           </ScrollReveal>
         </div>
       </section>

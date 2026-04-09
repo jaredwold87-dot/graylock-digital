@@ -232,6 +232,7 @@ const data: IndustryPageData = {
       "Book a free 20-minute call. We'll show you exactly what your dental website could look like — and build you a custom homepage demo before you commit to anything.",
     button: "Book Your Free Website Review",
   },
+  showPrivacyNote: true,
   relatedPages: [
     { name: "Physicians", path: "/websites-for-physicians" },
     { name: "Optometrists", path: "/websites-for-optometrists" },

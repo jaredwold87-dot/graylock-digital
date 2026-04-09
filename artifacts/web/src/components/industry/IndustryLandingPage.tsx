@@ -60,6 +60,7 @@ export interface IndustryPageData {
     button: string;
   };
   pricingHeadline?: string;
+  showPrivacyNote?: boolean;
   relatedPages: { name: string; path: string }[];
   schema: object;
 }
@@ -523,6 +524,11 @@ export default function IndustryLandingPage({ data }: { data: IndustryPageData }
             <CTAButton href="/get-started" variant="dark" className="px-10 py-5 text-lg">
               {data.bottomCta.button}
             </CTAButton>
+            {data.showPrivacyNote && (
+              <p className="text-white/70 font-sans text-sm mt-6 max-w-xl mx-auto">
+                Our intake forms are designed for appointment inquiries only and do not collect Protected Health Information.
+              </p>
+            )}
           </ScrollReveal>
         </div>
       </section>

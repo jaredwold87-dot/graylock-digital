@@ -230,6 +230,7 @@ const data: IndustryPageData = {
       "Book a free 20-minute call. We'll show you exactly what your chiropractic website could look like — and build you a custom homepage demo before you commit to anything.",
     button: "Book Your Free Website Review",
   },
+  showPrivacyNote: true,
   relatedPages: [
     { name: "Physical Therapists", path: "/websites-for-physical-therapists" },
     { name: "Physicians", path: "/websites-for-physicians" },

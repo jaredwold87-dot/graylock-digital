@@ -203,6 +203,28 @@ export const FAQS = [
     ]
   },
   {
+    category: "Privacy & Compliance",
+    id: "privacy-compliance",
+    questions: [
+      {
+        q: "Are your contact forms HIPAA compliant?",
+        a: "Our contact forms are designed for appointment inquiries only and do not collect Protected Health Information (PHI). This keeps your implementation simple and outside the technical scope of HIPAA safeguards. We do not integrate with EHR/EMR systems or patient portals. If your practice requires a HIPAA-compliant patient portal, we'll tell you that upfront and refer you to the right solution."
+      },
+      {
+        q: "Do you integrate with EHR or EMR systems?",
+        a: "No. We build marketing websites designed to attract and convert new patients — not clinical software. We do not integrate with EHR/EMR systems, patient portals, or health record platforms. Our forms capture appointment inquiries only: name, contact information, and the reason for their visit. If you need a patient portal or clinical integration, we'll be upfront about that and point you to the right vendor."
+      },
+      {
+        q: "What data do your forms actually collect?",
+        a: "Our lead capture and appointment request forms collect basic contact information only — name, email, phone number, and a message or reason for their inquiry. They do not collect medical records, diagnoses, treatment histories, insurance IDs, or any information classified as Protected Health Information under HIPAA. This is by design. It keeps your website simple, effective, and outside the scope of HIPAA technical safeguards."
+      },
+      {
+        q: "What if my practice needs a HIPAA-compliant patient portal?",
+        a: "That's outside what we build — and we'll tell you that upfront. Our websites are marketing tools designed to get new patients to contact you. If your practice requires a secure patient portal for medical records, messaging, or intake forms that collect PHI, you'll need a dedicated platform built for that purpose. We're happy to refer you to the right solution."
+      }
+    ]
+  },
+  {
     category: "Working With Graylock",
     id: "working-with-graylock",
     questions: [

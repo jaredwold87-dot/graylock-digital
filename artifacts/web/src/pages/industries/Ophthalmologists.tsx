@@ -230,6 +230,7 @@ const data: IndustryPageData = {
       "Book a free 20-minute call. We'll show you exactly what your ophthalmology website could look like — and build you a custom homepage demo before you commit to anything.",
     button: "Book Your Free Website Review",
   },
+  showPrivacyNote: true,
   relatedPages: [
     { name: "Optometrists", path: "/websites-for-optometrists" },
     { name: "Physicians", path: "/websites-for-physicians" },
