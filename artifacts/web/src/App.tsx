@@ -1,6 +1,7 @@
 import { Switch, Route, Router as WouterRouter, useLocation, Redirect } from "wouter";
 import { useEffect, lazy, Suspense } from "react";
 import { usePageTracking } from "@/hooks/usePageTracking";
+import { SiteSettingsProvider } from "@/hooks/SiteSettingsContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
@@ -111,9 +112,11 @@ function App() {
           <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
             <ScrollToTop />
             <PageTracker />
-            <Layout>
-              <Router />
-            </Layout>
+            <SiteSettingsProvider>
+              <Layout>
+                <Router />
+              </Layout>
+            </SiteSettingsProvider>
           </WouterRouter>
           <Toaster />
         </TooltipProvider>

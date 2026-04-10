@@ -1,10 +1,13 @@
 import { Link } from "wouter";
-import { useSiteSettings } from "@/hooks/useSiteSettings";
+import { useSiteSettingsContext } from "@/hooks/SiteSettingsContext";
 
 export function Footer() {
-  const settings = useSiteSettings();
-  const phone = settings?.contact_info?.phone || "hello@graylockdigital.com";
+  const settings = useSiteSettingsContext();
+  const phone = settings?.contact_info?.phone;
   const email = settings?.contact_info?.email || "hello@graylockdigital.com";
+
+  const dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const officeHours = settings?.office_hours;
 
   return (
     <footer className="bg-charcoal pt-20 pb-10 px-6 md:px-12 relative">
@@ -22,6 +25,24 @@ export function Footer() {
           <p className="text-stone font-sans mt-4 max-w-xs">
             Custom websites for professional practices. Done for you, maintained forever.
           </p>
+          {officeHours && Object.keys(officeHours).length > 0 && (
+            <div className="mt-6">
+              <h5 className="text-offwhite font-sans font-semibold text-xs uppercase tracking-wider mb-3">Office Hours</h5>
+              <ul className="space-y-1">
+                {dayNames.map((day) => {
+                  const key = day.toLowerCase();
+                  const h = officeHours[key];
+                  if (!h) return null;
+                  return (
+                    <li key={day} className="text-stone text-xs font-sans flex justify-between gap-3">
+                      <span>{day.slice(0, 3)}</span>
+                      <span>{h.open ? `${h.from}–${h.to}` : "Closed"}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
         </div>
 
         <div>

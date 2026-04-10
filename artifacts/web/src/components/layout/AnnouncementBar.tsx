@@ -1,4 +1,4 @@
-import { useSiteSettings } from "@/hooks/useSiteSettings";
+import { useSiteSettingsContext } from "@/hooks/SiteSettingsContext";
 
 function isSafeUrl(url: string): boolean {
   try {
@@ -10,7 +10,7 @@ function isSafeUrl(url: string): boolean {
 }
 
 export function AnnouncementBar() {
-  const settings = useSiteSettings();
+  const settings = useSiteSettingsContext();
 
   if (!settings?.announcement_bar?.enabled) return null;
 

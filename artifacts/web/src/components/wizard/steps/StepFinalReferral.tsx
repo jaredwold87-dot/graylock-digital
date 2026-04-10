@@ -23,13 +23,7 @@ export function StepFinalReferral() {
       heard_about_us: data.referralSource || "",
     };
 
-    const apiPromise = fetch(`${import.meta.env.BASE_URL || "/"}api/leads`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    }).catch((err) => console.error("Lead submission error:", err));
-
-    const gosPromise = fetch(
+    fetch(
       "https://graylock-os-ymwca.sevalla.app/api/public/leads/99c58e46-33ee-4c7c-ab23-eeb7badcc57b",
       {
         method: "POST",
@@ -52,7 +46,15 @@ export function StepFinalReferral() {
       }
     ).catch(() => {});
 
-    await Promise.allSettled([apiPromise, gosPromise]);
+    try {
+      await fetch(`${import.meta.env.BASE_URL || "/"}api/leads`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch (err) {
+      console.error("Lead submission error:", err);
+    }
 
     setPhase("booking");
     setIsSubmitting(false);
