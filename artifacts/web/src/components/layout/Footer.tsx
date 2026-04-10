@@ -102,7 +102,7 @@ export function Footer() {
             <Link href="/get-started" className="inline-block bg-orange text-white font-sans font-bold px-6 py-3 rounded hover:bg-orange/90 transition-colors w-full text-center shadow-lg shadow-orange/20">
               Get a Free Evaluation
             </Link>
-            {phone !== email && (
+            {phone && (
               <p className="text-stone text-sm text-center mt-4">
                 <a href={`tel:${phone}`} className="hover:text-offwhite transition-colors">{phone}</a>
               </p>
