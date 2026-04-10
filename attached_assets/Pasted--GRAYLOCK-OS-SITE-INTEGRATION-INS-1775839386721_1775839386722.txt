@@ -1,0 +1,229 @@
+═══════════════════════════════════════════════════════════════
+  GRAYLOCK OS — SITE INTEGRATION INSTRUCTIONS
+═══════════════════════════════════════════════════════════════
+
+This site connects to Graylock OS for analytics, settings, lead
+capture, and client dashboard access. Wire up each section below.
+
+━━━ CONFIGURATION ━━━
+
+SITE_ID: 99c58e46-33ee-4c7c-ab23-eeb7badcc57b
+API_BASE: https://graylock-os-ymwca.sevalla.app/api
+SITE_INGEST_KEY: (not configured — auth header not required)
+PORTAL_URL: https://graylock-os-ymwca.sevalla.app/portal
+
+━━━ 1. ANALYTICS TRACKING (page views + load time) ━━━
+
+On every route change (and initial load), POST a page view event.
+Uses PerformanceObserver for load time measurement.
+   Use navigator.sendBeacon for reliability (no auth header needed).
+
+React Router example (add to your App or Layout component):
+
+```tsx
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+
+const SITE_ID = "99c58e46-33ee-4c7c-ab23-eeb7badcc57b";
+const ANALYTICS_URL = "https://graylock-os-ymwca.sevalla.app/api/public/analytics/event";
+
+function categorizeReferrer(ref: string): string {
+  if (!ref) return "Direct";
+  try {
+    const host = new URL(ref).hostname.toLowerCase();
+    if (host.includes("google")) return "Google";
+    if (host.includes("facebook") || host.includes("instagram") || host.includes("twitter") || host.includes("linkedin") || host.includes("tiktok") || host.includes("youtube")) return "Social";
+    return "Other";
+  } catch { return "Other"; }
+}
+
+function usePageTracking() {
+  const location = useLocation();
+  const sent = useRef<string>("");
+
+  useEffect(() => {
+    const path = location.pathname;
+    if (sent.current === path) return;
+    sent.current = path;
+
+    const device = window.innerWidth < 768 ? "mobile" : "desktop";
+    const referrer = categorizeReferrer(document.referrer);
+
+    let loadTimeMs: number | null = null;
+    try {
+      if (typeof PerformanceObserver !== "undefined") {
+        new PerformanceObserver((list) => {
+          const entries = list.getEntriesByType("navigation");
+          if (entries.length > 0) {
+            const nav = entries[0] as PerformanceNavigationTiming;
+            loadTimeMs = Math.round(nav.loadEventEnd - nav.startTime);
+          }
+          sendEvent(loadTimeMs);
+        }).observe({ type: "navigation", buffered: true });
+        return;
+      }
+    } catch {}
+
+    sendEvent(null);
+
+    function sendEvent(lt: number | null) {
+      const body: Record<string, unknown> = {
+        site_id: SITE_ID,
+        path,
+        referrer,
+        device,
+      };
+      if (typeof lt === "number" && lt > 0) body.load_time_ms = lt;
+      fetch(ANALYTICS_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      }).catch(() => {});
+    }
+  }, [location.pathname]);
+}
+
+// Usage: call usePageTracking() inside your root layout component
+```
+
+Alternative — embed the auto-tracking script in your HTML <head>
+(includes ingest key automatically):
+
+```html
+<script src="https://graylock-os-ymwca.sevalla.app/api/public/tracking.js?site_id=99c58e46-33ee-4c7c-ab23-eeb7badcc57b" defer></script>
+```
+
+━━━ 2. DYNAMIC SETTINGS (hours, contact info, announcements) ━━━
+
+Fetch settings on mount and poll every 5 minutes so client edits
+in their portal appear without a redeploy.
+
+```tsx
+import { useState, useEffect } from "react";
+
+const SETTINGS_URL = "https://graylock-os-ymwca.sevalla.app/api/public/settings/99c58e46-33ee-4c7c-ab23-eeb7badcc57b";
+
+interface SiteSettings {
+  announcement_bar: {
+    enabled: boolean;
+    message: string;
+    background_color: string;
+    link_url: string;
+    link_text: string;
+  };
+  office_hours: Record<string, { open: boolean; from: string; to: string }>;
+  contact_info: {
+    phone: string;
+    email: string;
+    address: string;
+    telehealth_available?: boolean;
+  };
+}
+
+function useSiteSettings() {
+  const [settings, setSettings] = useState<SiteSettings | null>(null);
+
+  useEffect(() => {
+    const load = () =>
+      fetch(SETTINGS_URL)
+        .then((r) => r.json())
+        .then(setSettings)
+        .catch(() => {});
+
+    load();
+    const interval = setInterval(load, 5 * 60 * 1000); // poll every 5 min
+    return () => clearInterval(interval);
+  }, []);
+
+  return settings;
+}
+
+// Usage in a component:
+// const settings = useSiteSettings();
+// if (settings?.announcement_bar?.enabled) { /* render banner */ }
+// Render office_hours, contact_info from settings object
+```
+
+━━━ 3. CONTACT FORM → LEAD CAPTURE ━━━
+
+Form submissions POST to the GOS API and appear in the client's
+portal Leads tab automatically.
+
+```tsx
+const LEADS_URL = "https://graylock-os-ymwca.sevalla.app/api/public/leads/99c58e46-33ee-4c7c-ab23-eeb7badcc57b";
+
+async function handleContactSubmit(formData: {
+  name: string;
+  email: string;
+  phone?: string;
+  subject?: string;
+  message?: string;
+}) {
+  const res = await fetch(LEADS_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" }, // Add x-site-key header here if SITE_INGEST_KEY is configured
+    body: JSON.stringify(formData),
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to submit — please call us directly.");
+  }
+
+  return res.json(); // { success: true }
+}
+
+// Wire this into your contact form's onSubmit handler.
+// Show success: "Thank you — we'll be in touch shortly."
+// Show error: "Something went wrong. Please call us directly."
+```
+
+━━━ 4. FOOTER — CLIENT DASHBOARD LINK ━━━
+
+Add a "Client Dashboard" link in the site footer pointing to the
+client's portal login page.
+
+```tsx
+<a
+  href="https://graylock-os-ymwca.sevalla.app/portal?site=99c58e46-33ee-4c7c-ab23-eeb7badcc57b"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm text-gray-500 hover:text-gray-400"
+>
+  Client Dashboard
+</a>
+```
+
+━━━ 5. GOOGLE ANALYTICS (GA4) TRACKING ━━━
+
+Add the Google Analytics gtag.js snippet to the HTML <head> of every page.
+This site's Measurement ID is: G-9YFQ865HBJ
+
+```html
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YFQ865HBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9YFQ865HBJ');
+</script>
+```
+
+Also set the environment variable VITE_GA_MEASUREMENT_ID=G-9YFQ865HBJ
+in Sevalla so the app can read it at build time if needed.
+
+━━━ 6. COMPLETE INTEGRATION CHECKLIST ━━━
+
+□ Google Analytics gtag.js snippet in <head> with G-9YFQ865HBJ (Section 5)
+□ Analytics tracking on every route change (Section 1)
+□ PerformanceObserver reporting load_time_ms (Section 1)
+□ x-site-key header included on analytics and lead requests (when configured)
+□ Settings fetched on mount + 5-min polling (Section 2)
+□ Announcement banner rendered when enabled (Section 2)
+□ Office hours displayed from settings (Section 2)
+□ Contact info from settings (Section 2)
+□ Contact form POSTs to /public/leads/99c58e46-33ee-4c7c-ab23-eeb7badcc57b (Section 3)
+□ Success/error feedback on form submission (Section 3)
+□ "Client Dashboard" link in footer (Section 4)
+
+═══════════════════════════════════════════════════════════════
